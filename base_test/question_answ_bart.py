@@ -55,7 +55,7 @@ def preprocess_function(examples):
     return inputs
 
 
-squad = load_dataset("squad")
+squad = load_dataset("hotpot_qa", 'distractor')
 tokenizer = AutoTokenizer.from_pretrained("facebook/bart-base")
 tokenized_squad = squad.map(preprocess_function, batched=True, remove_columns=squad["train"].column_names)
 
@@ -67,8 +67,8 @@ training_args = TrainingArguments(
     output_dir="./results",
     evaluation_strategy="epoch",
     learning_rate=2e-5,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
+    per_device_train_batch_size=4,
+    per_device_eval_batch_size=4,
     num_train_epochs=3,
     weight_decay=0.01,
 )

@@ -1,0 +1,14 @@
+06/23/2022 21:51:05 - INFO - __main__ - Namespace(adam_epsilon=1e-08, append_another_bos=True, checkpoint=None, dataset='mrqa', debug=False, dev_file='data/mrqa_squad/mrqa_squad_dev.mini.2048.jsonl', do_lowercase=False, do_predict=False, do_train=True, eval_period=10, freeze_embeds=False, gradient_accumulation_steps=1, learning_rate=5e-05, max_grad_norm=0.1, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, num_train_epochs=30.0, output_dir='out/mrqa_squad_bart-base_upstream_model', predict_batch_size=4, predict_checkpoint='best-model.pt', prefix='', quiet=False, seed=42, test_file='data/mrqa_squad/mrqa_squad_dev.jsonl', total_steps=-1, train_batch_size=4, train_file='data/mrqa_squad/mrqa_squad_train.jsonl', wait_step=10, warmup_steps=100, weight_decay=0.01)
+06/23/2022 21:51:05 - INFO - __main__ - out/mrqa_squad_bart-base_upstream_model
+06/23/2022 21:51:05 - INFO - __main__ - Using 8 gpus
+06/23/2022 21:52:09 - INFO - __main__ - Namespace(adam_epsilon=1e-08, append_another_bos=True, checkpoint=None, dataset='mrqa', debug=False, dev_file='/amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_dev.mini.2048.jsonl', do_lowercase=False, do_predict=False, do_train=True, eval_period=10, freeze_embeds=False, gradient_accumulation_steps=1, learning_rate=5e-05, max_grad_norm=0.1, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, num_train_epochs=30.0, output_dir='out/mrqa_squad_bart-base_upstream_model', predict_batch_size=4, predict_checkpoint='best-model.pt', prefix='', quiet=False, seed=42, test_file='/amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_dev.jsonl', total_steps=-1, train_batch_size=4, train_file='/amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_train.jsonl', wait_step=10, warmup_steps=100, weight_decay=0.01)
+06/23/2022 21:52:09 - INFO - __main__ - out/mrqa_squad_bart-base_upstream_model
+06/23/2022 21:52:09 - INFO - __main__ - Using 8 gpus
+06/23/2022 21:54:17 - INFO - __main__ - preprocessed_path=/amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_train-preproBartTokenized.json
+06/23/2022 21:54:17 - INFO - __main__ - Loading pre-tokenized data from /amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_train-preproBartTokenized.json
+06/23/2022 21:54:39 - INFO - __main__ - Loaded 86420 examples from train data
+06/23/2022 21:54:40 - INFO - __main__ - preprocessed_path=/amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_dev.mini.2048-preproBartTokenized.json
+06/23/2022 21:54:40 - INFO - __main__ - Loading pre-tokenized data from /amax/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_dev.mini.2048-preproBartTokenized.json
+06/23/2022 21:54:40 - INFO - __main__ - Loaded 2048 examples from dev data
+06/23/2022 21:55:27 - INFO - __main__ - args.total_steps = 648150.0
+06/23/2022 21:55:27 - INFO - __main__ - Starting training!
