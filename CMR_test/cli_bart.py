@@ -19,7 +19,8 @@ import numpy as np
 import torch
 
 from cmr.models.utils import set_seeds
-from cmr.models.run_bart import run
+# from cmr.models.run_bart import run
+from cmr.models.run_test import run
 
 
 def get_parser():

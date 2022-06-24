@@ -14,7 +14,7 @@ from .utils import label_smoothed_nll_loss
 class MyBart(BartForConditionalGeneration):
     def forward(self, input_ids, attention_mask=None, encoder_outputs=None,
                 decoder_input_ids=None, decoder_attention_mask=None, decoder_cached_states=None,
-                use_cache=False, is_training=False, return_all_loss=False):
+                use_cache=False, is_training=False, return_all_loss=False, past_key_values=None):
 
         if is_training:
             # print(decoder_input_ids.ne(self.config.pad_token_id).sum(dim=1) - 1)

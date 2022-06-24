@@ -83,3 +83,5 @@ trainer = Trainer(
 )
 
 trainer.train()
+
+# model.generate()

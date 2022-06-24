@@ -35,7 +35,7 @@ python cli_bart.py \
         --output_dir ${output_dir} \
         --model facebook/bart-${modelsize} \
         --dataset mrqa \
-        --train_file /amax/home/gangwei/project/CMR/data/${task}/${task}_train.jsonl \
+        --train_file /amax/home/gangwei/project/CMR/data/${task}/${task}_dev.mini.2048.jsonl \
         --dev_file /amax/home/gangwei/project/CMR/data/${task}/${task}_dev.mini.2048.jsonl \
         --test_file /amax/home/gangwei/project/CMR/data/${task}/${task}_dev.jsonl \
         --learning_rate ${lr} \
@@ -51,4 +51,6 @@ python cli_bart.py \
         # > ${logfile}  2>&1 &
 
 # tail -f logs/${task}.${logname}.log
+
+# --train_file /amax/home/gangwei/project/CMR/data/${task}/${task}_train.jsonl \
 echo "${logfile}"
