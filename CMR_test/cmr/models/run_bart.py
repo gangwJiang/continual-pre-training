@@ -20,7 +20,8 @@ import copy
 
 
 def run(args, logger):
-    tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
+    # tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
+    tokenizer = BartTokenizer.from_pretrained("bart-large")
 
     train_data = GeneralDataset(logger, args, args.train_file,
                                 data_type="train", is_training=True, task_name=args.dataset)
@@ -237,16 +238,16 @@ def inference(model, dev_data, save_predictions=False, verbose=False, args=None,
         if return_all:
             pass
         if not loss_only:
-            # outputs = model.generate(input_ids=batch[0],
-            #                         attention_mask=batch[1],
-            #                         num_beams=dev_data.args.num_beams,
-            #                         max_length=dev_data.args.max_output_length,
-            #                         decoder_start_token_id=model.config.bos_token_id,
-            #                         early_stopping=dev_data.gen_early_stop,)
             outputs = model.generate(input_ids=batch[0],
                                     attention_mask=batch[1],
                                     num_beams=dev_data.args.num_beams,
-                                    max_length=dev_data.args.max_output_length,)
+                                    max_length=dev_data.args.max_output_length,
+                                    decoder_start_token_id=model.config.bos_token_id,
+                                    early_stopping=dev_data.gen_early_stop,)
+            # outputs = model.generate(input_ids=batch[0],
+            #                         attention_mask=batch[1],
+            #                         num_beams=dev_data.args.num_beams,
+            #                         max_length=dev_data.args.max_output_length,)
             for input_, output in zip(batch[0], outputs):
                 pred = dev_data.decode(output)
                 predictions.append(pred)

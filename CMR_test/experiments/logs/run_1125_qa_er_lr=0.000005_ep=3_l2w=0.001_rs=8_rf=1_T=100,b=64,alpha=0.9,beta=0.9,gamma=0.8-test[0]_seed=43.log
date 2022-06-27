@@ -1,0 +1,2179 @@
+06/27/2022 03:04:00 - INFO - __main__ - Namespace(adam_epsilon=1e-08, adapter_dim=32, append_another_bos=1, base_model_path='out/mrqa_squad_bart-base_upstream_model/best-model.pt', base_model_type='facebook/bart-base', ckpt_dir='experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43', cl_method_name='er', current_thread_id=None, diff_loss_weight=0.001, do_lowercase=False, ewc_gamma=1, ewc_lambda=0.5, example_encoder_name='roberta-base', freeze_embeds=False, gradient_accumulation_steps=1, heldout_submission_data='experiments/eval_data/qa/heldout_eval.jsonl', index_rank_method='most_similar', indexing_args_path='exp_results/supervision_data/1012_dm_simple.train_args.json', indexing_method='bart_index', inference_query_size=1, init_memory_cache_path='na', kg_eval_freq=10, kg_eval_mode='metric', kr_eval_freq=10, kr_eval_mode='metric', learning_rate=5e-06, local_adapt_lr=1e-05, max_grad_norm=0.1, max_input_length=888, max_output_length=50, max_timecode=100, memory_key_encoder='facebook/bart-base', memory_path='experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/memory_dict.pkl', memory_store_rate=1.0, mir_abalation_args='none', num_adapt_epochs=0, num_beams=3, num_threads_eval=0, num_train_epochs=3.0, offline_retrain_upstream=False, okr_sample_seed=1337, okr_sample_size=512, path_to_thread_result=None, predict_batch_size=1, prefix='qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43', replay_candidate_size=8, replay_frequency=1, replay_size=8, result_file='experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json', save_ckpt_freq=25, seed=43, skip_instant_eval=False, stream_id=0, submission_stream_data='experiments/eval_data/qa/submission_stream.T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test.json', task_emb_dim=768, task_name='mrqa', train_batch_size=2, upstream_data_path='/data2/home/gangwei/project/CMR/data/mrqa_squad/mrqa_squad_train.jsonl', upstream_eval_data='experiments/eval_data/qa/upstream_eval.jsonl', upstream_sample_ratio=-1.0, use_mir=False, use_replay_mix=True, use_wandb=False, weight_decay=0.01)
+06/27/2022 03:04:02 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/27/2022 03:04:02 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/27/2022 03:04:03 - INFO - __main__ - Loading the stream from experiments/eval_data/qa/submission_stream.T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test.json and use the $0 part.
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+postfix:     preproBartTokenized
+06/27/2022 03:04:24 - INFO - __main__ - load_data: len(upstream_eval_examples)=512
+postfix:     preproBartTokenized
+06/27/2022 03:04:25 - INFO - __main__ - load_data: len(heldout_eval_examples)=1280
+postfix:     preproBartTokenized
+06/27/2022 03:04:29 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model/best-model.pt for facebook/bart-base .....
+06/27/2022 03:04:31 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/27/2022 03:04:31 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/27/2022 03:04:31 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/27/2022 03:04:36 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model/best-model.pt for facebook/bart-base ..... Done!
+06/27/2022 03:04:40 - INFO - __main__ - Moving to the GPUs.
+06/27/2022 03:04:40 - INFO - __main__ - Debugger Setup ......
+06/27/2022 03:04:40 - INFO - __main__ - debugger_args: Namespace(adam_epsilon=1e-08, ckpt_dir='experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43', diff_loss_weight=0.001, gradient_accumulation_steps=1, inference_query_size=1, init_memory_cache_path='na', kg_eval_freq=10, kg_eval_mode='metric', kr_eval_freq=10, kr_eval_mode='metric', learning_rate=5e-06, local_adapt_lr=1e-05, max_grad_norm=0.1, memory_key_encoder='facebook/bart-base', memory_path='experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/memory_dict.pkl', memory_store_rate=1.0, num_adapt_epochs=0, num_epochs=3.0, okr_sample_seed=1337, okr_sample_size=512, replay_candidate_size=8, replay_frequency=1, replay_size=8, save_ckpt_freq=25, skip_instant_eval=False, total_steps=10000, upstream_sample_ratio=-1.0, use_replay_mix=True, warmup_steps=0, weight_decay=0.01) ......
+06/27/2022 03:04:40 - INFO - __main__ - optimizer & scheduler Setup ...... Done!
+06/27/2022 03:04:40 - INFO - __main__ - Debugger Setup ...... Done!
+06/27/2022 03:04:40 - INFO - __main__ - Prepare the sampled upstream data as the initial memory for the ER and MIR;
+06/27/2022 03:04:40 - INFO - __main__ - Set up the initial memory with 86420 examples.
+06/27/2022 03:04:40 - INFO - __main__ - Initial memroy_module size: 86420
+06/27/2022 03:04:40 - INFO - __main__ - Initial upstream_memroy_module size: 86420
+06/27/2022 03:04:40 - INFO - __main__ - Start Online Debugging with Dynamic Error Mode
+06/27/2022 03:04:40 - INFO - __main__ - Number of Batches of Data: 100
+06/27/2022 03:04:40 - INFO - __main__ - Data Batch Size: 64;
+06/27/2022 03:04:42 - INFO - __main__ - Model saved to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/model_ckpt_000.pt.
+06/27/2022 03:04:42 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=0
+06/27/2022 03:08:13 - INFO - __main__ - Upstream Knowledge Retation (UKR@0): 0.8613
+06/27/2022 03:08:13 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=0
+06/27/2022 03:17:41 - INFO - __main__ - Future Knowledge Generalization (KG@0): 0.4234
+06/27/2022 03:17:41 - INFO - __main__ - Evaluating to get errors .... Timecode: 0
+06/27/2022 03:18:07 - INFO - __main__ - Before Error Fixing: {'EM': 0.890625, 'QA-F1': 0.9169642857142857}
+06/27/2022 03:18:07 - INFO - __main__ - Found 7 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:18:07 - INFO - __main__ - Start error-fixing (len(examples_to_train)=7) .... Timecode: 0
+postfix:     preproBartTokenized
+06/27/2022 03:18:09 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:18:09 - INFO - __main__ - Saving the current error examples (len=7) to the memory.
+06/27/2022 03:18:09 - INFO - __main__ - Current memory size: 86420.
+06/27/2022 03:18:09 - INFO - __main__ - Save 7 examples to the memory.
+06/27/2022 03:18:09 - INFO - __main__ - .................. Done.
+06/27/2022 03:18:12 - INFO - __main__ - EFR=0.5714285714285714
+06/27/2022 03:18:12 - INFO - __main__ - Overall: 0.7310267857142857 from scores=[0.890625, 0.5714285714285714]
+06/27/2022 03:18:25 - INFO - __main__ - Model saved to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/model_ckpt_000.pt.
+06/27/2022 03:18:26 - INFO - __main__ - Updated result file: experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json at Timecode: 0.
+06/27/2022 03:18:26 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:18:26 - INFO - __main__ - Evaluating to get errors .... Timecode: 1
+06/27/2022 03:18:52 - INFO - __main__ - Before Error Fixing: {'EM': 0.78125, 'QA-F1': 0.803125}
+06/27/2022 03:18:52 - INFO - __main__ - Found 14 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:18:52 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:18:52 - INFO - __main__ - Current memroy_module size: 86427.
+06/27/2022 03:18:52 - INFO - __main__ - Current upstream_memroy_module size: 86427.
+06/27/2022 03:18:52 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:18:52 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:18:52 - INFO - __main__ - Start error-fixing (len(examples_to_train)=22) .... Timecode: 1
+postfix:     preproBartTokenized
+06/27/2022 03:18:58 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:18:58 - INFO - __main__ - Saving the current error examples (len=14) to the memory.
+06/27/2022 03:18:58 - INFO - __main__ - Current memory size: 86427.
+06/27/2022 03:18:58 - INFO - __main__ - Save 14 examples to the memory.
+06/27/2022 03:18:58 - INFO - __main__ - .................. Done.
+06/27/2022 03:19:03 - INFO - __main__ - EFR=0.5714285714285714
+06/27/2022 03:19:03 - INFO - __main__ - Overall: 0.7036830357142857 from scores=[0.8359375, 0.5714285714285714]
+06/27/2022 03:19:03 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:19:03 - INFO - __main__ - Evaluating to get errors .... Timecode: 2
+06/27/2022 03:19:30 - INFO - __main__ - Before Error Fixing: {'EM': 0.828125, 'QA-F1': 0.8643914473684211}
+06/27/2022 03:19:30 - INFO - __main__ - Found 11 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:19:30 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:19:30 - INFO - __main__ - Current memroy_module size: 86441.
+06/27/2022 03:19:30 - INFO - __main__ - Current upstream_memroy_module size: 86441.
+06/27/2022 03:19:30 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:19:30 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:19:30 - INFO - __main__ - Start error-fixing (len(examples_to_train)=19) .... Timecode: 2
+postfix:     preproBartTokenized
+06/27/2022 03:19:35 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:19:35 - INFO - __main__ - Saving the current error examples (len=11) to the memory.
+06/27/2022 03:19:35 - INFO - __main__ - Current memory size: 86441.
+06/27/2022 03:19:35 - INFO - __main__ - Save 11 examples to the memory.
+06/27/2022 03:19:35 - INFO - __main__ - .................. Done.
+06/27/2022 03:19:40 - INFO - __main__ - EFR=0.45454545454545453
+06/27/2022 03:19:40 - INFO - __main__ - Overall: 0.6439393939393939 from scores=[0.8333333333333334, 0.45454545454545453]
+06/27/2022 03:19:40 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:19:40 - INFO - __main__ - Evaluating to get errors .... Timecode: 3
+06/27/2022 03:20:06 - INFO - __main__ - Before Error Fixing: {'EM': 0.796875, 'QA-F1': 0.8216145833333333}
+06/27/2022 03:20:06 - INFO - __main__ - Found 13 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:20:06 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:20:06 - INFO - __main__ - Current memroy_module size: 86452.
+06/27/2022 03:20:06 - INFO - __main__ - Current upstream_memroy_module size: 86452.
+06/27/2022 03:20:06 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:20:07 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:20:07 - INFO - __main__ - Start error-fixing (len(examples_to_train)=21) .... Timecode: 3
+postfix:     preproBartTokenized
+06/27/2022 03:20:13 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:20:13 - INFO - __main__ - Saving the current error examples (len=13) to the memory.
+06/27/2022 03:20:13 - INFO - __main__ - Current memory size: 86452.
+06/27/2022 03:20:13 - INFO - __main__ - Save 13 examples to the memory.
+06/27/2022 03:20:13 - INFO - __main__ - .................. Done.
+06/27/2022 03:20:18 - INFO - __main__ - EFR=0.38461538461538464
+06/27/2022 03:20:18 - INFO - __main__ - Overall: 0.6044170673076923 from scores=[0.82421875, 0.38461538461538464]
+06/27/2022 03:20:18 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:20:18 - INFO - __main__ - Evaluating to get errors .... Timecode: 4
+06/27/2022 03:20:45 - INFO - __main__ - Before Error Fixing: {'EM': 0.71875, 'QA-F1': 0.7442708333333333}
+06/27/2022 03:20:45 - INFO - __main__ - Found 18 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:20:46 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:20:46 - INFO - __main__ - Current memroy_module size: 86465.
+06/27/2022 03:20:46 - INFO - __main__ - Current upstream_memroy_module size: 86465.
+06/27/2022 03:20:46 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:20:46 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:20:46 - INFO - __main__ - Start error-fixing (len(examples_to_train)=26) .... Timecode: 4
+postfix:     preproBartTokenized
+06/27/2022 03:20:54 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:20:54 - INFO - __main__ - Saving the current error examples (len=18) to the memory.
+06/27/2022 03:20:54 - INFO - __main__ - Current memory size: 86465.
+06/27/2022 03:20:54 - INFO - __main__ - Save 18 examples to the memory.
+06/27/2022 03:20:54 - INFO - __main__ - .................. Done.
+06/27/2022 03:21:01 - INFO - __main__ - EFR=0.5555555555555556
+06/27/2022 03:21:01 - INFO - __main__ - Overall: 0.6793402777777777 from scores=[0.803125, 0.5555555555555556]
+06/27/2022 03:21:01 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:21:01 - INFO - __main__ - Evaluating to get errors .... Timecode: 5
+06/27/2022 03:21:27 - INFO - __main__ - Before Error Fixing: {'EM': 0.75, 'QA-F1': 0.7765625}
+06/27/2022 03:21:27 - INFO - __main__ - Found 16 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:21:27 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:21:27 - INFO - __main__ - Current memroy_module size: 86483.
+06/27/2022 03:21:27 - INFO - __main__ - Current upstream_memroy_module size: 86483.
+06/27/2022 03:21:27 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:21:27 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:21:27 - INFO - __main__ - Start error-fixing (len(examples_to_train)=24) .... Timecode: 5
+postfix:     preproBartTokenized
+06/27/2022 03:21:35 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:21:35 - INFO - __main__ - Saving the current error examples (len=16) to the memory.
+06/27/2022 03:21:35 - INFO - __main__ - Current memory size: 86483.
+06/27/2022 03:21:35 - INFO - __main__ - Save 16 examples to the memory.
+06/27/2022 03:21:35 - INFO - __main__ - .................. Done.
+06/27/2022 03:21:42 - INFO - __main__ - EFR=0.5
+06/27/2022 03:21:42 - INFO - __main__ - Overall: 0.6471354166666667 from scores=[0.7942708333333334, 0.5]
+06/27/2022 03:21:42 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:21:42 - INFO - __main__ - Evaluating to get errors .... Timecode: 6
+06/27/2022 03:22:08 - INFO - __main__ - Before Error Fixing: {'EM': 0.734375, 'QA-F1': 0.7765625}
+06/27/2022 03:22:08 - INFO - __main__ - Found 17 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:22:08 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:22:08 - INFO - __main__ - Current memroy_module size: 86499.
+06/27/2022 03:22:08 - INFO - __main__ - Current upstream_memroy_module size: 86499.
+06/27/2022 03:22:08 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:22:08 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:22:08 - INFO - __main__ - Start error-fixing (len(examples_to_train)=25) .... Timecode: 6
+postfix:     preproBartTokenized
+06/27/2022 03:22:15 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:22:15 - INFO - __main__ - Saving the current error examples (len=17) to the memory.
+06/27/2022 03:22:15 - INFO - __main__ - Current memory size: 86499.
+06/27/2022 03:22:15 - INFO - __main__ - Save 17 examples to the memory.
+06/27/2022 03:22:15 - INFO - __main__ - .................. Done.
+06/27/2022 03:22:22 - INFO - __main__ - EFR=0.35294117647058826
+06/27/2022 03:22:22 - INFO - __main__ - Overall: 0.569327731092437 from scores=[0.7857142857142857, 0.35294117647058826]
+06/27/2022 03:22:22 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:22:22 - INFO - __main__ - Evaluating to get errors .... Timecode: 7
+06/27/2022 03:22:48 - INFO - __main__ - Before Error Fixing: {'EM': 0.671875, 'QA-F1': 0.7122395833333334}
+06/27/2022 03:22:48 - INFO - __main__ - Found 21 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:22:49 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:22:49 - INFO - __main__ - Current memroy_module size: 86516.
+06/27/2022 03:22:49 - INFO - __main__ - Current upstream_memroy_module size: 86516.
+06/27/2022 03:22:49 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:22:49 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:22:49 - INFO - __main__ - Start error-fixing (len(examples_to_train)=29) .... Timecode: 7
+postfix:     preproBartTokenized
+06/27/2022 03:22:57 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:22:57 - INFO - __main__ - Saving the current error examples (len=21) to the memory.
+06/27/2022 03:22:57 - INFO - __main__ - Current memory size: 86516.
+06/27/2022 03:22:57 - INFO - __main__ - Save 21 examples to the memory.
+06/27/2022 03:22:57 - INFO - __main__ - .................. Done.
+06/27/2022 03:23:06 - INFO - __main__ - EFR=0.2857142857142857
+06/27/2022 03:23:06 - INFO - __main__ - Overall: 0.5285993303571428 from scores=[0.771484375, 0.2857142857142857]
+06/27/2022 03:23:06 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:23:06 - INFO - __main__ - Evaluating to get errors .... Timecode: 8
+06/27/2022 03:23:32 - INFO - __main__ - Before Error Fixing: {'EM': 0.65625, 'QA-F1': 0.6998727887894288}
+06/27/2022 03:23:32 - INFO - __main__ - Found 22 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:23:32 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:23:32 - INFO - __main__ - Current memroy_module size: 86537.
+06/27/2022 03:23:32 - INFO - __main__ - Current upstream_memroy_module size: 86537.
+06/27/2022 03:23:32 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:23:32 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:23:32 - INFO - __main__ - Start error-fixing (len(examples_to_train)=30) .... Timecode: 8
+postfix:     preproBartTokenized
+06/27/2022 03:23:41 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:23:41 - INFO - __main__ - Saving the current error examples (len=22) to the memory.
+06/27/2022 03:23:41 - INFO - __main__ - Current memory size: 86537.
+06/27/2022 03:23:41 - INFO - __main__ - Save 22 examples to the memory.
+06/27/2022 03:23:41 - INFO - __main__ - .................. Done.
+06/27/2022 03:23:50 - INFO - __main__ - EFR=0.22727272727272727
+06/27/2022 03:23:50 - INFO - __main__ - Overall: 0.49297664141414144 from scores=[0.7586805555555556, 0.22727272727272727]
+06/27/2022 03:23:50 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:23:50 - INFO - __main__ - Evaluating to get errors .... Timecode: 9
+06/27/2022 03:24:15 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.6625}
+06/27/2022 03:24:15 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:24:15 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:24:15 - INFO - __main__ - Current memroy_module size: 86559.
+06/27/2022 03:24:15 - INFO - __main__ - Current upstream_memroy_module size: 86559.
+06/27/2022 03:24:15 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:24:15 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:24:15 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 9
+postfix:     preproBartTokenized
+06/27/2022 03:24:24 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:24:24 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 03:24:24 - INFO - __main__ - Current memory size: 86559.
+06/27/2022 03:24:24 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 03:24:24 - INFO - __main__ - .................. Done.
+06/27/2022 03:24:34 - INFO - __main__ - EFR=0.2608695652173913
+06/27/2022 03:24:34 - INFO - __main__ - Overall: 0.5038722826086957 from scores=[0.746875, 0.2608695652173913]
+06/27/2022 03:24:34 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:24:34 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=10
+06/27/2022 03:28:03 - INFO - __main__ - Upstream Knowledge Retation (UKR@10): 0.8516
+postfix:     preproBartTokenized
+06/27/2022 03:28:04 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=10
+06/27/2022 03:31:30 - INFO - __main__ - Online Knowledge Retation (OKR@10): 0.8301
+06/27/2022 03:31:30 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=10
+06/27/2022 03:40:38 - INFO - __main__ - Future Knowledge Generalization (KG@10): 0.4383
+06/27/2022 03:40:38 - INFO - __main__ - Evaluating to get errors .... Timecode: 10
+06/27/2022 03:41:04 - INFO - __main__ - Before Error Fixing: {'EM': 0.625, 'QA-F1': 0.6718162593984962}
+06/27/2022 03:41:04 - INFO - __main__ - Found 24 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:41:04 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:41:04 - INFO - __main__ - Current memroy_module size: 86582.
+06/27/2022 03:41:04 - INFO - __main__ - Current upstream_memroy_module size: 86582.
+06/27/2022 03:41:04 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:41:04 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:41:04 - INFO - __main__ - Start error-fixing (len(examples_to_train)=32) .... Timecode: 10
+postfix:     preproBartTokenized
+06/27/2022 03:41:14 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:41:14 - INFO - __main__ - Saving the current error examples (len=24) to the memory.
+06/27/2022 03:41:14 - INFO - __main__ - Current memory size: 86582.
+06/27/2022 03:41:14 - INFO - __main__ - Save 24 examples to the memory.
+06/27/2022 03:41:14 - INFO - __main__ - .................. Done.
+06/27/2022 03:41:24 - INFO - __main__ - EFR=0.5416666666666666
+06/27/2022 03:41:24 - INFO - __main__ - Overall: 0.6794767992424242 from scores=[0.7357954545454546, 0.5416666666666666, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:41:24 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:41:24 - INFO - __main__ - Evaluating to get errors .... Timecode: 11
+06/27/2022 03:41:49 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6158854166666667}
+06/27/2022 03:41:49 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:41:50 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:41:50 - INFO - __main__ - Current memroy_module size: 86606.
+06/27/2022 03:41:50 - INFO - __main__ - Current upstream_memroy_module size: 86606.
+06/27/2022 03:41:50 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:41:50 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:41:50 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 11
+postfix:     preproBartTokenized
+06/27/2022 03:42:00 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:42:00 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 03:42:00 - INFO - __main__ - Current memory size: 86606.
+06/27/2022 03:42:00 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 03:42:00 - INFO - __main__ - .................. Done.
+06/27/2022 03:42:10 - INFO - __main__ - EFR=0.34615384615384615
+06/27/2022 03:42:10 - INFO - __main__ - Overall: 0.6380068108974359 from scores=[0.7239583333333333, 0.34615384615384615, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:42:10 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:42:10 - INFO - __main__ - Evaluating to get errors .... Timecode: 12
+06/27/2022 03:42:36 - INFO - __main__ - Before Error Fixing: {'EM': 0.6875, 'QA-F1': 0.7163471638655462}
+06/27/2022 03:42:36 - INFO - __main__ - Found 20 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:42:36 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:42:36 - INFO - __main__ - Current memroy_module size: 86632.
+06/27/2022 03:42:36 - INFO - __main__ - Current upstream_memroy_module size: 86632.
+06/27/2022 03:42:36 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:42:36 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:42:36 - INFO - __main__ - Start error-fixing (len(examples_to_train)=28) .... Timecode: 12
+postfix:     preproBartTokenized
+06/27/2022 03:42:44 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:42:44 - INFO - __main__ - Saving the current error examples (len=20) to the memory.
+06/27/2022 03:42:44 - INFO - __main__ - Current memory size: 86632.
+06/27/2022 03:42:44 - INFO - __main__ - Save 20 examples to the memory.
+06/27/2022 03:42:44 - INFO - __main__ - .................. Done.
+06/27/2022 03:42:53 - INFO - __main__ - EFR=0.35
+06/27/2022 03:42:53 - INFO - __main__ - Overall: 0.6382151442307693 from scores=[0.7211538461538461, 0.35, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:42:53 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:42:53 - INFO - __main__ - Evaluating to get errors .... Timecode: 13
+06/27/2022 03:43:19 - INFO - __main__ - Before Error Fixing: {'EM': 0.6875, 'QA-F1': 0.71875}
+06/27/2022 03:43:19 - INFO - __main__ - Found 20 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:43:19 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:43:19 - INFO - __main__ - Current memroy_module size: 86652.
+06/27/2022 03:43:19 - INFO - __main__ - Current upstream_memroy_module size: 86652.
+06/27/2022 03:43:19 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:43:19 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:43:19 - INFO - __main__ - Start error-fixing (len(examples_to_train)=28) .... Timecode: 13
+postfix:     preproBartTokenized
+06/27/2022 03:43:27 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:43:27 - INFO - __main__ - Saving the current error examples (len=20) to the memory.
+06/27/2022 03:43:27 - INFO - __main__ - Current memory size: 86652.
+06/27/2022 03:43:27 - INFO - __main__ - Save 20 examples to the memory.
+06/27/2022 03:43:27 - INFO - __main__ - .................. Done.
+06/27/2022 03:43:35 - INFO - __main__ - EFR=0.4
+06/27/2022 03:43:35 - INFO - __main__ - Overall: 0.647734375 from scores=[0.71875, 0.4, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:43:35 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:43:35 - INFO - __main__ - Evaluating to get errors .... Timecode: 14
+06/27/2022 03:44:02 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.5712733477011493}
+06/27/2022 03:44:02 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:44:02 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:44:02 - INFO - __main__ - Current memroy_module size: 86671.
+06/27/2022 03:44:02 - INFO - __main__ - Current upstream_memroy_module size: 86671.
+06/27/2022 03:44:02 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:44:02 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:44:02 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 14
+postfix:     preproBartTokenized
+06/27/2022 03:44:14 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:44:14 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 03:44:14 - INFO - __main__ - Current memory size: 86671.
+06/27/2022 03:44:14 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 03:44:14 - INFO - __main__ - .................. Done.
+06/27/2022 03:44:27 - INFO - __main__ - EFR=0.53125
+06/27/2022 03:44:27 - INFO - __main__ - Overall: 0.6710677083333334 from scores=[0.7041666666666666, 0.53125, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:44:27 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:44:27 - INFO - __main__ - Evaluating to get errors .... Timecode: 15
+06/27/2022 03:44:52 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5512152777777778}
+06/27/2022 03:44:52 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:44:52 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:44:52 - INFO - __main__ - Current memroy_module size: 86703.
+06/27/2022 03:44:52 - INFO - __main__ - Current upstream_memroy_module size: 86703.
+06/27/2022 03:44:52 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:44:52 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:44:52 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 15
+postfix:     preproBartTokenized
+06/27/2022 03:45:04 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:45:04 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 03:45:04 - INFO - __main__ - Current memory size: 86703.
+06/27/2022 03:45:04 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 03:45:04 - INFO - __main__ - .................. Done.
+06/27/2022 03:45:17 - INFO - __main__ - EFR=0.5806451612903226
+06/27/2022 03:45:17 - INFO - __main__ - Overall: 0.6785899697580645 from scores=[0.6923828125, 0.5806451612903226, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:45:17 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:45:17 - INFO - __main__ - Evaluating to get errors .... Timecode: 16
+06/27/2022 03:45:42 - INFO - __main__ - Before Error Fixing: {'EM': 0.40625, 'QA-F1': 0.4515625}
+06/27/2022 03:45:42 - INFO - __main__ - Found 38 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:45:42 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:45:42 - INFO - __main__ - Current memroy_module size: 86734.
+06/27/2022 03:45:42 - INFO - __main__ - Current upstream_memroy_module size: 86734.
+06/27/2022 03:45:42 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:45:42 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:45:42 - INFO - __main__ - Start error-fixing (len(examples_to_train)=46) .... Timecode: 16
+postfix:     preproBartTokenized
+06/27/2022 03:45:56 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:45:56 - INFO - __main__ - Saving the current error examples (len=38) to the memory.
+06/27/2022 03:45:56 - INFO - __main__ - Current memory size: 86734.
+06/27/2022 03:45:56 - INFO - __main__ - Save 38 examples to the memory.
+06/27/2022 03:45:56 - INFO - __main__ - .................. Done.
+06/27/2022 03:46:11 - INFO - __main__ - EFR=0.5263157894736842
+06/27/2022 03:46:11 - INFO - __main__ - Overall: 0.664357827012384 from scores=[0.6755514705882353, 0.5263157894736842, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:46:11 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:46:11 - INFO - __main__ - Evaluating to get errors .... Timecode: 17
+06/27/2022 03:46:37 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.5591605392156863}
+06/27/2022 03:46:37 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:46:37 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:46:37 - INFO - __main__ - Current memroy_module size: 86771.
+06/27/2022 03:46:37 - INFO - __main__ - Current upstream_memroy_module size: 86771.
+06/27/2022 03:46:37 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:46:37 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:46:37 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 17
+postfix:     preproBartTokenized
+06/27/2022 03:46:49 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:46:49 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 03:46:49 - INFO - __main__ - Current memory size: 86771.
+06/27/2022 03:46:49 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 03:46:49 - INFO - __main__ - .................. Done.
+06/27/2022 03:47:02 - INFO - __main__ - EFR=0.5
+06/27/2022 03:47:02 - INFO - __main__ - Overall: 0.6571440972222222 from scores=[0.6657986111111112, 0.5, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:47:02 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:47:02 - INFO - __main__ - Evaluating to get errors .... Timecode: 18
+06/27/2022 03:47:27 - INFO - __main__ - Before Error Fixing: {'EM': 0.609375, 'QA-F1': 0.6925595238095239}
+06/27/2022 03:47:27 - INFO - __main__ - Found 25 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:47:27 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:47:27 - INFO - __main__ - Current memroy_module size: 86803.
+06/27/2022 03:47:27 - INFO - __main__ - Current upstream_memroy_module size: 86803.
+06/27/2022 03:47:27 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:47:27 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:47:27 - INFO - __main__ - Start error-fixing (len(examples_to_train)=33) .... Timecode: 18
+postfix:     preproBartTokenized
+06/27/2022 03:47:37 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:47:37 - INFO - __main__ - Saving the current error examples (len=25) to the memory.
+06/27/2022 03:47:37 - INFO - __main__ - Current memory size: 86803.
+06/27/2022 03:47:37 - INFO - __main__ - Save 25 examples to the memory.
+06/27/2022 03:47:37 - INFO - __main__ - .................. Done.
+06/27/2022 03:47:48 - INFO - __main__ - EFR=0.48
+06/27/2022 03:47:48 - INFO - __main__ - Overall: 0.6525501644736842 from scores=[0.662828947368421, 0.48, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:47:48 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:47:48 - INFO - __main__ - Evaluating to get errors .... Timecode: 19
+06/27/2022 03:48:13 - INFO - __main__ - Before Error Fixing: {'EM': 0.546875, 'QA-F1': 0.5949156746031745}
+06/27/2022 03:48:13 - INFO - __main__ - Found 29 errors.
+postfix:     preproBartTokenized
+06/27/2022 03:48:13 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 03:48:13 - INFO - __main__ - Current memroy_module size: 86828.
+06/27/2022 03:48:13 - INFO - __main__ - Current upstream_memroy_module size: 86828.
+06/27/2022 03:48:13 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 03:48:13 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 03:48:13 - INFO - __main__ - Start error-fixing (len(examples_to_train)=37) .... Timecode: 19
+postfix:     preproBartTokenized
+06/27/2022 03:48:24 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 03:48:24 - INFO - __main__ - Saving the current error examples (len=29) to the memory.
+06/27/2022 03:48:24 - INFO - __main__ - Current memory size: 86828.
+06/27/2022 03:48:24 - INFO - __main__ - Save 29 examples to the memory.
+06/27/2022 03:48:24 - INFO - __main__ - .................. Done.
+06/27/2022 03:48:36 - INFO - __main__ - EFR=0.3793103448275862
+06/27/2022 03:48:36 - INFO - __main__ - Overall: 0.6312526939655172 from scores=[0.65703125, 0.3793103448275862, 0.830078125, 0.8515625, 0.43828125]
+06/27/2022 03:48:36 - INFO - __main__ - --------------------------------------------------
+06/27/2022 03:48:36 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=20
+06/27/2022 03:52:09 - INFO - __main__ - Upstream Knowledge Retation (UKR@20): 0.8418
+postfix:     preproBartTokenized
+06/27/2022 03:52:10 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=20
+06/27/2022 03:55:40 - INFO - __main__ - Online Knowledge Retation (OKR@20): 0.7949
+06/27/2022 03:55:40 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=20
+06/27/2022 04:04:49 - INFO - __main__ - Future Knowledge Generalization (KG@20): 0.5055
+06/27/2022 04:04:49 - INFO - __main__ - Evaluating to get errors .... Timecode: 20
+06/27/2022 04:05:16 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5787326388888889}
+06/27/2022 04:05:16 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:05:16 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:05:16 - INFO - __main__ - Current memroy_module size: 86854.
+06/27/2022 04:05:16 - INFO - __main__ - Current upstream_memroy_module size: 86854.
+06/27/2022 04:05:16 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:05:16 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:05:16 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 20
+postfix:     preproBartTokenized
+06/27/2022 04:05:29 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:05:29 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 04:05:29 - INFO - __main__ - Current memory size: 86854.
+06/27/2022 04:05:29 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 04:05:29 - INFO - __main__ - .................. Done.
+06/27/2022 04:05:41 - INFO - __main__ - EFR=0.4838709677419355
+06/27/2022 04:05:41 - INFO - __main__ - Overall: 0.6552712173579109 from scores=[0.6502976190476191, 0.4838709677419355, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:05:41 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:05:41 - INFO - __main__ - Evaluating to get errors .... Timecode: 21
+06/27/2022 04:06:07 - INFO - __main__ - Before Error Fixing: {'EM': 0.53125, 'QA-F1': 0.5771292892156863}
+06/27/2022 04:06:07 - INFO - __main__ - Found 30 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:06:07 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:06:07 - INFO - __main__ - Current memroy_module size: 86885.
+06/27/2022 04:06:07 - INFO - __main__ - Current upstream_memroy_module size: 86885.
+06/27/2022 04:06:07 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:06:07 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:06:07 - INFO - __main__ - Start error-fixing (len(examples_to_train)=38) .... Timecode: 21
+postfix:     preproBartTokenized
+06/27/2022 04:06:19 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:06:19 - INFO - __main__ - Saving the current error examples (len=30) to the memory.
+06/27/2022 04:06:19 - INFO - __main__ - Current memory size: 86885.
+06/27/2022 04:06:19 - INFO - __main__ - Save 30 examples to the memory.
+06/27/2022 04:06:19 - INFO - __main__ - .................. Done.
+06/27/2022 04:06:31 - INFO - __main__ - EFR=0.43333333333333335
+06/27/2022 04:06:31 - INFO - __main__ - Overall: 0.6440814393939394 from scores=[0.6448863636363636, 0.43333333333333335, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:06:31 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:06:31 - INFO - __main__ - Evaluating to get errors .... Timecode: 22
+06/27/2022 04:06:56 - INFO - __main__ - Before Error Fixing: {'EM': 0.546875, 'QA-F1': 0.6094020562770563}
+06/27/2022 04:06:56 - INFO - __main__ - Found 29 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:06:56 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:06:56 - INFO - __main__ - Current memroy_module size: 86915.
+06/27/2022 04:06:56 - INFO - __main__ - Current upstream_memroy_module size: 86915.
+06/27/2022 04:06:56 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:06:56 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:06:56 - INFO - __main__ - Start error-fixing (len(examples_to_train)=37) .... Timecode: 22
+postfix:     preproBartTokenized
+06/27/2022 04:07:07 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:07:07 - INFO - __main__ - Saving the current error examples (len=29) to the memory.
+06/27/2022 04:07:07 - INFO - __main__ - Current memory size: 86915.
+06/27/2022 04:07:07 - INFO - __main__ - Save 29 examples to the memory.
+06/27/2022 04:07:07 - INFO - __main__ - .................. Done.
+06/27/2022 04:07:19 - INFO - __main__ - EFR=0.4482758620689655
+06/27/2022 04:07:19 - INFO - __main__ - Overall: 0.646217672413793 from scores=[0.640625, 0.4482758620689655, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:07:19 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:07:19 - INFO - __main__ - Evaluating to get errors .... Timecode: 23
+06/27/2022 04:07:45 - INFO - __main__ - Before Error Fixing: {'EM': 0.40625, 'QA-F1': 0.4885416666666667}
+06/27/2022 04:07:45 - INFO - __main__ - Found 38 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:07:45 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:07:45 - INFO - __main__ - Current memroy_module size: 86944.
+06/27/2022 04:07:45 - INFO - __main__ - Current upstream_memroy_module size: 86944.
+06/27/2022 04:07:45 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:07:45 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:07:45 - INFO - __main__ - Start error-fixing (len(examples_to_train)=46) .... Timecode: 23
+postfix:     preproBartTokenized
+06/27/2022 04:07:59 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:07:59 - INFO - __main__ - Saving the current error examples (len=38) to the memory.
+06/27/2022 04:07:59 - INFO - __main__ - Current memory size: 86944.
+06/27/2022 04:07:59 - INFO - __main__ - Save 38 examples to the memory.
+06/27/2022 04:07:59 - INFO - __main__ - .................. Done.
+06/27/2022 04:08:14 - INFO - __main__ - EFR=0.5
+06/27/2022 04:08:14 - INFO - __main__ - Overall: 0.6546093749999999 from scores=[0.630859375, 0.5, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:08:14 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:08:14 - INFO - __main__ - Evaluating to get errors .... Timecode: 24
+06/27/2022 04:08:40 - INFO - __main__ - Before Error Fixing: {'EM': 0.6875, 'QA-F1': 0.7572172619047619}
+06/27/2022 04:08:40 - INFO - __main__ - Found 20 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:08:40 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:08:40 - INFO - __main__ - Current memroy_module size: 86982.
+06/27/2022 04:08:40 - INFO - __main__ - Current upstream_memroy_module size: 86982.
+06/27/2022 04:08:40 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:08:40 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:08:40 - INFO - __main__ - Start error-fixing (len(examples_to_train)=28) .... Timecode: 24
+postfix:     preproBartTokenized
+06/27/2022 04:08:48 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:08:48 - INFO - __main__ - Saving the current error examples (len=20) to the memory.
+06/27/2022 04:08:48 - INFO - __main__ - Current memory size: 86982.
+06/27/2022 04:08:48 - INFO - __main__ - Save 20 examples to the memory.
+06/27/2022 04:08:48 - INFO - __main__ - .................. Done.
+06/27/2022 04:08:57 - INFO - __main__ - EFR=0.4
+06/27/2022 04:08:57 - INFO - __main__ - Overall: 0.6350625 from scores=[0.6331249999999999, 0.4, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:08:57 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:08:57 - INFO - __main__ - Evaluating to get errors .... Timecode: 25
+06/27/2022 04:09:22 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.6184027777777779}
+06/27/2022 04:09:22 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:09:22 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:09:22 - INFO - __main__ - Current memroy_module size: 87001.
+06/27/2022 04:09:22 - INFO - __main__ - Current upstream_memroy_module size: 87001.
+06/27/2022 04:09:22 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:09:22 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:09:22 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 25
+postfix:     preproBartTokenized
+06/27/2022 04:09:34 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:09:34 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 04:09:34 - INFO - __main__ - Current memory size: 87001.
+06/27/2022 04:09:34 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 04:09:34 - INFO - __main__ - .................. Done.
+06/27/2022 04:09:46 - INFO - __main__ - EFR=0.4838709677419355
+06/27/2022 04:09:46 - INFO - __main__ - Overall: 0.6509328473945409 from scores=[0.6286057692307692, 0.4838709677419355, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:09:48 - INFO - __main__ - Model saved to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/model_ckpt_025.pt.
+06/27/2022 04:09:48 - INFO - __main__ - Updated result file: experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json at Timecode: 25.
+06/27/2022 04:09:48 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:09:48 - INFO - __main__ - Evaluating to get errors .... Timecode: 26
+06/27/2022 04:10:14 - INFO - __main__ - Before Error Fixing: {'EM': 0.578125, 'QA-F1': 0.6203125}
+06/27/2022 04:10:14 - INFO - __main__ - Found 27 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:10:14 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:10:14 - INFO - __main__ - Current memroy_module size: 87029.
+06/27/2022 04:10:14 - INFO - __main__ - Current upstream_memroy_module size: 87029.
+06/27/2022 04:10:14 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:10:14 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:10:14 - INFO - __main__ - Start error-fixing (len(examples_to_train)=35) .... Timecode: 26
+postfix:     preproBartTokenized
+06/27/2022 04:10:24 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:10:24 - INFO - __main__ - Saving the current error examples (len=27) to the memory.
+06/27/2022 04:10:24 - INFO - __main__ - Current memory size: 87029.
+06/27/2022 04:10:24 - INFO - __main__ - Save 27 examples to the memory.
+06/27/2022 04:10:24 - INFO - __main__ - .................. Done.
+06/27/2022 04:10:35 - INFO - __main__ - EFR=0.4444444444444444
+06/27/2022 04:10:35 - INFO - __main__ - Overall: 0.6426736111111111 from scores=[0.6267361111111112, 0.4444444444444444, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:10:35 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:10:35 - INFO - __main__ - Evaluating to get errors .... Timecode: 27
+06/27/2022 04:11:01 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5841145833333333}
+06/27/2022 04:11:01 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:11:02 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:11:02 - INFO - __main__ - Current memroy_module size: 87055.
+06/27/2022 04:11:02 - INFO - __main__ - Current upstream_memroy_module size: 87055.
+06/27/2022 04:11:02 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:11:02 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:11:02 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 27
+postfix:     preproBartTokenized
+06/27/2022 04:11:14 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:11:14 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 04:11:14 - INFO - __main__ - Current memory size: 87055.
+06/27/2022 04:11:14 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 04:11:14 - INFO - __main__ - .................. Done.
+06/27/2022 04:11:26 - INFO - __main__ - EFR=0.4838709677419355
+06/27/2022 04:11:26 - INFO - __main__ - Overall: 0.6497652649769585 from scores=[0.6227678571428572, 0.4838709677419355, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:11:26 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:11:26 - INFO - __main__ - Evaluating to get errors .... Timecode: 28
+06/27/2022 04:11:52 - INFO - __main__ - Before Error Fixing: {'EM': 0.625, 'QA-F1': 0.6736057194616977}
+06/27/2022 04:11:52 - INFO - __main__ - Found 24 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:11:52 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:11:52 - INFO - __main__ - Current memroy_module size: 87086.
+06/27/2022 04:11:52 - INFO - __main__ - Current upstream_memroy_module size: 87086.
+06/27/2022 04:11:52 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:11:52 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:11:52 - INFO - __main__ - Start error-fixing (len(examples_to_train)=32) .... Timecode: 28
+postfix:     preproBartTokenized
+06/27/2022 04:12:01 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:12:01 - INFO - __main__ - Saving the current error examples (len=24) to the memory.
+06/27/2022 04:12:01 - INFO - __main__ - Current memory size: 87086.
+06/27/2022 04:12:01 - INFO - __main__ - Save 24 examples to the memory.
+06/27/2022 04:12:01 - INFO - __main__ - .................. Done.
+06/27/2022 04:12:11 - INFO - __main__ - EFR=0.5416666666666666
+06/27/2022 04:12:11 - INFO - __main__ - Overall: 0.6613397988505747 from scores=[0.6228448275862069, 0.5416666666666666, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:12:11 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:12:11 - INFO - __main__ - Evaluating to get errors .... Timecode: 29
+06/27/2022 04:12:37 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.7040178571428571}
+06/27/2022 04:12:37 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:12:37 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:12:37 - INFO - __main__ - Current memroy_module size: 87110.
+06/27/2022 04:12:37 - INFO - __main__ - Current upstream_memroy_module size: 87110.
+06/27/2022 04:12:37 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:12:37 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:12:37 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 29
+postfix:     preproBartTokenized
+06/27/2022 04:12:46 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:12:46 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 04:12:46 - INFO - __main__ - Current memory size: 87110.
+06/27/2022 04:12:46 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 04:12:46 - INFO - __main__ - .................. Done.
+06/27/2022 04:12:56 - INFO - __main__ - EFR=0.6956521739130435
+06/27/2022 04:12:56 - INFO - __main__ - Overall: 0.6922554347826086 from scores=[0.6234375, 0.6956521739130435, 0.794921875, 0.841796875, 0.50546875]
+06/27/2022 04:12:56 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:12:56 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=30
+06/27/2022 04:16:28 - INFO - __main__ - Upstream Knowledge Retation (UKR@30): 0.8359
+postfix:     preproBartTokenized
+06/27/2022 04:16:29 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=30
+06/27/2022 04:19:54 - INFO - __main__ - Online Knowledge Retation (OKR@30): 0.7422
+06/27/2022 04:19:54 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=30
+06/27/2022 04:28:51 - INFO - __main__ - Future Knowledge Generalization (KG@30): 0.5195
+06/27/2022 04:28:51 - INFO - __main__ - Evaluating to get errors .... Timecode: 30
+06/27/2022 04:29:17 - INFO - __main__ - Before Error Fixing: {'EM': 0.5625, 'QA-F1': 0.6125}
+06/27/2022 04:29:17 - INFO - __main__ - Found 28 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:29:17 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:29:17 - INFO - __main__ - Current memroy_module size: 87132.
+06/27/2022 04:29:17 - INFO - __main__ - Current upstream_memroy_module size: 87132.
+06/27/2022 04:29:17 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:29:17 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:29:17 - INFO - __main__ - Start error-fixing (len(examples_to_train)=36) .... Timecode: 30
+postfix:     preproBartTokenized
+06/27/2022 04:29:28 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:29:28 - INFO - __main__ - Saving the current error examples (len=28) to the memory.
+06/27/2022 04:29:28 - INFO - __main__ - Current memory size: 87132.
+06/27/2022 04:29:28 - INFO - __main__ - Save 28 examples to the memory.
+06/27/2022 04:29:28 - INFO - __main__ - .................. Done.
+06/27/2022 04:29:39 - INFO - __main__ - EFR=0.5357142857142857
+06/27/2022 04:29:39 - INFO - __main__ - Overall: 0.6509684619815668 from scores=[0.6214717741935484, 0.5357142857142857, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:29:39 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:29:39 - INFO - __main__ - Evaluating to get errors .... Timecode: 31
+06/27/2022 04:30:04 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5807291666666667}
+06/27/2022 04:30:04 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:30:04 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:30:04 - INFO - __main__ - Current memroy_module size: 87159.
+06/27/2022 04:30:04 - INFO - __main__ - Current upstream_memroy_module size: 87159.
+06/27/2022 04:30:04 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:30:04 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:30:04 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 31
+postfix:     preproBartTokenized
+06/27/2022 04:30:16 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:30:16 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 04:30:16 - INFO - __main__ - Current memory size: 87159.
+06/27/2022 04:30:16 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 04:30:16 - INFO - __main__ - .................. Done.
+06/27/2022 04:30:28 - INFO - __main__ - EFR=0.5806451612903226
+06/27/2022 04:30:28 - INFO - __main__ - Overall: 0.6592930947580645 from scores=[0.6181640625, 0.5806451612903226, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:30:28 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:30:28 - INFO - __main__ - Evaluating to get errors .... Timecode: 32
+06/27/2022 04:30:54 - INFO - __main__ - Before Error Fixing: {'EM': 0.53125, 'QA-F1': 0.5622519841269842}
+06/27/2022 04:30:54 - INFO - __main__ - Found 30 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:30:54 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:30:54 - INFO - __main__ - Current memroy_module size: 87188.
+06/27/2022 04:30:54 - INFO - __main__ - Current upstream_memroy_module size: 87188.
+06/27/2022 04:30:54 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:30:54 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:30:54 - INFO - __main__ - Start error-fixing (len(examples_to_train)=38) .... Timecode: 32
+postfix:     preproBartTokenized
+06/27/2022 04:31:05 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:31:05 - INFO - __main__ - Saving the current error examples (len=30) to the memory.
+06/27/2022 04:31:05 - INFO - __main__ - Current memory size: 87188.
+06/27/2022 04:31:05 - INFO - __main__ - Save 30 examples to the memory.
+06/27/2022 04:31:05 - INFO - __main__ - .................. Done.
+06/27/2022 04:31:17 - INFO - __main__ - EFR=0.5333333333333333
+06/27/2022 04:31:17 - INFO - __main__ - Overall: 0.6493039772727273 from scores=[0.615530303030303, 0.5333333333333333, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:31:17 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:31:17 - INFO - __main__ - Evaluating to get errors .... Timecode: 33
+06/27/2022 04:31:42 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6803571428571429}
+06/27/2022 04:31:42 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:31:42 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:31:42 - INFO - __main__ - Current memroy_module size: 87218.
+06/27/2022 04:31:42 - INFO - __main__ - Current upstream_memroy_module size: 87218.
+06/27/2022 04:31:42 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:31:42 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:31:42 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 33
+postfix:     preproBartTokenized
+06/27/2022 04:31:52 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:31:52 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 04:31:52 - INFO - __main__ - Current memory size: 87218.
+06/27/2022 04:31:52 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 04:31:52 - INFO - __main__ - .................. Done.
+06/27/2022 04:32:03 - INFO - __main__ - EFR=0.34615384615384615
+06/27/2022 04:32:03 - INFO - __main__ - Overall: 0.6117399604072398 from scores=[0.6148897058823529, 0.34615384615384615, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:32:03 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:32:03 - INFO - __main__ - Evaluating to get errors .... Timecode: 34
+06/27/2022 04:32:29 - INFO - __main__ - Before Error Fixing: {'EM': 0.578125, 'QA-F1': 0.6520833333333333}
+06/27/2022 04:32:29 - INFO - __main__ - Found 27 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:32:29 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:32:29 - INFO - __main__ - Current memroy_module size: 87243.
+06/27/2022 04:32:29 - INFO - __main__ - Current upstream_memroy_module size: 87243.
+06/27/2022 04:32:29 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:32:29 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:32:29 - INFO - __main__ - Start error-fixing (len(examples_to_train)=35) .... Timecode: 34
+postfix:     preproBartTokenized
+06/27/2022 04:32:40 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:32:40 - INFO - __main__ - Saving the current error examples (len=27) to the memory.
+06/27/2022 04:32:40 - INFO - __main__ - Current memory size: 87243.
+06/27/2022 04:32:40 - INFO - __main__ - Save 27 examples to the memory.
+06/27/2022 04:32:40 - INFO - __main__ - .................. Done.
+06/27/2022 04:32:50 - INFO - __main__ - EFR=0.37037037037037035
+06/27/2022 04:32:50 - INFO - __main__ - Overall: 0.6163731812169312 from scores=[0.6138392857142857, 0.37037037037037035, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:32:50 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:32:50 - INFO - __main__ - Evaluating to get errors .... Timecode: 35
+06/27/2022 04:33:16 - INFO - __main__ - Before Error Fixing: {'EM': 0.625, 'QA-F1': 0.6713541666666667}
+06/27/2022 04:33:16 - INFO - __main__ - Found 24 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:33:16 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:33:16 - INFO - __main__ - Current memroy_module size: 87269.
+06/27/2022 04:33:16 - INFO - __main__ - Current upstream_memroy_module size: 87269.
+06/27/2022 04:33:16 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:33:16 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:33:16 - INFO - __main__ - Start error-fixing (len(examples_to_train)=32) .... Timecode: 35
+postfix:     preproBartTokenized
+06/27/2022 04:33:25 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:33:25 - INFO - __main__ - Saving the current error examples (len=24) to the memory.
+06/27/2022 04:33:25 - INFO - __main__ - Current memory size: 87269.
+06/27/2022 04:33:25 - INFO - __main__ - Save 24 examples to the memory.
+06/27/2022 04:33:25 - INFO - __main__ - .................. Done.
+06/27/2022 04:33:35 - INFO - __main__ - EFR=0.25
+06/27/2022 04:33:35 - INFO - __main__ - Overall: 0.5923611111111111 from scores=[0.6141493055555556, 0.25, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:33:35 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:33:35 - INFO - __main__ - Evaluating to get errors .... Timecode: 36
+06/27/2022 04:34:01 - INFO - __main__ - Before Error Fixing: {'EM': 0.4375, 'QA-F1': 0.5482638888888889}
+06/27/2022 04:34:01 - INFO - __main__ - Found 36 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:34:01 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:34:01 - INFO - __main__ - Current memroy_module size: 87292.
+06/27/2022 04:34:01 - INFO - __main__ - Current upstream_memroy_module size: 87292.
+06/27/2022 04:34:01 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:34:01 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:34:01 - INFO - __main__ - Start error-fixing (len(examples_to_train)=44) .... Timecode: 36
+postfix:     preproBartTokenized
+06/27/2022 04:34:14 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:34:14 - INFO - __main__ - Saving the current error examples (len=36) to the memory.
+06/27/2022 04:34:14 - INFO - __main__ - Current memory size: 87292.
+06/27/2022 04:34:14 - INFO - __main__ - Save 36 examples to the memory.
+06/27/2022 04:34:14 - INFO - __main__ - .................. Done.
+06/27/2022 04:34:29 - INFO - __main__ - EFR=0.3055555555555556
+06/27/2022 04:34:29 - INFO - __main__ - Overall: 0.6025173611111111 from scores=[0.609375, 0.3055555555555556, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:34:29 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:34:29 - INFO - __main__ - Evaluating to get errors .... Timecode: 37
+06/27/2022 04:34:55 - INFO - __main__ - Before Error Fixing: {'EM': 0.578125, 'QA-F1': 0.6236111111111111}
+06/27/2022 04:34:55 - INFO - __main__ - Found 27 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:34:55 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:34:55 - INFO - __main__ - Current memroy_module size: 87324.
+06/27/2022 04:34:55 - INFO - __main__ - Current upstream_memroy_module size: 87324.
+06/27/2022 04:34:55 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:34:55 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:34:55 - INFO - __main__ - Start error-fixing (len(examples_to_train)=35) .... Timecode: 37
+postfix:     preproBartTokenized
+06/27/2022 04:35:06 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:35:06 - INFO - __main__ - Saving the current error examples (len=27) to the memory.
+06/27/2022 04:35:06 - INFO - __main__ - Current memory size: 87324.
+06/27/2022 04:35:06 - INFO - __main__ - Save 27 examples to the memory.
+06/27/2022 04:35:06 - INFO - __main__ - .................. Done.
+06/27/2022 04:35:17 - INFO - __main__ - EFR=0.4074074074074074
+06/27/2022 04:35:17 - INFO - __main__ - Overall: 0.622723257797271 from scores=[0.6085526315789473, 0.4074074074074074, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:35:17 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:35:17 - INFO - __main__ - Evaluating to get errors .... Timecode: 38
+06/27/2022 04:35:42 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6453125}
+06/27/2022 04:35:42 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:35:42 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:35:42 - INFO - __main__ - Current memroy_module size: 87351.
+06/27/2022 04:35:42 - INFO - __main__ - Current upstream_memroy_module size: 87351.
+06/27/2022 04:35:42 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:35:42 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:35:42 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 38
+postfix:     preproBartTokenized
+06/27/2022 04:35:52 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:35:52 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 04:35:52 - INFO - __main__ - Current memory size: 87351.
+06/27/2022 04:35:52 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 04:35:52 - INFO - __main__ - .................. Done.
+06/27/2022 04:36:03 - INFO - __main__ - EFR=0.4230769230769231
+06/27/2022 04:36:03 - INFO - __main__ - Overall: 0.62578125 from scores=[0.6081730769230769, 0.4230769230769231, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:36:03 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:36:03 - INFO - __main__ - Evaluating to get errors .... Timecode: 39
+06/27/2022 04:36:29 - INFO - __main__ - Before Error Fixing: {'EM': 0.53125, 'QA-F1': 0.5838541666666667}
+06/27/2022 04:36:29 - INFO - __main__ - Found 30 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:36:29 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:36:29 - INFO - __main__ - Current memroy_module size: 87377.
+06/27/2022 04:36:29 - INFO - __main__ - Current upstream_memroy_module size: 87377.
+06/27/2022 04:36:29 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:36:29 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:36:29 - INFO - __main__ - Start error-fixing (len(examples_to_train)=38) .... Timecode: 39
+postfix:     preproBartTokenized
+06/27/2022 04:36:40 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:36:40 - INFO - __main__ - Saving the current error examples (len=30) to the memory.
+06/27/2022 04:36:40 - INFO - __main__ - Current memory size: 87377.
+06/27/2022 04:36:40 - INFO - __main__ - Save 30 examples to the memory.
+06/27/2022 04:36:40 - INFO - __main__ - .................. Done.
+06/27/2022 04:36:53 - INFO - __main__ - EFR=0.43333333333333335
+06/27/2022 04:36:53 - INFO - __main__ - Overall: 0.6274479166666667 from scores=[0.60625, 0.43333333333333335, 0.7421875, 0.8359375, 0.51953125]
+06/27/2022 04:36:53 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:36:53 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=40
+06/27/2022 04:40:29 - INFO - __main__ - Upstream Knowledge Retation (UKR@40): 0.8281
+postfix:     preproBartTokenized
+06/27/2022 04:40:31 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=40
+06/27/2022 04:44:01 - INFO - __main__ - Online Knowledge Retation (OKR@40): 0.7734
+06/27/2022 04:44:01 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=40
+06/27/2022 04:53:04 - INFO - __main__ - Future Knowledge Generalization (KG@40): 0.5289
+06/27/2022 04:53:04 - INFO - __main__ - Evaluating to get errors .... Timecode: 40
+06/27/2022 04:53:29 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.5710565476190476}
+06/27/2022 04:53:29 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:53:29 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:53:29 - INFO - __main__ - Current memroy_module size: 87404.
+06/27/2022 04:53:29 - INFO - __main__ - Current upstream_memroy_module size: 87404.
+06/27/2022 04:53:29 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:53:29 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:53:29 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 40
+postfix:     preproBartTokenized
+06/27/2022 04:53:41 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:53:41 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 04:53:41 - INFO - __main__ - Current memory size: 87404.
+06/27/2022 04:53:41 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 04:53:41 - INFO - __main__ - .................. Done.
+06/27/2022 04:53:54 - INFO - __main__ - EFR=0.5
+06/27/2022 04:53:54 - INFO - __main__ - Overall: 0.6468254573170731 from scores=[0.6036585365853658, 0.5, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:53:54 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:53:54 - INFO - __main__ - Evaluating to get errors .... Timecode: 41
+06/27/2022 04:54:19 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.7110998376623376}
+06/27/2022 04:54:19 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:54:19 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:54:19 - INFO - __main__ - Current memroy_module size: 87435.
+06/27/2022 04:54:19 - INFO - __main__ - Current upstream_memroy_module size: 87435.
+06/27/2022 04:54:19 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:54:19 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:54:19 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 41
+postfix:     preproBartTokenized
+06/27/2022 04:54:29 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:54:29 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 04:54:29 - INFO - __main__ - Current memory size: 87435.
+06/27/2022 04:54:29 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 04:54:29 - INFO - __main__ - .................. Done.
+06/27/2022 04:54:38 - INFO - __main__ - EFR=0.43478260869565216
+06/27/2022 04:54:38 - INFO - __main__ - Overall: 0.6339580098343685 from scores=[0.6045386904761905, 0.43478260869565216, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:54:38 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:54:38 - INFO - __main__ - Evaluating to get errors .... Timecode: 42
+06/27/2022 04:55:03 - INFO - __main__ - Before Error Fixing: {'EM': 0.484375, 'QA-F1': 0.5739583333333333}
+06/27/2022 04:55:03 - INFO - __main__ - Found 33 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:55:03 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:55:03 - INFO - __main__ - Current memroy_module size: 87458.
+06/27/2022 04:55:03 - INFO - __main__ - Current upstream_memroy_module size: 87458.
+06/27/2022 04:55:03 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:55:03 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:55:03 - INFO - __main__ - Start error-fixing (len(examples_to_train)=41) .... Timecode: 42
+postfix:     preproBartTokenized
+06/27/2022 04:55:16 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:55:16 - INFO - __main__ - Saving the current error examples (len=33) to the memory.
+06/27/2022 04:55:16 - INFO - __main__ - Current memory size: 87458.
+06/27/2022 04:55:16 - INFO - __main__ - Save 33 examples to the memory.
+06/27/2022 04:55:16 - INFO - __main__ - .................. Done.
+06/27/2022 04:55:29 - INFO - __main__ - EFR=0.42424242424242425
+06/27/2022 04:55:29 - INFO - __main__ - Overall: 0.6312910720577871 from scores=[0.6017441860465116, 0.42424242424242425, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:55:29 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:55:29 - INFO - __main__ - Evaluating to get errors .... Timecode: 43
+06/27/2022 04:55:55 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6234375}
+06/27/2022 04:55:55 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:55:55 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:55:55 - INFO - __main__ - Current memroy_module size: 87490.
+06/27/2022 04:55:55 - INFO - __main__ - Current upstream_memroy_module size: 87490.
+06/27/2022 04:55:55 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:55:55 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:55:55 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 43
+postfix:     preproBartTokenized
+06/27/2022 04:56:05 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:56:05 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 04:56:05 - INFO - __main__ - Current memory size: 87490.
+06/27/2022 04:56:05 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 04:56:05 - INFO - __main__ - .................. Done.
+06/27/2022 04:56:15 - INFO - __main__ - EFR=0.46153846153846156
+06/27/2022 04:56:15 - INFO - __main__ - Overall: 0.6387139423076923 from scores=[0.6015625, 0.46153846153846156, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:56:15 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:56:15 - INFO - __main__ - Evaluating to get errors .... Timecode: 44
+06/27/2022 04:56:41 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.565810057997558}
+06/27/2022 04:56:41 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:56:41 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:56:41 - INFO - __main__ - Current memroy_module size: 87516.
+06/27/2022 04:56:41 - INFO - __main__ - Current upstream_memroy_module size: 87516.
+06/27/2022 04:56:41 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:56:41 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:56:41 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 44
+postfix:     preproBartTokenized
+06/27/2022 04:56:53 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:56:53 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 04:56:53 - INFO - __main__ - Current memory size: 87516.
+06/27/2022 04:56:53 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 04:56:53 - INFO - __main__ - .................. Done.
+06/27/2022 04:57:07 - INFO - __main__ - EFR=0.3125
+06/27/2022 04:57:07 - INFO - __main__ - Overall: 0.6084548611111111 from scores=[0.5993055555555555, 0.3125, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:57:07 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:57:07 - INFO - __main__ - Evaluating to get errors .... Timecode: 45
+06/27/2022 04:57:36 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6658042478354979}
+06/27/2022 04:57:36 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:57:36 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:57:36 - INFO - __main__ - Current memroy_module size: 87547.
+06/27/2022 04:57:36 - INFO - __main__ - Current upstream_memroy_module size: 87547.
+06/27/2022 04:57:36 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:57:36 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:57:36 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 45
+postfix:     preproBartTokenized
+06/27/2022 04:57:47 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:57:47 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 04:57:47 - INFO - __main__ - Current memory size: 87547.
+06/27/2022 04:57:47 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 04:57:47 - INFO - __main__ - .................. Done.
+06/27/2022 04:57:59 - INFO - __main__ - EFR=0.38461538461538464
+06/27/2022 04:57:59 - INFO - __main__ - Overall: 0.622853783444816 from scores=[0.5991847826086957, 0.38461538461538464, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:57:59 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:57:59 - INFO - __main__ - Evaluating to get errors .... Timecode: 46
+06/27/2022 04:58:27 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.5646423618252663}
+06/27/2022 04:58:27 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:58:27 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:58:27 - INFO - __main__ - Current memroy_module size: 87572.
+06/27/2022 04:58:27 - INFO - __main__ - Current upstream_memroy_module size: 87572.
+06/27/2022 04:58:27 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:58:27 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:58:27 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 46
+postfix:     preproBartTokenized
+06/27/2022 04:58:38 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:58:38 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 04:58:38 - INFO - __main__ - Current memory size: 87572.
+06/27/2022 04:58:38 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 04:58:38 - INFO - __main__ - .................. Done.
+06/27/2022 04:58:53 - INFO - __main__ - EFR=0.375
+06/27/2022 04:58:53 - INFO - __main__ - Overall: 0.6205086436170213 from scores=[0.5970744680851063, 0.375, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:58:53 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:58:53 - INFO - __main__ - Evaluating to get errors .... Timecode: 47
+06/27/2022 04:59:26 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6525862505550005}
+06/27/2022 04:59:26 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 04:59:26 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 04:59:26 - INFO - __main__ - Current memroy_module size: 87604.
+06/27/2022 04:59:26 - INFO - __main__ - Current upstream_memroy_module size: 87604.
+06/27/2022 04:59:26 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 04:59:26 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 04:59:26 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 47
+postfix:     preproBartTokenized
+06/27/2022 04:59:33 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 04:59:33 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 04:59:33 - INFO - __main__ - Current memory size: 87604.
+06/27/2022 04:59:33 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 04:59:33 - INFO - __main__ - .................. Done.
+06/27/2022 04:59:46 - INFO - __main__ - EFR=0.4230769230769231
+06/27/2022 04:59:46 - INFO - __main__ - Overall: 0.6301101762820512 from scores=[0.5970052083333333, 0.4230769230769231, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 04:59:46 - INFO - __main__ - --------------------------------------------------
+06/27/2022 04:59:46 - INFO - __main__ - Evaluating to get errors .... Timecode: 48
+06/27/2022 05:00:14 - INFO - __main__ - Before Error Fixing: {'EM': 0.390625, 'QA-F1': 0.4869405165121278}
+06/27/2022 05:00:14 - INFO - __main__ - Found 39 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:00:14 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:00:14 - INFO - __main__ - Current memroy_module size: 87630.
+06/27/2022 05:00:14 - INFO - __main__ - Current upstream_memroy_module size: 87630.
+06/27/2022 05:00:14 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:00:14 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:00:14 - INFO - __main__ - Start error-fixing (len(examples_to_train)=47) .... Timecode: 48
+postfix:     preproBartTokenized
+06/27/2022 05:00:26 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:00:26 - INFO - __main__ - Saving the current error examples (len=39) to the memory.
+06/27/2022 05:00:26 - INFO - __main__ - Current memory size: 87630.
+06/27/2022 05:00:26 - INFO - __main__ - Save 39 examples to the memory.
+06/27/2022 05:00:26 - INFO - __main__ - .................. Done.
+06/27/2022 05:00:43 - INFO - __main__ - EFR=0.38461538461538464
+06/27/2022 05:00:43 - INFO - __main__ - Overall: 0.6215755003924646 from scores=[0.5927933673469388, 0.38461538461538464, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 05:00:43 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:00:43 - INFO - __main__ - Evaluating to get errors .... Timecode: 49
+06/27/2022 05:01:12 - INFO - __main__ - Before Error Fixing: {'EM': 0.484375, 'QA-F1': 0.5822033460820225}
+06/27/2022 05:01:12 - INFO - __main__ - Found 33 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:01:12 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:01:12 - INFO - __main__ - Current memroy_module size: 87669.
+06/27/2022 05:01:12 - INFO - __main__ - Current upstream_memroy_module size: 87669.
+06/27/2022 05:01:12 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:01:12 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:01:12 - INFO - __main__ - Start error-fixing (len(examples_to_train)=41) .... Timecode: 49
+postfix:     preproBartTokenized
+06/27/2022 05:01:22 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:01:22 - INFO - __main__ - Saving the current error examples (len=33) to the memory.
+06/27/2022 05:01:22 - INFO - __main__ - Current memory size: 87669.
+06/27/2022 05:01:22 - INFO - __main__ - Save 33 examples to the memory.
+06/27/2022 05:01:22 - INFO - __main__ - .................. Done.
+06/27/2022 05:01:37 - INFO - __main__ - EFR=0.3939393939393939
+06/27/2022 05:01:37 - INFO - __main__ - Overall: 0.6230066287878787 from scores=[0.590625, 0.3939393939393939, 0.7734375, 0.828125, 0.52890625]
+06/27/2022 05:01:37 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:01:37 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=50
+06/27/2022 05:05:19 - INFO - __main__ - Upstream Knowledge Retation (UKR@50): 0.8145
+postfix:     preproBartTokenized
+06/27/2022 05:05:20 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=50
+06/27/2022 05:08:54 - INFO - __main__ - Online Knowledge Retation (OKR@50): 0.7207
+06/27/2022 05:08:54 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=50
+06/27/2022 05:18:25 - INFO - __main__ - Future Knowledge Generalization (KG@50): 0.5172
+06/27/2022 05:18:25 - INFO - __main__ - Evaluating to get errors .... Timecode: 50
+06/27/2022 05:18:54 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.6062500433594183}
+06/27/2022 05:18:54 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:18:54 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:18:54 - INFO - __main__ - Current memroy_module size: 87700.
+06/27/2022 05:18:54 - INFO - __main__ - Current upstream_memroy_module size: 87700.
+06/27/2022 05:18:54 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:18:54 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:18:54 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 50
+postfix:     preproBartTokenized
+06/27/2022 05:19:06 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:19:06 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 05:19:06 - INFO - __main__ - Current memory size: 87700.
+06/27/2022 05:19:06 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 05:19:06 - INFO - __main__ - .................. Done.
+06/27/2022 05:19:21 - INFO - __main__ - EFR=0.40625
+06/27/2022 05:19:21 - INFO - __main__ - Overall: 0.6094883578431373 from scores=[0.5888480392156863, 0.40625, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:19:22 - INFO - __main__ - Model saved to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/model_ckpt_050.pt.
+06/27/2022 05:19:22 - INFO - __main__ - Updated result file: experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json at Timecode: 50.
+06/27/2022 05:19:22 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:19:22 - INFO - __main__ - Evaluating to get errors .... Timecode: 51
+06/27/2022 05:19:53 - INFO - __main__ - Before Error Fixing: {'EM': 0.46875, 'QA-F1': 0.5938946339651985}
+06/27/2022 05:19:53 - INFO - __main__ - Found 34 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:19:53 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:19:53 - INFO - __main__ - Current memroy_module size: 87731.
+06/27/2022 05:19:53 - INFO - __main__ - Current upstream_memroy_module size: 87731.
+06/27/2022 05:19:53 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:19:53 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:19:53 - INFO - __main__ - Start error-fixing (len(examples_to_train)=42) .... Timecode: 51
+postfix:     preproBartTokenized
+06/27/2022 05:20:04 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:20:04 - INFO - __main__ - Saving the current error examples (len=34) to the memory.
+06/27/2022 05:20:04 - INFO - __main__ - Current memory size: 87731.
+06/27/2022 05:20:04 - INFO - __main__ - Save 34 examples to the memory.
+06/27/2022 05:20:04 - INFO - __main__ - .................. Done.
+06/27/2022 05:20:20 - INFO - __main__ - EFR=0.2647058823529412
+06/27/2022 05:20:20 - INFO - __main__ - Overall: 0.5807176187782805 from scores=[0.5865384615384616, 0.2647058823529412, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:20:20 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:20:20 - INFO - __main__ - Evaluating to get errors .... Timecode: 52
+06/27/2022 05:20:48 - INFO - __main__ - Before Error Fixing: {'EM': 0.40625, 'QA-F1': 0.5230411600955879}
+06/27/2022 05:20:48 - INFO - __main__ - Found 38 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:20:48 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:20:48 - INFO - __main__ - Current memroy_module size: 87763.
+06/27/2022 05:20:48 - INFO - __main__ - Current upstream_memroy_module size: 87763.
+06/27/2022 05:20:48 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:20:48 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:20:48 - INFO - __main__ - Start error-fixing (len(examples_to_train)=46) .... Timecode: 52
+postfix:     preproBartTokenized
+06/27/2022 05:20:59 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:20:59 - INFO - __main__ - Saving the current error examples (len=38) to the memory.
+06/27/2022 05:20:59 - INFO - __main__ - Current memory size: 87763.
+06/27/2022 05:20:59 - INFO - __main__ - Save 38 examples to the memory.
+06/27/2022 05:20:59 - INFO - __main__ - .................. Done.
+06/27/2022 05:21:16 - INFO - __main__ - EFR=0.3157894736842105
+06/27/2022 05:21:16 - INFO - __main__ - Overall: 0.5902540032274082 from scores=[0.5831367924528301, 0.3157894736842105, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:21:16 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:21:16 - INFO - __main__ - Evaluating to get errors .... Timecode: 53
+06/27/2022 05:21:42 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5870118003341688}
+06/27/2022 05:21:42 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:21:42 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:21:42 - INFO - __main__ - Current memroy_module size: 87801.
+06/27/2022 05:21:42 - INFO - __main__ - Current upstream_memroy_module size: 87801.
+06/27/2022 05:21:42 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:21:42 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:21:42 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 53
+postfix:     preproBartTokenized
+06/27/2022 05:21:54 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:21:54 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 05:21:54 - INFO - __main__ - Current memory size: 87801.
+06/27/2022 05:21:54 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 05:21:54 - INFO - __main__ - .................. Done.
+06/27/2022 05:22:07 - INFO - __main__ - EFR=0.12903225806451613
+06/27/2022 05:22:07 - INFO - __main__ - Overall: 0.5526525164277181 from scores=[0.5818865740740741, 0.12903225806451613, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:22:07 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:22:07 - INFO - __main__ - Evaluating to get errors .... Timecode: 54
+06/27/2022 05:22:32 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.5835069444444445}
+06/27/2022 05:22:32 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:22:32 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:22:32 - INFO - __main__ - Current memroy_module size: 87830.
+06/27/2022 05:22:32 - INFO - __main__ - Current upstream_memroy_module size: 87830.
+06/27/2022 05:22:32 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:22:32 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:22:32 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 54
+postfix:     preproBartTokenized
+06/27/2022 05:22:44 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:22:44 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 05:22:44 - INFO - __main__ - Current memory size: 87830.
+06/27/2022 05:22:44 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 05:22:44 - INFO - __main__ - .................. Done.
+06/27/2022 05:22:57 - INFO - __main__ - EFR=0.1875
+06/27/2022 05:22:57 - INFO - __main__ - Overall: 0.5640482954545454 from scores=[0.5803977272727272, 0.1875, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:22:57 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:22:57 - INFO - __main__ - Evaluating to get errors .... Timecode: 55
+06/27/2022 05:23:23 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6453125}
+06/27/2022 05:23:23 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:23:23 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:23:23 - INFO - __main__ - Current memroy_module size: 87859.
+06/27/2022 05:23:23 - INFO - __main__ - Current upstream_memroy_module size: 87859.
+06/27/2022 05:23:23 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:23:23 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:23:23 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 55
+postfix:     preproBartTokenized
+06/27/2022 05:23:34 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:23:34 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 05:23:34 - INFO - __main__ - Current memory size: 87859.
+06/27/2022 05:23:34 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 05:23:34 - INFO - __main__ - .................. Done.
+06/27/2022 05:23:44 - INFO - __main__ - EFR=0.4230769230769231
+06/27/2022 05:23:44 - INFO - __main__ - Overall: 0.6112113667582417 from scores=[0.5806361607142857, 0.4230769230769231, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:23:44 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:23:44 - INFO - __main__ - Evaluating to get errors .... Timecode: 56
+06/27/2022 05:24:10 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.5376455269607843}
+06/27/2022 05:24:10 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:24:10 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:24:10 - INFO - __main__ - Current memroy_module size: 87882.
+06/27/2022 05:24:10 - INFO - __main__ - Current upstream_memroy_module size: 87882.
+06/27/2022 05:24:10 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:24:10 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:24:10 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 56
+postfix:     preproBartTokenized
+06/27/2022 05:24:22 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:24:22 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 05:24:22 - INFO - __main__ - Current memory size: 87882.
+06/27/2022 05:24:22 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 05:24:22 - INFO - __main__ - .................. Done.
+06/27/2022 05:24:35 - INFO - __main__ - EFR=0.53125
+06/27/2022 05:24:35 - INFO - __main__ - Overall: 0.632563048245614 from scores=[0.5792214912280702, 0.53125, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:24:35 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:24:35 - INFO - __main__ - Evaluating to get errors .... Timecode: 57
+06/27/2022 05:25:00 - INFO - __main__ - Before Error Fixing: {'EM': 0.53125, 'QA-F1': 0.5761014921171171}
+06/27/2022 05:25:00 - INFO - __main__ - Found 30 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:25:00 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:25:00 - INFO - __main__ - Current memroy_module size: 87914.
+06/27/2022 05:25:00 - INFO - __main__ - Current upstream_memroy_module size: 87914.
+06/27/2022 05:25:00 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:25:00 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:25:00 - INFO - __main__ - Start error-fixing (len(examples_to_train)=38) .... Timecode: 57
+postfix:     preproBartTokenized
+06/27/2022 05:25:11 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:25:11 - INFO - __main__ - Saving the current error examples (len=30) to the memory.
+06/27/2022 05:25:11 - INFO - __main__ - Current memory size: 87914.
+06/27/2022 05:25:11 - INFO - __main__ - Save 30 examples to the memory.
+06/27/2022 05:25:11 - INFO - __main__ - .................. Done.
+06/27/2022 05:25:24 - INFO - __main__ - EFR=0.36666666666666664
+06/27/2022 05:25:24 - INFO - __main__ - Overall: 0.5994809626436781 from scores=[0.5783943965517242, 0.36666666666666664, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:25:24 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:25:24 - INFO - __main__ - Evaluating to get errors .... Timecode: 58
+06/27/2022 05:25:50 - INFO - __main__ - Before Error Fixing: {'EM': 0.578125, 'QA-F1': 0.6365405701754385}
+06/27/2022 05:25:50 - INFO - __main__ - Found 27 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:25:50 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:25:50 - INFO - __main__ - Current memroy_module size: 87943.
+06/27/2022 05:25:50 - INFO - __main__ - Current upstream_memroy_module size: 87943.
+06/27/2022 05:25:50 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:25:50 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:25:50 - INFO - __main__ - Start error-fixing (len(examples_to_train)=35) .... Timecode: 58
+postfix:     preproBartTokenized
+06/27/2022 05:26:00 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:26:00 - INFO - __main__ - Saving the current error examples (len=27) to the memory.
+06/27/2022 05:26:00 - INFO - __main__ - Current memory size: 87943.
+06/27/2022 05:26:00 - INFO - __main__ - Save 27 examples to the memory.
+06/27/2022 05:26:00 - INFO - __main__ - .................. Done.
+06/27/2022 05:26:11 - INFO - __main__ - EFR=0.14814814814814814
+06/27/2022 05:26:11 - INFO - __main__ - Overall: 0.5557763457313245 from scores=[0.5783898305084746, 0.14814814814814814, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:26:11 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:26:11 - INFO - __main__ - Evaluating to get errors .... Timecode: 59
+06/27/2022 05:26:36 - INFO - __main__ - Before Error Fixing: {'EM': 0.453125, 'QA-F1': 0.538013795045045}
+06/27/2022 05:26:36 - INFO - __main__ - Found 35 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:26:37 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:26:37 - INFO - __main__ - Current memroy_module size: 87968.
+06/27/2022 05:26:37 - INFO - __main__ - Current upstream_memroy_module size: 87968.
+06/27/2022 05:26:37 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:26:37 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:26:37 - INFO - __main__ - Start error-fixing (len(examples_to_train)=43) .... Timecode: 59
+postfix:     preproBartTokenized
+06/27/2022 05:26:50 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:26:50 - INFO - __main__ - Saving the current error examples (len=35) to the memory.
+06/27/2022 05:26:50 - INFO - __main__ - Current memory size: 87968.
+06/27/2022 05:26:50 - INFO - __main__ - Save 35 examples to the memory.
+06/27/2022 05:26:50 - INFO - __main__ - .................. Done.
+06/27/2022 05:27:04 - INFO - __main__ - EFR=0.42857142857142855
+06/27/2022 05:27:04 - INFO - __main__ - Overall: 0.6114434523809524 from scores=[0.5763020833333333, 0.42857142857142855, 0.720703125, 0.814453125, 0.5171875]
+06/27/2022 05:27:04 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:27:04 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=60
+06/27/2022 05:30:39 - INFO - __main__ - Upstream Knowledge Retation (UKR@60): 0.8320
+postfix:     preproBartTokenized
+06/27/2022 05:30:41 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=60
+06/27/2022 05:34:09 - INFO - __main__ - Online Knowledge Retation (OKR@60): 0.7012
+06/27/2022 05:34:09 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=60
+06/27/2022 05:42:59 - INFO - __main__ - Future Knowledge Generalization (KG@60): 0.5344
+06/27/2022 05:42:59 - INFO - __main__ - Evaluating to get errors .... Timecode: 60
+06/27/2022 05:43:27 - INFO - __main__ - Before Error Fixing: {'EM': 0.46875, 'QA-F1': 0.6103344751187821}
+06/27/2022 05:43:27 - INFO - __main__ - Found 34 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:43:27 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:43:27 - INFO - __main__ - Current memroy_module size: 88002.
+06/27/2022 05:43:27 - INFO - __main__ - Current upstream_memroy_module size: 88002.
+06/27/2022 05:43:27 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:43:27 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:43:27 - INFO - __main__ - Start error-fixing (len(examples_to_train)=42) .... Timecode: 60
+postfix:     preproBartTokenized
+06/27/2022 05:43:39 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:43:39 - INFO - __main__ - Saving the current error examples (len=34) to the memory.
+06/27/2022 05:43:39 - INFO - __main__ - Current memory size: 88002.
+06/27/2022 05:43:39 - INFO - __main__ - Save 34 examples to the memory.
+06/27/2022 05:43:39 - INFO - __main__ - .................. Done.
+06/27/2022 05:43:55 - INFO - __main__ - EFR=0.3235294117647059
+06/27/2022 05:43:55 - INFO - __main__ - Overall: 0.5931292942381872 from scores=[0.5745389344262295, 0.3235294117647059, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:43:55 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:43:55 - INFO - __main__ - Evaluating to get errors .... Timecode: 61
+06/27/2022 05:44:22 - INFO - __main__ - Before Error Fixing: {'EM': 0.453125, 'QA-F1': 0.543458952532329}
+06/27/2022 05:44:22 - INFO - __main__ - Found 35 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:44:22 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:44:22 - INFO - __main__ - Current memroy_module size: 88033.
+06/27/2022 05:44:22 - INFO - __main__ - Current upstream_memroy_module size: 88033.
+06/27/2022 05:44:22 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:44:22 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:44:22 - INFO - __main__ - Start error-fixing (len(examples_to_train)=43) .... Timecode: 61
+postfix:     preproBartTokenized
+06/27/2022 05:44:34 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:44:34 - INFO - __main__ - Saving the current error examples (len=35) to the memory.
+06/27/2022 05:44:34 - INFO - __main__ - Current memory size: 88033.
+06/27/2022 05:44:34 - INFO - __main__ - Save 35 examples to the memory.
+06/27/2022 05:44:34 - INFO - __main__ - .................. Done.
+06/27/2022 05:44:50 - INFO - __main__ - EFR=0.3142857142857143
+06/27/2022 05:44:50 - INFO - __main__ - Overall: 0.5908888968894009 from scores=[0.5725806451612903, 0.3142857142857143, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:44:50 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:44:50 - INFO - __main__ - Evaluating to get errors .... Timecode: 62
+06/27/2022 05:45:17 - INFO - __main__ - Before Error Fixing: {'EM': 0.5, 'QA-F1': 0.563573795995671}
+06/27/2022 05:45:17 - INFO - __main__ - Found 32 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:45:17 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:45:17 - INFO - __main__ - Current memroy_module size: 88066.
+06/27/2022 05:45:17 - INFO - __main__ - Current upstream_memroy_module size: 88066.
+06/27/2022 05:45:17 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:45:17 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:45:17 - INFO - __main__ - Start error-fixing (len(examples_to_train)=40) .... Timecode: 62
+postfix:     preproBartTokenized
+06/27/2022 05:45:28 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:45:28 - INFO - __main__ - Saving the current error examples (len=32) to the memory.
+06/27/2022 05:45:28 - INFO - __main__ - Current memory size: 88066.
+06/27/2022 05:45:28 - INFO - __main__ - Save 32 examples to the memory.
+06/27/2022 05:45:28 - INFO - __main__ - .................. Done.
+06/27/2022 05:45:42 - INFO - __main__ - EFR=0.25
+06/27/2022 05:45:42 - INFO - __main__ - Overall: 0.5778013392857142 from scores=[0.5714285714285714, 0.25, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:45:42 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:45:42 - INFO - __main__ - Evaluating to get errors .... Timecode: 63
+06/27/2022 05:46:11 - INFO - __main__ - Before Error Fixing: {'EM': 0.578125, 'QA-F1': 0.6369137286324786}
+06/27/2022 05:46:11 - INFO - __main__ - Found 27 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:46:11 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:46:11 - INFO - __main__ - Current memroy_module size: 88095.
+06/27/2022 05:46:11 - INFO - __main__ - Current upstream_memroy_module size: 88095.
+06/27/2022 05:46:11 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:46:11 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:46:11 - INFO - __main__ - Start error-fixing (len(examples_to_train)=35) .... Timecode: 63
+postfix:     preproBartTokenized
+06/27/2022 05:46:21 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:46:21 - INFO - __main__ - Saving the current error examples (len=27) to the memory.
+06/27/2022 05:46:21 - INFO - __main__ - Current memory size: 88095.
+06/27/2022 05:46:21 - INFO - __main__ - Save 27 examples to the memory.
+06/27/2022 05:46:21 - INFO - __main__ - .................. Done.
+06/27/2022 05:46:33 - INFO - __main__ - EFR=0.4444444444444444
+06/27/2022 05:46:33 - INFO - __main__ - Overall: 0.6167111545138889 from scores=[0.571533203125, 0.4444444444444444, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:46:33 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:46:33 - INFO - __main__ - Evaluating to get errors .... Timecode: 64
+06/27/2022 05:47:01 - INFO - __main__ - Before Error Fixing: {'EM': 0.484375, 'QA-F1': 0.5592662684034967}
+06/27/2022 05:47:01 - INFO - __main__ - Found 33 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:47:01 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:47:01 - INFO - __main__ - Current memroy_module size: 88120.
+06/27/2022 05:47:01 - INFO - __main__ - Current upstream_memroy_module size: 88120.
+06/27/2022 05:47:01 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:47:01 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:47:01 - INFO - __main__ - Start error-fixing (len(examples_to_train)=41) .... Timecode: 64
+postfix:     preproBartTokenized
+06/27/2022 05:47:13 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:47:13 - INFO - __main__ - Saving the current error examples (len=33) to the memory.
+06/27/2022 05:47:13 - INFO - __main__ - Current memory size: 88120.
+06/27/2022 05:47:13 - INFO - __main__ - Save 33 examples to the memory.
+06/27/2022 05:47:13 - INFO - __main__ - .................. Done.
+06/27/2022 05:47:29 - INFO - __main__ - EFR=0.3333333333333333
+06/27/2022 05:47:29 - INFO - __main__ - Overall: 0.5942207532051281 from scores=[0.5701923076923077, 0.3333333333333333, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:47:29 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:47:29 - INFO - __main__ - Evaluating to get errors .... Timecode: 65
+06/27/2022 05:47:57 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6425235697764768}
+06/27/2022 05:47:57 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:47:57 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:47:57 - INFO - __main__ - Current memroy_module size: 88151.
+06/27/2022 05:47:57 - INFO - __main__ - Current upstream_memroy_module size: 88151.
+06/27/2022 05:47:57 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:47:57 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:47:57 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 65
+postfix:     preproBartTokenized
+06/27/2022 05:48:06 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:48:06 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 05:48:06 - INFO - __main__ - Current memory size: 88151.
+06/27/2022 05:48:06 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 05:48:06 - INFO - __main__ - .................. Done.
+06/27/2022 05:48:19 - INFO - __main__ - EFR=0.3076923076923077
+06/27/2022 05:48:19 - INFO - __main__ - Overall: 0.5891639350233101 from scores=[0.5705492424242424, 0.3076923076923077, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:48:19 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:48:19 - INFO - __main__ - Evaluating to get errors .... Timecode: 66
+06/27/2022 05:48:45 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5866666666666667}
+06/27/2022 05:48:45 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:48:45 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:48:45 - INFO - __main__ - Current memroy_module size: 88175.
+06/27/2022 05:48:45 - INFO - __main__ - Current upstream_memroy_module size: 88175.
+06/27/2022 05:48:45 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:48:45 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:48:45 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 66
+postfix:     preproBartTokenized
+06/27/2022 05:48:57 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:48:57 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 05:48:57 - INFO - __main__ - Current memory size: 88175.
+06/27/2022 05:48:57 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 05:48:57 - INFO - __main__ - .................. Done.
+06/27/2022 05:49:10 - INFO - __main__ - EFR=0.3870967741935484
+06/27/2022 05:49:10 - INFO - __main__ - Overall: 0.6048808753610977 from scores=[0.5697294776119404, 0.3870967741935484, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:49:10 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:49:10 - INFO - __main__ - Evaluating to get errors .... Timecode: 67
+06/27/2022 05:49:36 - INFO - __main__ - Before Error Fixing: {'EM': 0.578125, 'QA-F1': 0.640625}
+06/27/2022 05:49:36 - INFO - __main__ - Found 27 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:49:36 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:49:36 - INFO - __main__ - Current memroy_module size: 88205.
+06/27/2022 05:49:36 - INFO - __main__ - Current upstream_memroy_module size: 88205.
+06/27/2022 05:49:36 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:49:36 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:49:36 - INFO - __main__ - Start error-fixing (len(examples_to_train)=35) .... Timecode: 67
+postfix:     preproBartTokenized
+06/27/2022 05:49:47 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:49:47 - INFO - __main__ - Saving the current error examples (len=27) to the memory.
+06/27/2022 05:49:47 - INFO - __main__ - Current memory size: 88205.
+06/27/2022 05:49:47 - INFO - __main__ - Save 27 examples to the memory.
+06/27/2022 05:49:47 - INFO - __main__ - .................. Done.
+06/27/2022 05:49:58 - INFO - __main__ - EFR=0.4444444444444444
+06/27/2022 05:49:58 - INFO - __main__ - Overall: 0.6163751021241829 from scores=[0.5698529411764706, 0.4444444444444444, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:49:58 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:49:58 - INFO - __main__ - Evaluating to get errors .... Timecode: 68
+06/27/2022 05:50:24 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6411458333333333}
+06/27/2022 05:50:24 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:50:24 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:50:24 - INFO - __main__ - Current memroy_module size: 88231.
+06/27/2022 05:50:24 - INFO - __main__ - Current upstream_memroy_module size: 88231.
+06/27/2022 05:50:24 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:50:24 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:50:24 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 68
+postfix:     preproBartTokenized
+06/27/2022 05:50:34 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:50:34 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 05:50:34 - INFO - __main__ - Current memory size: 88231.
+06/27/2022 05:50:34 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 05:50:34 - INFO - __main__ - .................. Done.
+06/27/2022 05:50:45 - INFO - __main__ - EFR=0.2692307692307692
+06/27/2022 05:50:45 - INFO - __main__ - Overall: 0.5814016339186177 from scores=[0.5701992753623188, 0.2692307692307692, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:50:45 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:50:45 - INFO - __main__ - Evaluating to get errors .... Timecode: 69
+06/27/2022 05:51:11 - INFO - __main__ - Before Error Fixing: {'EM': 0.546875, 'QA-F1': 0.6491443452380953}
+06/27/2022 05:51:11 - INFO - __main__ - Found 29 errors.
+postfix:     preproBartTokenized
+06/27/2022 05:51:11 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 05:51:11 - INFO - __main__ - Current memroy_module size: 88256.
+06/27/2022 05:51:11 - INFO - __main__ - Current upstream_memroy_module size: 88256.
+06/27/2022 05:51:11 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 05:51:11 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 05:51:11 - INFO - __main__ - Start error-fixing (len(examples_to_train)=37) .... Timecode: 69
+postfix:     preproBartTokenized
+06/27/2022 05:51:22 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 05:51:22 - INFO - __main__ - Saving the current error examples (len=29) to the memory.
+06/27/2022 05:51:22 - INFO - __main__ - Current memory size: 88256.
+06/27/2022 05:51:22 - INFO - __main__ - Save 29 examples to the memory.
+06/27/2022 05:51:22 - INFO - __main__ - .................. Done.
+06/27/2022 05:51:34 - INFO - __main__ - EFR=0.3103448275862069
+06/27/2022 05:51:34 - INFO - __main__ - Overall: 0.5895578048029556 from scores=[0.5698660714285715, 0.3103448275862069, 0.701171875, 0.83203125, 0.534375]
+06/27/2022 05:51:34 - INFO - __main__ - --------------------------------------------------
+06/27/2022 05:51:34 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=70
+06/27/2022 05:55:10 - INFO - __main__ - Upstream Knowledge Retation (UKR@70): 0.8125
+postfix:     preproBartTokenized
+06/27/2022 05:55:12 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=70
+06/27/2022 05:58:40 - INFO - __main__ - Online Knowledge Retation (OKR@70): 0.6973
+06/27/2022 05:58:40 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=70
+06/27/2022 06:07:33 - INFO - __main__ - Future Knowledge Generalization (KG@70): 0.5359
+06/27/2022 06:07:33 - INFO - __main__ - Evaluating to get errors .... Timecode: 70
+06/27/2022 06:07:58 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.6951636904761904}
+06/27/2022 06:07:58 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:07:58 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:07:58 - INFO - __main__ - Current memroy_module size: 88284.
+06/27/2022 06:07:58 - INFO - __main__ - Current upstream_memroy_module size: 88284.
+06/27/2022 06:07:58 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:07:58 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:07:58 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 70
+postfix:     preproBartTokenized
+06/27/2022 06:08:07 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:08:07 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 06:08:07 - INFO - __main__ - Current memory size: 88284.
+06/27/2022 06:08:07 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 06:08:07 - INFO - __main__ - .................. Done.
+06/27/2022 06:08:17 - INFO - __main__ - EFR=0.21739130434782608
+06/27/2022 06:08:17 - INFO - __main__ - Overall: 0.5667914210808329 from scores=[0.570862676056338, 0.21739130434782608, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:08:17 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:08:17 - INFO - __main__ - Evaluating to get errors .... Timecode: 71
+06/27/2022 06:08:44 - INFO - __main__ - Before Error Fixing: {'EM': 0.453125, 'QA-F1': 0.5925190004729962}
+06/27/2022 06:08:44 - INFO - __main__ - Found 35 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:08:44 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:08:44 - INFO - __main__ - Current memroy_module size: 88306.
+06/27/2022 06:08:44 - INFO - __main__ - Current upstream_memroy_module size: 88306.
+06/27/2022 06:08:44 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:08:44 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:08:44 - INFO - __main__ - Start error-fixing (len(examples_to_train)=43) .... Timecode: 71
+postfix:     preproBartTokenized
+06/27/2022 06:08:55 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:08:55 - INFO - __main__ - Saving the current error examples (len=35) to the memory.
+06/27/2022 06:08:55 - INFO - __main__ - Current memory size: 88306.
+06/27/2022 06:08:55 - INFO - __main__ - Save 35 examples to the memory.
+06/27/2022 06:08:55 - INFO - __main__ - .................. Done.
+06/27/2022 06:09:11 - INFO - __main__ - EFR=0.2857142857142857
+06/27/2022 06:09:11 - INFO - __main__ - Overall: 0.5801289682539682 from scores=[0.5692274305555556, 0.2857142857142857, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:09:11 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:09:11 - INFO - __main__ - Evaluating to get errors .... Timecode: 72
+06/27/2022 06:09:38 - INFO - __main__ - Before Error Fixing: {'EM': 0.515625, 'QA-F1': 0.5364583333333333}
+06/27/2022 06:09:38 - INFO - __main__ - Found 31 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:09:38 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:09:38 - INFO - __main__ - Current memroy_module size: 88334.
+06/27/2022 06:09:38 - INFO - __main__ - Current upstream_memroy_module size: 88334.
+06/27/2022 06:09:38 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:09:38 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:09:38 - INFO - __main__ - Start error-fixing (len(examples_to_train)=39) .... Timecode: 72
+postfix:     preproBartTokenized
+06/27/2022 06:09:50 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:09:50 - INFO - __main__ - Saving the current error examples (len=31) to the memory.
+06/27/2022 06:09:50 - INFO - __main__ - Current memory size: 88334.
+06/27/2022 06:09:50 - INFO - __main__ - Save 31 examples to the memory.
+06/27/2022 06:09:50 - INFO - __main__ - .................. Done.
+06/27/2022 06:10:02 - INFO - __main__ - EFR=0.25806451612903225
+06/27/2022 06:10:02 - INFO - __main__ - Overall: 0.5744521583627927 from scores=[0.5684931506849316, 0.25806451612903225, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:10:02 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:10:02 - INFO - __main__ - Evaluating to get errors .... Timecode: 73
+06/27/2022 06:10:28 - INFO - __main__ - Before Error Fixing: {'EM': 0.484375, 'QA-F1': 0.5195684523809524}
+06/27/2022 06:10:28 - INFO - __main__ - Found 33 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:10:28 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:10:28 - INFO - __main__ - Current memroy_module size: 88363.
+06/27/2022 06:10:28 - INFO - __main__ - Current upstream_memroy_module size: 88363.
+06/27/2022 06:10:28 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:10:28 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:10:28 - INFO - __main__ - Start error-fixing (len(examples_to_train)=41) .... Timecode: 73
+postfix:     preproBartTokenized
+06/27/2022 06:10:41 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:10:41 - INFO - __main__ - Saving the current error examples (len=33) to the memory.
+06/27/2022 06:10:41 - INFO - __main__ - Current memory size: 88363.
+06/27/2022 06:10:41 - INFO - __main__ - Save 33 examples to the memory.
+06/27/2022 06:10:41 - INFO - __main__ - .................. Done.
+06/27/2022 06:10:54 - INFO - __main__ - EFR=0.18181818181818182
+06/27/2022 06:10:54 - INFO - __main__ - Overall: 0.5589755451474202 from scores=[0.5673564189189189, 0.18181818181818182, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:10:54 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:10:54 - INFO - __main__ - Evaluating to get errors .... Timecode: 74
+06/27/2022 06:11:19 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.7019301470588235}
+06/27/2022 06:11:19 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:11:19 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:11:19 - INFO - __main__ - Current memroy_module size: 88394.
+06/27/2022 06:11:19 - INFO - __main__ - Current upstream_memroy_module size: 88394.
+06/27/2022 06:11:19 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:11:19 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:11:19 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 74
+postfix:     preproBartTokenized
+06/27/2022 06:11:29 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:11:29 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 06:11:29 - INFO - __main__ - Current memory size: 88394.
+06/27/2022 06:11:29 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 06:11:29 - INFO - __main__ - .................. Done.
+06/27/2022 06:11:38 - INFO - __main__ - EFR=0.17391304347826086
+06/27/2022 06:11:38 - INFO - __main__ - Overall: 0.5575899003623188 from scores=[0.5683333333333334, 0.17391304347826086, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:11:38 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:11:38 - INFO - __main__ - Evaluating to get errors .... Timecode: 75
+06/27/2022 06:12:04 - INFO - __main__ - Before Error Fixing: {'EM': 0.5625, 'QA-F1': 0.6015625}
+06/27/2022 06:12:04 - INFO - __main__ - Found 28 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:12:04 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:12:04 - INFO - __main__ - Current memroy_module size: 88411.
+06/27/2022 06:12:04 - INFO - __main__ - Current upstream_memroy_module size: 88411.
+06/27/2022 06:12:04 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:12:04 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:12:04 - INFO - __main__ - Start error-fixing (len(examples_to_train)=36) .... Timecode: 75
+postfix:     preproBartTokenized
+06/27/2022 06:12:15 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:12:15 - INFO - __main__ - Saving the current error examples (len=28) to the memory.
+06/27/2022 06:12:15 - INFO - __main__ - Current memory size: 88411.
+06/27/2022 06:12:15 - INFO - __main__ - Save 28 examples to the memory.
+06/27/2022 06:12:15 - INFO - __main__ - .................. Done.
+06/27/2022 06:12:26 - INFO - __main__ - EFR=0.25
+06/27/2022 06:12:26 - INFO - __main__ - Overall: 0.5727919407894737 from scores=[0.5682565789473684, 0.25, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:12:28 - INFO - __main__ - Model saved to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/model_ckpt_075.pt.
+06/27/2022 06:12:28 - INFO - __main__ - Updated result file: experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json at Timecode: 75.
+06/27/2022 06:12:28 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:12:28 - INFO - __main__ - Evaluating to get errors .... Timecode: 76
+06/27/2022 06:12:53 - INFO - __main__ - Before Error Fixing: {'EM': 0.65625, 'QA-F1': 0.6854166666666667}
+06/27/2022 06:12:53 - INFO - __main__ - Found 22 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:12:53 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:12:53 - INFO - __main__ - Current memroy_module size: 88436.
+06/27/2022 06:12:53 - INFO - __main__ - Current upstream_memroy_module size: 88436.
+06/27/2022 06:12:53 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:12:53 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:12:53 - INFO - __main__ - Start error-fixing (len(examples_to_train)=30) .... Timecode: 76
+postfix:     preproBartTokenized
+06/27/2022 06:13:02 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:13:02 - INFO - __main__ - Saving the current error examples (len=22) to the memory.
+06/27/2022 06:13:02 - INFO - __main__ - Current memory size: 88436.
+06/27/2022 06:13:02 - INFO - __main__ - Save 22 examples to the memory.
+06/27/2022 06:13:02 - INFO - __main__ - .................. Done.
+06/27/2022 06:13:11 - INFO - __main__ - EFR=0.18181818181818182
+06/27/2022 06:13:11 - INFO - __main__ - Overall: 0.5593841314935066 from scores=[0.5693993506493507, 0.18181818181818182, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:13:11 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:13:11 - INFO - __main__ - Evaluating to get errors .... Timecode: 77
+06/27/2022 06:13:37 - INFO - __main__ - Before Error Fixing: {'EM': 0.609375, 'QA-F1': 0.6517857142857143}
+06/27/2022 06:13:37 - INFO - __main__ - Found 25 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:13:37 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:13:37 - INFO - __main__ - Current memroy_module size: 88458.
+06/27/2022 06:13:37 - INFO - __main__ - Current upstream_memroy_module size: 88458.
+06/27/2022 06:13:37 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:13:37 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:13:37 - INFO - __main__ - Start error-fixing (len(examples_to_train)=33) .... Timecode: 77
+postfix:     preproBartTokenized
+06/27/2022 06:13:47 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:13:47 - INFO - __main__ - Saving the current error examples (len=25) to the memory.
+06/27/2022 06:13:47 - INFO - __main__ - Current memory size: 88458.
+06/27/2022 06:13:47 - INFO - __main__ - Save 25 examples to the memory.
+06/27/2022 06:13:47 - INFO - __main__ - .................. Done.
+06/27/2022 06:13:57 - INFO - __main__ - EFR=0.32
+06/27/2022 06:13:57 - INFO - __main__ - Overall: 0.5871229967948718 from scores=[0.569911858974359, 0.32, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:13:57 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:13:57 - INFO - __main__ - Evaluating to get errors .... Timecode: 78
+06/27/2022 06:14:23 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6696180555555555}
+06/27/2022 06:14:23 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:14:23 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:14:23 - INFO - __main__ - Current memroy_module size: 88483.
+06/27/2022 06:14:23 - INFO - __main__ - Current upstream_memroy_module size: 88483.
+06/27/2022 06:14:23 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:14:23 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:14:23 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 78
+postfix:     preproBartTokenized
+06/27/2022 06:14:33 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:14:33 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 06:14:33 - INFO - __main__ - Current memory size: 88483.
+06/27/2022 06:14:33 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 06:14:33 - INFO - __main__ - .................. Done.
+06/27/2022 06:14:44 - INFO - __main__ - EFR=0.3076923076923077
+06/27/2022 06:14:44 - INFO - __main__ - Overall: 0.5847218080574489 from scores=[0.5702136075949367, 0.3076923076923077, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:14:44 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:14:44 - INFO - __main__ - Evaluating to get errors .... Timecode: 79
+06/27/2022 06:15:09 - INFO - __main__ - Before Error Fixing: {'EM': 0.53125, 'QA-F1': 0.5830729166666666}
+06/27/2022 06:15:09 - INFO - __main__ - Found 30 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:15:09 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:15:09 - INFO - __main__ - Current memroy_module size: 88507.
+06/27/2022 06:15:09 - INFO - __main__ - Current upstream_memroy_module size: 88507.
+06/27/2022 06:15:09 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:15:09 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:15:09 - INFO - __main__ - Start error-fixing (len(examples_to_train)=38) .... Timecode: 79
+postfix:     preproBartTokenized
+06/27/2022 06:15:21 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:15:21 - INFO - __main__ - Saving the current error examples (len=30) to the memory.
+06/27/2022 06:15:21 - INFO - __main__ - Current memory size: 88507.
+06/27/2022 06:15:21 - INFO - __main__ - Save 30 examples to the memory.
+06/27/2022 06:15:21 - INFO - __main__ - .................. Done.
+06/27/2022 06:15:33 - INFO - __main__ - EFR=0.3333333333333333
+06/27/2022 06:15:33 - INFO - __main__ - Overall: 0.5897526041666667 from scores=[0.5697265625, 0.3333333333333333, 0.697265625, 0.8125, 0.5359375]
+06/27/2022 06:15:33 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:15:33 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=80
+06/27/2022 06:19:07 - INFO - __main__ - Upstream Knowledge Retation (UKR@80): 0.8203
+postfix:     preproBartTokenized
+06/27/2022 06:19:08 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=80
+06/27/2022 06:22:34 - INFO - __main__ - Online Knowledge Retation (OKR@80): 0.6895
+06/27/2022 06:22:34 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=80
+06/27/2022 06:31:24 - INFO - __main__ - Future Knowledge Generalization (KG@80): 0.5367
+06/27/2022 06:31:24 - INFO - __main__ - Evaluating to get errors .... Timecode: 80
+06/27/2022 06:31:49 - INFO - __main__ - Before Error Fixing: {'EM': 0.546875, 'QA-F1': 0.6245134320175438}
+06/27/2022 06:31:49 - INFO - __main__ - Found 29 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:31:49 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:31:49 - INFO - __main__ - Current memroy_module size: 88533.
+06/27/2022 06:31:49 - INFO - __main__ - Current upstream_memroy_module size: 88533.
+06/27/2022 06:31:49 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:31:49 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:31:49 - INFO - __main__ - Start error-fixing (len(examples_to_train)=37) .... Timecode: 80
+postfix:     preproBartTokenized
+06/27/2022 06:32:00 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:32:00 - INFO - __main__ - Saving the current error examples (len=29) to the memory.
+06/27/2022 06:32:00 - INFO - __main__ - Current memory size: 88533.
+06/27/2022 06:32:00 - INFO - __main__ - Save 29 examples to the memory.
+06/27/2022 06:32:00 - INFO - __main__ - .................. Done.
+06/27/2022 06:32:12 - INFO - __main__ - EFR=0.2413793103448276
+06/27/2022 06:32:12 - INFO - __main__ - Overall: 0.5714616259578544 from scores=[0.5694444444444444, 0.2413793103448276, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:32:12 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:32:12 - INFO - __main__ - Evaluating to get errors .... Timecode: 81
+06/27/2022 06:32:37 - INFO - __main__ - Before Error Fixing: {'EM': 0.546875, 'QA-F1': 0.6245806277056277}
+06/27/2022 06:32:37 - INFO - __main__ - Found 29 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:32:38 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:32:38 - INFO - __main__ - Current memroy_module size: 88562.
+06/27/2022 06:32:38 - INFO - __main__ - Current upstream_memroy_module size: 88562.
+06/27/2022 06:32:38 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:32:38 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:32:38 - INFO - __main__ - Start error-fixing (len(examples_to_train)=37) .... Timecode: 81
+postfix:     preproBartTokenized
+06/27/2022 06:32:49 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:32:49 - INFO - __main__ - Saving the current error examples (len=29) to the memory.
+06/27/2022 06:32:49 - INFO - __main__ - Current memory size: 88562.
+06/27/2022 06:32:49 - INFO - __main__ - Save 29 examples to the memory.
+06/27/2022 06:32:49 - INFO - __main__ - .................. Done.
+06/27/2022 06:33:01 - INFO - __main__ - EFR=0.20689655172413793
+06/27/2022 06:33:01 - INFO - __main__ - Overall: 0.5645100268082422 from scores=[0.5691692073170731, 0.20689655172413793, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:33:01 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:33:01 - INFO - __main__ - Evaluating to get errors .... Timecode: 82
+06/27/2022 06:33:26 - INFO - __main__ - Before Error Fixing: {'EM': 0.65625, 'QA-F1': 0.6820819805194805}
+06/27/2022 06:33:26 - INFO - __main__ - Found 22 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:33:26 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:33:26 - INFO - __main__ - Current memroy_module size: 88588.
+06/27/2022 06:33:26 - INFO - __main__ - Current upstream_memroy_module size: 88588.
+06/27/2022 06:33:26 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:33:26 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:33:26 - INFO - __main__ - Start error-fixing (len(examples_to_train)=30) .... Timecode: 82
+postfix:     preproBartTokenized
+06/27/2022 06:33:35 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:33:35 - INFO - __main__ - Saving the current error examples (len=22) to the memory.
+06/27/2022 06:33:35 - INFO - __main__ - Current memory size: 88588.
+06/27/2022 06:33:35 - INFO - __main__ - Save 22 examples to the memory.
+06/27/2022 06:33:35 - INFO - __main__ - .................. Done.
+06/27/2022 06:33:44 - INFO - __main__ - EFR=0.045454545454545456
+06/27/2022 06:33:44 - INFO - __main__ - Overall: 0.5324314587897042 from scores=[0.5702183734939759, 0.045454545454545456, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:33:44 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:33:44 - INFO - __main__ - Evaluating to get errors .... Timecode: 83
+06/27/2022 06:34:10 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.6878720238095238}
+06/27/2022 06:34:10 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:34:10 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:34:10 - INFO - __main__ - Current memroy_module size: 88607.
+06/27/2022 06:34:10 - INFO - __main__ - Current upstream_memroy_module size: 88607.
+06/27/2022 06:34:10 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:34:10 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:34:10 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 83
+postfix:     preproBartTokenized
+06/27/2022 06:34:19 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:34:19 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 06:34:19 - INFO - __main__ - Current memory size: 88607.
+06/27/2022 06:34:19 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 06:34:19 - INFO - __main__ - .................. Done.
+06/27/2022 06:34:29 - INFO - __main__ - EFR=0.2608695652173913
+06/27/2022 06:34:29 - INFO - __main__ - Overall: 0.5756820975672878 from scores=[0.5710565476190477, 0.2608695652173913, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:34:29 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:34:29 - INFO - __main__ - Evaluating to get errors .... Timecode: 84
+06/27/2022 06:34:55 - INFO - __main__ - Before Error Fixing: {'EM': 0.671875, 'QA-F1': 0.7135416666666666}
+06/27/2022 06:34:55 - INFO - __main__ - Found 21 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:34:55 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:34:55 - INFO - __main__ - Current memroy_module size: 88629.
+06/27/2022 06:34:55 - INFO - __main__ - Current upstream_memroy_module size: 88629.
+06/27/2022 06:34:55 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:34:55 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:34:55 - INFO - __main__ - Start error-fixing (len(examples_to_train)=29) .... Timecode: 84
+postfix:     preproBartTokenized
+06/27/2022 06:35:04 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:35:04 - INFO - __main__ - Saving the current error examples (len=21) to the memory.
+06/27/2022 06:35:04 - INFO - __main__ - Current memory size: 88629.
+06/27/2022 06:35:04 - INFO - __main__ - Save 21 examples to the memory.
+06/27/2022 06:35:04 - INFO - __main__ - .................. Done.
+06/27/2022 06:35:12 - INFO - __main__ - EFR=0.23809523809523808
+06/27/2022 06:35:12 - INFO - __main__ - Overall: 0.5713644520308123 from scores=[0.5722426470588236, 0.23809523809523808, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:35:12 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:35:12 - INFO - __main__ - Evaluating to get errors .... Timecode: 85
+06/27/2022 06:35:37 - INFO - __main__ - Before Error Fixing: {'EM': 0.625, 'QA-F1': 0.6710069444444444}
+06/27/2022 06:35:37 - INFO - __main__ - Found 24 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:35:37 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:35:37 - INFO - __main__ - Current memroy_module size: 88650.
+06/27/2022 06:35:37 - INFO - __main__ - Current upstream_memroy_module size: 88650.
+06/27/2022 06:35:37 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:35:37 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:35:37 - INFO - __main__ - Start error-fixing (len(examples_to_train)=32) .... Timecode: 85
+postfix:     preproBartTokenized
+06/27/2022 06:35:47 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:35:47 - INFO - __main__ - Saving the current error examples (len=24) to the memory.
+06/27/2022 06:35:47 - INFO - __main__ - Current memory size: 88650.
+06/27/2022 06:35:47 - INFO - __main__ - Save 24 examples to the memory.
+06/27/2022 06:35:47 - INFO - __main__ - .................. Done.
+06/27/2022 06:35:56 - INFO - __main__ - EFR=0.4166666666666667
+06/27/2022 06:35:56 - INFO - __main__ - Overall: 0.6072014292635658 from scores=[0.5728561046511628, 0.4166666666666667, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:35:56 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:35:56 - INFO - __main__ - Evaluating to get errors .... Timecode: 86
+06/27/2022 06:36:22 - INFO - __main__ - Before Error Fixing: {'EM': 0.640625, 'QA-F1': 0.7227746212121212}
+06/27/2022 06:36:22 - INFO - __main__ - Found 23 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:36:22 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:36:22 - INFO - __main__ - Current memroy_module size: 88674.
+06/27/2022 06:36:22 - INFO - __main__ - Current upstream_memroy_module size: 88674.
+06/27/2022 06:36:22 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:36:22 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:36:22 - INFO - __main__ - Start error-fixing (len(examples_to_train)=31) .... Timecode: 86
+postfix:     preproBartTokenized
+06/27/2022 06:36:31 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:36:31 - INFO - __main__ - Saving the current error examples (len=23) to the memory.
+06/27/2022 06:36:31 - INFO - __main__ - Current memory size: 88674.
+06/27/2022 06:36:31 - INFO - __main__ - Save 23 examples to the memory.
+06/27/2022 06:36:31 - INFO - __main__ - .................. Done.
+06/27/2022 06:36:40 - INFO - __main__ - EFR=0.43478260869565216
+06/27/2022 06:36:40 - INFO - __main__ - Overall: 0.6109804082333833 from scores=[0.5736350574712643, 0.43478260869565216, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:36:40 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:36:40 - INFO - __main__ - Evaluating to get errors .... Timecode: 87
+06/27/2022 06:37:06 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.684375}
+06/27/2022 06:37:06 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:37:06 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:37:06 - INFO - __main__ - Current memroy_module size: 88696.
+06/27/2022 06:37:06 - INFO - __main__ - Current upstream_memroy_module size: 88696.
+06/27/2022 06:37:06 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:37:06 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:37:06 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 87
+postfix:     preproBartTokenized
+06/27/2022 06:37:16 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:37:16 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 06:37:16 - INFO - __main__ - Current memory size: 88696.
+06/27/2022 06:37:16 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 06:37:16 - INFO - __main__ - .................. Done.
+06/27/2022 06:37:26 - INFO - __main__ - EFR=0.34615384615384615
+06/27/2022 06:37:26 - INFO - __main__ - Overall: 0.5933003715034965 from scores=[0.5738636363636364, 0.34615384615384615, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:37:26 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:37:26 - INFO - __main__ - Evaluating to get errors .... Timecode: 88
+06/27/2022 06:37:52 - INFO - __main__ - Before Error Fixing: {'EM': 0.5625, 'QA-F1': 0.626953125}
+06/27/2022 06:37:52 - INFO - __main__ - Found 28 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:37:52 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:37:52 - INFO - __main__ - Current memroy_module size: 88720.
+06/27/2022 06:37:52 - INFO - __main__ - Current upstream_memroy_module size: 88720.
+06/27/2022 06:37:52 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:37:52 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:37:52 - INFO - __main__ - Start error-fixing (len(examples_to_train)=36) .... Timecode: 88
+postfix:     preproBartTokenized
+06/27/2022 06:38:03 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:38:03 - INFO - __main__ - Saving the current error examples (len=28) to the memory.
+06/27/2022 06:38:03 - INFO - __main__ - Current memory size: 88720.
+06/27/2022 06:38:03 - INFO - __main__ - Save 28 examples to the memory.
+06/27/2022 06:38:03 - INFO - __main__ - .................. Done.
+06/27/2022 06:38:15 - INFO - __main__ - EFR=0.17857142857142858
+06/27/2022 06:38:15 - INFO - __main__ - Overall: 0.5597583517255217 from scores=[0.5737359550561798, 0.17857142857142858, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:38:15 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:38:15 - INFO - __main__ - Evaluating to get errors .... Timecode: 89
+06/27/2022 06:38:40 - INFO - __main__ - Before Error Fixing: {'EM': 0.46875, 'QA-F1': 0.5971138784461153}
+06/27/2022 06:38:40 - INFO - __main__ - Found 34 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:38:40 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:38:40 - INFO - __main__ - Current memroy_module size: 88743.
+06/27/2022 06:38:40 - INFO - __main__ - Current upstream_memroy_module size: 88743.
+06/27/2022 06:38:40 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:38:40 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:38:40 - INFO - __main__ - Start error-fixing (len(examples_to_train)=42) .... Timecode: 89
+postfix:     preproBartTokenized
+06/27/2022 06:38:52 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:38:52 - INFO - __main__ - Saving the current error examples (len=34) to the memory.
+06/27/2022 06:38:52 - INFO - __main__ - Current memory size: 88743.
+06/27/2022 06:38:52 - INFO - __main__ - Save 34 examples to the memory.
+06/27/2022 06:38:52 - INFO - __main__ - .................. Done.
+06/27/2022 06:39:06 - INFO - __main__ - EFR=0.29411764705882354
+06/27/2022 06:39:06 - INFO - __main__ - Overall: 0.5826342933006535 from scores=[0.5725694444444445, 0.29411764705882354, 0.689453125, 0.8203125, 0.53671875]
+06/27/2022 06:39:06 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:39:06 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=90
+06/27/2022 06:42:46 - INFO - __main__ - Upstream Knowledge Retation (UKR@90): 0.8066
+postfix:     preproBartTokenized
+06/27/2022 06:42:47 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=90
+06/27/2022 06:46:17 - INFO - __main__ - Online Knowledge Retation (OKR@90): 0.6797
+06/27/2022 06:46:17 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=90
+06/27/2022 06:55:24 - INFO - __main__ - Future Knowledge Generalization (KG@90): 0.5320
+06/27/2022 06:55:24 - INFO - __main__ - Evaluating to get errors .... Timecode: 90
+06/27/2022 06:55:49 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6621527777777778}
+06/27/2022 06:55:49 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:55:49 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:55:49 - INFO - __main__ - Current memroy_module size: 88773.
+06/27/2022 06:55:49 - INFO - __main__ - Current upstream_memroy_module size: 88773.
+06/27/2022 06:55:49 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:55:49 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:55:49 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 90
+postfix:     preproBartTokenized
+06/27/2022 06:55:59 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:55:59 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 06:55:59 - INFO - __main__ - Current memory size: 88773.
+06/27/2022 06:55:59 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 06:55:59 - INFO - __main__ - .................. Done.
+06/27/2022 06:56:10 - INFO - __main__ - EFR=0.23076923076923078
+06/27/2022 06:56:10 - INFO - __main__ - Overall: 0.5643861607142858 from scores=[0.5728021978021978, 0.23076923076923078, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 06:56:10 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:56:10 - INFO - __main__ - Evaluating to get errors .... Timecode: 91
+06/27/2022 06:56:36 - INFO - __main__ - Before Error Fixing: {'EM': 0.609375, 'QA-F1': 0.6546875}
+06/27/2022 06:56:36 - INFO - __main__ - Found 25 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:56:36 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:56:36 - INFO - __main__ - Current memroy_module size: 88796.
+06/27/2022 06:56:36 - INFO - __main__ - Current upstream_memroy_module size: 88796.
+06/27/2022 06:56:36 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:56:36 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:56:36 - INFO - __main__ - Start error-fixing (len(examples_to_train)=33) .... Timecode: 91
+postfix:     preproBartTokenized
+06/27/2022 06:56:46 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:56:46 - INFO - __main__ - Saving the current error examples (len=25) to the memory.
+06/27/2022 06:56:46 - INFO - __main__ - Current memory size: 88796.
+06/27/2022 06:56:46 - INFO - __main__ - Save 25 examples to the memory.
+06/27/2022 06:56:46 - INFO - __main__ - .................. Done.
+06/27/2022 06:56:56 - INFO - __main__ - EFR=0.32
+06/27/2022 06:56:56 - INFO - __main__ - Overall: 0.5823118206521739 from scores=[0.5731997282608696, 0.32, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 06:56:56 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:56:56 - INFO - __main__ - Evaluating to get errors .... Timecode: 92
+06/27/2022 06:57:22 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6809895833333333}
+06/27/2022 06:57:22 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:57:22 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:57:22 - INFO - __main__ - Current memroy_module size: 88817.
+06/27/2022 06:57:22 - INFO - __main__ - Current upstream_memroy_module size: 88817.
+06/27/2022 06:57:22 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:57:22 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:57:22 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 92
+postfix:     preproBartTokenized
+06/27/2022 06:57:32 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:57:32 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 06:57:32 - INFO - __main__ - Current memory size: 88817.
+06/27/2022 06:57:32 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 06:57:32 - INFO - __main__ - .................. Done.
+06/27/2022 06:57:42 - INFO - __main__ - EFR=0.2692307692307692
+06/27/2022 06:57:42 - INFO - __main__ - Overall: 0.5722021686311001 from scores=[0.5734206989247312, 0.2692307692307692, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 06:57:42 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:57:42 - INFO - __main__ - Evaluating to get errors .... Timecode: 93
+06/27/2022 06:58:08 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6661458333333333}
+06/27/2022 06:58:08 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:58:08 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:58:08 - INFO - __main__ - Current memroy_module size: 88843.
+06/27/2022 06:58:08 - INFO - __main__ - Current upstream_memroy_module size: 88843.
+06/27/2022 06:58:08 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:58:08 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:58:08 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 93
+postfix:     preproBartTokenized
+06/27/2022 06:58:18 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:58:18 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 06:58:18 - INFO - __main__ - Current memory size: 88843.
+06/27/2022 06:58:18 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 06:58:18 - INFO - __main__ - .................. Done.
+06/27/2022 06:58:28 - INFO - __main__ - EFR=0.2692307692307692
+06/27/2022 06:58:28 - INFO - __main__ - Overall: 0.572245422463175 from scores=[0.5736369680851063, 0.2692307692307692, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 06:58:28 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:58:28 - INFO - __main__ - Evaluating to get errors .... Timecode: 94
+06/27/2022 06:58:54 - INFO - __main__ - Before Error Fixing: {'EM': 0.5625, 'QA-F1': 0.6920873397435897}
+06/27/2022 06:58:54 - INFO - __main__ - Found 28 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:58:54 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:58:54 - INFO - __main__ - Current memroy_module size: 88867.
+06/27/2022 06:58:54 - INFO - __main__ - Current upstream_memroy_module size: 88867.
+06/27/2022 06:58:54 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:58:54 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:58:54 - INFO - __main__ - Start error-fixing (len(examples_to_train)=36) .... Timecode: 94
+postfix:     preproBartTokenized
+06/27/2022 06:59:05 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:59:05 - INFO - __main__ - Saving the current error examples (len=28) to the memory.
+06/27/2022 06:59:05 - INFO - __main__ - Current memory size: 88867.
+06/27/2022 06:59:05 - INFO - __main__ - Save 28 examples to the memory.
+06/27/2022 06:59:05 - INFO - __main__ - .................. Done.
+06/27/2022 06:59:16 - INFO - __main__ - EFR=0.4642857142857143
+06/27/2022 06:59:16 - INFO - __main__ - Overall: 0.6112329652255639 from scores=[0.5735197368421052, 0.4642857142857143, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 06:59:16 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:59:16 - INFO - __main__ - Evaluating to get errors .... Timecode: 95
+06/27/2022 06:59:41 - INFO - __main__ - Before Error Fixing: {'EM': 0.71875, 'QA-F1': 0.7878949175824176}
+06/27/2022 06:59:41 - INFO - __main__ - Found 18 errors.
+postfix:     preproBartTokenized
+06/27/2022 06:59:41 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 06:59:41 - INFO - __main__ - Current memroy_module size: 88892.
+06/27/2022 06:59:41 - INFO - __main__ - Current upstream_memroy_module size: 88892.
+06/27/2022 06:59:41 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 06:59:41 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 06:59:41 - INFO - __main__ - Start error-fixing (len(examples_to_train)=26) .... Timecode: 95
+postfix:     preproBartTokenized
+06/27/2022 06:59:49 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 06:59:49 - INFO - __main__ - Saving the current error examples (len=18) to the memory.
+06/27/2022 06:59:49 - INFO - __main__ - Current memory size: 88892.
+06/27/2022 06:59:49 - INFO - __main__ - Save 18 examples to the memory.
+06/27/2022 06:59:49 - INFO - __main__ - .................. Done.
+06/27/2022 06:59:56 - INFO - __main__ - EFR=0.3888888888888889
+06/27/2022 06:59:56 - INFO - __main__ - Overall: 0.5964561631944445 from scores=[0.5750325520833333, 0.3888888888888889, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 06:59:56 - INFO - __main__ - --------------------------------------------------
+06/27/2022 06:59:56 - INFO - __main__ - Evaluating to get errors .... Timecode: 96
+06/27/2022 07:00:22 - INFO - __main__ - Before Error Fixing: {'EM': 0.5625, 'QA-F1': 0.6310763888888888}
+06/27/2022 07:00:22 - INFO - __main__ - Found 28 errors.
+postfix:     preproBartTokenized
+06/27/2022 07:00:22 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 07:00:22 - INFO - __main__ - Current memroy_module size: 88906.
+06/27/2022 07:00:22 - INFO - __main__ - Current upstream_memroy_module size: 88906.
+06/27/2022 07:00:22 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 07:00:22 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 07:00:22 - INFO - __main__ - Start error-fixing (len(examples_to_train)=36) .... Timecode: 96
+postfix:     preproBartTokenized
+06/27/2022 07:00:32 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 07:00:32 - INFO - __main__ - Saving the current error examples (len=28) to the memory.
+06/27/2022 07:00:32 - INFO - __main__ - Current memory size: 88906.
+06/27/2022 07:00:32 - INFO - __main__ - Save 28 examples to the memory.
+06/27/2022 07:00:32 - INFO - __main__ - .................. Done.
+06/27/2022 07:00:44 - INFO - __main__ - EFR=0.2857142857142857
+06/27/2022 07:00:44 - INFO - __main__ - Overall: 0.5757954022459499 from scores=[0.5749033505154639, 0.2857142857142857, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 07:00:44 - INFO - __main__ - --------------------------------------------------
+06/27/2022 07:00:44 - INFO - __main__ - Evaluating to get errors .... Timecode: 97
+06/27/2022 07:01:09 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6309895833333333}
+06/27/2022 07:01:09 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 07:01:09 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 07:01:09 - INFO - __main__ - Current memroy_module size: 88932.
+06/27/2022 07:01:09 - INFO - __main__ - Current upstream_memroy_module size: 88932.
+06/27/2022 07:01:09 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 07:01:09 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 07:01:09 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 97
+postfix:     preproBartTokenized
+06/27/2022 07:01:19 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 07:01:19 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 07:01:19 - INFO - __main__ - Current memory size: 88932.
+06/27/2022 07:01:19 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 07:01:19 - INFO - __main__ - .................. Done.
+06/27/2022 07:01:29 - INFO - __main__ - EFR=0.38461538461538464
+06/27/2022 07:01:29 - INFO - __main__ - Overall: 0.5956140845761382 from scores=[0.5750956632653061, 0.38461538461538464, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 07:01:29 - INFO - __main__ - --------------------------------------------------
+06/27/2022 07:01:29 - INFO - __main__ - Evaluating to get errors .... Timecode: 98
+06/27/2022 07:01:55 - INFO - __main__ - Before Error Fixing: {'EM': 0.546875, 'QA-F1': 0.6587797619047618}
+06/27/2022 07:01:55 - INFO - __main__ - Found 29 errors.
+postfix:     preproBartTokenized
+06/27/2022 07:01:55 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 07:01:55 - INFO - __main__ - Current memroy_module size: 88955.
+06/27/2022 07:01:55 - INFO - __main__ - Current upstream_memroy_module size: 88955.
+06/27/2022 07:01:55 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 07:01:55 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 07:01:55 - INFO - __main__ - Start error-fixing (len(examples_to_train)=37) .... Timecode: 98
+postfix:     preproBartTokenized
+06/27/2022 07:02:07 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 07:02:07 - INFO - __main__ - Saving the current error examples (len=29) to the memory.
+06/27/2022 07:02:07 - INFO - __main__ - Current memory size: 88955.
+06/27/2022 07:02:07 - INFO - __main__ - Save 29 examples to the memory.
+06/27/2022 07:02:07 - INFO - __main__ - .................. Done.
+06/27/2022 07:02:18 - INFO - __main__ - EFR=0.3103448275862069
+06/27/2022 07:02:18 - INFO - __main__ - Overall: 0.5807029617293626 from scores=[0.5748106060606061, 0.3103448275862069, 0.6796875, 0.806640625, 0.53203125]
+06/27/2022 07:02:18 - INFO - __main__ - --------------------------------------------------
+06/27/2022 07:02:18 - INFO - __main__ - Start eval_knowledge_retention for UKR @ Timecode=99
+06/27/2022 07:05:53 - INFO - __main__ - Upstream Knowledge Retation (UKR@99): 0.8340
+postfix:     preproBartTokenized
+06/27/2022 07:05:54 - INFO - __main__ - Start eval_knowledge_retention for OKR @ Timecode=99
+06/27/2022 07:09:20 - INFO - __main__ - Online Knowledge Retation (OKR@99): 0.7070
+06/27/2022 07:09:20 - INFO - __main__ - Start eval_knowledge_generalization for KG @ Timecode=99
+06/27/2022 07:18:12 - INFO - __main__ - Future Knowledge Generalization (KG@99): 0.5453
+06/27/2022 07:18:12 - INFO - __main__ - Evaluating to get errors .... Timecode: 99
+06/27/2022 07:18:38 - INFO - __main__ - Before Error Fixing: {'EM': 0.59375, 'QA-F1': 0.6182291666666666}
+06/27/2022 07:18:38 - INFO - __main__ - Found 26 errors.
+postfix:     preproBartTokenized
+06/27/2022 07:18:38 - INFO - __main__ - Triggering Sampling from Memory and starting to replay.
+06/27/2022 07:18:38 - INFO - __main__ - Current memroy_module size: 88983.
+06/27/2022 07:18:38 - INFO - __main__ - Current upstream_memroy_module size: 88983.
+06/27/2022 07:18:38 - INFO - __main__ - Randomly retrieve from the memory. `query_examples` not used
+06/27/2022 07:18:38 - INFO - __main__ - Mixed the retrieved examples (len=8) to the current batch for training.
+06/27/2022 07:18:38 - INFO - __main__ - Start error-fixing (len(examples_to_train)=34) .... Timecode: 99
+postfix:     preproBartTokenized
+06/27/2022 07:18:48 - INFO - __main__ - Start error-fixing .... Done!
+06/27/2022 07:18:48 - INFO - __main__ - Saving the current error examples (len=26) to the memory.
+06/27/2022 07:18:48 - INFO - __main__ - Current memory size: 88983.
+06/27/2022 07:18:48 - INFO - __main__ - Save 26 examples to the memory.
+06/27/2022 07:18:48 - INFO - __main__ - .................. Done.
+06/27/2022 07:18:59 - INFO - __main__ - EFR=0.2692307692307692
+06/27/2022 07:18:59 - INFO - __main__ - Overall: 0.5861117788461538 from scores=[0.575, 0.2692307692307692, 0.70703125, 0.833984375, 0.5453125]
+06/27/2022 07:18:59 - INFO - __main__ - --------------------------------------------------
+06/27/2022 07:18:59 - INFO - __main__ - Start the final evaluation.
+06/27/2022 07:18:59 - INFO - __main__ - Nothing here.
+06/27/2022 07:19:00 - INFO - __main__ - Model saved to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/model_ckpt_100.pt.
+06/27/2022 07:19:01 - INFO - __main__ - Saved the cache to experiments/ckpt_dirs/qa/er/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43/memory_dict.pkl
+06/27/2022 07:19:01 - INFO - __main__ - Updated result file: experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json at Timecode: 100.
+06/27/2022 07:19:01 - INFO - __main__ - Finished. Results saved to experiments/results/qa/qa_er_lr=0.000005_ep=3_l2w=0.001_rs=8_rf=1_T=100,b=64,alpha=0.9,beta=0.9,gamma=0.8-test[0]_seed=43_result.json

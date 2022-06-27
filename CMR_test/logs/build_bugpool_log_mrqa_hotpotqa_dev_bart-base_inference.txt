@@ -1,0 +1,752 @@
+06/25/2022 02:27:22 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:27:22 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:27:22 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=3
+06/25/2022 02:27:23 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=2
+06/25/2022 02:27:23 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:27:23 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:27:23 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=0
+06/25/2022 02:27:23 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=1
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:27:25 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:27:25 - INFO - __main__ - Start tokenizing ... 1475 instances
+06/25/2022 02:27:25 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:27:25 - INFO - __main__ - Question: Where did this dish emerge in the late 1950s that is a long-standing tradition in New Jersey? </s> Context: Cuisine of New Jersey  The cuisine of New Jersey is derived from the long history of immigrants to the state and its close proximity to New York City and Philadelphia.  Restaurants in the state make use of locally grown ingredients such as asparagus, blueberries, cranberries, tomatoes, corn, and peaches.  New Jersey is home to approximately 525 diners, the most of any state, and where disco fries are a long-standing tradition.  Various foods invented in the state, such as the pork roll, also known as taylor ham, and salt water taffy remain popular there today.   Poutine  Poutine ( ; ) is a Quebecois–Canadian dish originally made with French fries and cheese curds topped with a brown gravy.  The dish emerged in the late 1950s in the Centre-du-Québec area.  For most of its existence, poutine was negatively perceived and mocked, which is in drastic contrast with its later popularity.  In the past, poutine was even used as a means of stigmatization against the Quebec society.  Today, poutine is celebrated both within and outside Quebec borders.  Poutine festivals are held in Drummondville, Montreal, Quebec City, Toronto and Ottawa, as well as in other places, including some outside of Canada: Chicago and New Hampshire.  Poutine is now served using different toppings and ingredients beyond the original French fries, cheese curds, and brown gravy.  Nicolas Fabien-Ouellet, the author of "Poutine Dynamics" (a peer-reviewed article published in CuiZine), suggests that with its increasing variations, poutine has emerged as a new dish classification in its own right, just like sandwiches, dumplings, soups, flatbreads.
+06/25/2022 02:27:25 - INFO - __main__ - ['Centre-du-Québec']
+06/25/2022 02:27:25 - INFO - __main__ - Question: What island in the center of Pearl Harbor is connected to the O'ahu by a floating bridge? </s> Context: Admiral Clarey Bridge  Admiral Clarey Bridge, also known as the Ford Island Bridge, is a pontoon bridge, commonly called a floating concrete drawbridge, providing access to Ford Island, a United States Navy installation situated in the middle of Pearl Harbor.  The bridge provides access to Ford Island's historic sites to the public via tour bus and provides access to O'ahu for US military families housed on the island.  Before the completion of the bridge, the island's residents were required to use ferry boats operated by Naval personnel that operated on an hourly basis.  The bridge is one of only a few floating bridges and its floating moveable span is the largest worldwide.  Its namesake, Admiral Bernard A. Clarey, was one of the Navy's most decorated officers.   Admiral Clarey Bridge  Admiral Clarey Bridge, also known as the Ford Island Bridge, is a pontoon bridge, commonly called a floating concrete drawbridge, providing access to Ford Island, a United States Navy installation situated in the middle of Pearl Harbor.  The bridge provides access to Ford Island's historic sites to the public via tour bus and provides access to O'ahu for US military families housed on the island.  Before the completion of the bridge, the island's residents were required to use ferry boats operated by Naval personnel that operated on an hourly basis.  The bridge is one of only a few floating bridges and its floating moveable span is the largest worldwide.  Its namesake, Admiral Bernard A. Clarey, was one of the Navy's most decorated officers.   Ford Island  Ford Island (Hawaiian: ' ) is an islet in the center of Pearl Harbor, Oahu, in the U.S. state of Hawaii.  It has been known as Rabbit Island, Marín's Island, and Little Goats Island, and its native Hawaiian name is Mokuʻ umeʻ ume.  The island had an area of 334 acres when it was surveyed in 1825, which was increased during the 1930s to 441 acres with fill dredged out of Pearl Harbor by the United States Navy to accommodate battleships.
+06/25/2022 02:27:25 - INFO - __main__ - ['Ford Island']
+06/25/2022 02:27:25 - INFO - __main__ - Question: Michael Standing was long term friends with which professional midfielder from West Brom? </s> Context: Michael Standing (footballer)  Michael John Standing (born 20 March 1981) is an English former professional footballer who played as a midfielder.  Since terminating his playing career, Standing has become an agent for former teammate and long-term friend Gareth Barry.  He has also played part-time for his hometown club, Shoreham.   Gareth Barry  Gareth Barry (born 23 February 1981) is an English professional footballer who plays as a midfielder for West Bromwich Albion.  He is the player with the highest number of appearances in the Premier League.
+06/25/2022 02:27:25 - INFO - __main__ - ['Gareth Barry']
+06/25/2022 02:27:25 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:27:25 - INFO - __main__ - Start tokenizing ... 1475 instances
+06/25/2022 02:27:25 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:27:25 - INFO - __main__ - Question: Who is the US Olympian and Christian evangelist did the 2010 non-fiction book by Laura Hillenbrand focus on? </s> Context: Unbroken (film)  Unbroken is a 2014 American war film produced and directed by Angelina Jolie, written by the Coen brothers, Richard LaGravenese, and William Nicholson, based on the 2010 non-fiction book by Laura Hillenbrand, "".  The film revolves around the life of USA Olympian and army officer Louis "Louie" Zamperini.  Zamperini survived in a raft for 47 days after his bomber crash landed in the ocean during World War II, then was sent to a series of prisoner of war camps.   Unbroken (film)  Unbroken is a 2014 American war film produced and directed by Angelina Jolie, written by the Coen brothers, Richard LaGravenese, and William Nicholson, based on the 2010 non-fiction book by Laura Hillenbrand, "".  The film revolves around the life of USA Olympian and army officer Louis "Louie" Zamperini.  Zamperini survived in a raft for 47 days after his bomber crash landed in the ocean during World War II, then was sent to a series of prisoner of war camps.   Louis Zamperini  Louis Silvie "Louie" Zamperini (January 26, 1917 – July 2, 2014) was a US prisoner of war survivor in World War II, a Christian evangelist and an Olympic distance runner.
+06/25/2022 02:27:25 - INFO - __main__ - ['Louis "Louie" Zamperini']
+06/25/2022 02:27:25 - INFO - __main__ - Question: What is the prefix given to the end of the name to avoid confusion for the winner of the 1996 Record of the Year Grammy? </s> Context: Seal (1994 album)  Seal (sometimes referred to as Seal II to avoid confusion with the 1991 album of the same name) is the second eponymous studio album by singer Seal.  The album was released in 1994 on ZTT and Sire Records and features the worldwide smash hit single "Kiss from a Rose".   Kiss from a Rose  "Kiss from a Rose" is a song from Seal's second eponymous album.  The song was first released as a single in July 1994.  Re-released in 1995, it was included on the "Batman Forever" film soundtrack, helping it top the charts in the US and Australia.  At the 1996 Grammy Awards, it won awards for Record of the Year, Song of the Year, and Best Male Pop Vocal Performance.
+06/25/2022 02:27:25 - INFO - __main__ - ['II']
+06/25/2022 02:27:25 - INFO - __main__ - Question: Orchard Gateway connects what shopping mall in singapore with 313 @ Somerset? </s> Context: Orchard Gateway  Orchard Gateway is a shopping mall in Orchard Road, Singapore, connecting Orchard Central and 313 @ Somerset together.  The mall was meant to be completed in November 2013, but was delayed and officially opened on April 26, 2014It was built on the site of the former Specialists Shopping Centre and Orchard Emerald.   Orchard Central  Orchard Central is a shopping mall in Singapore located along the main shopping belt at Orchard Road.  It is Singapore's first and only vertical mall and was officially opened on July 2, 2009.  It sits on the land previously occupied by an open air carpark and has a 160m frontage along Orchard Road.  In December 2016, Forbes recognized Orchard Central as one of the top five shopping malls in Singapore.
+06/25/2022 02:27:25 - INFO - __main__ - ['Orchard Central']
+06/25/2022 02:27:25 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:27:25 - INFO - __main__ - Start tokenizing ... 1476 instances
+06/25/2022 02:27:25 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:27:25 - INFO - __main__ - Question: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell? </s> Context: Kiss and Tell (1945 film)  Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.  In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.  The parents' bickering about which girl is the worse influence causes more problems than it solves.   Shirley Temple  Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.  As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.   Shirley Temple  Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.  As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.
+06/25/2022 02:27:25 - INFO - __main__ - ['Chief of Protocol']
+06/25/2022 02:27:25 - INFO - __main__ - Question: The director of the romantic comedy "Big Stone Gap" is based in what New York city? </s> Context: Big Stone Gap (film)  Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s.  The film had its world premiere at the Virginia Film Festival on November 6, 2014.   Adriana Trigiani  Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City.  Trigiani has published a novel a year since 2000.
+06/25/2022 02:27:25 - INFO - __main__ - ['Greenwich Village, New York City']
+06/25/2022 02:27:25 - INFO - __main__ - Question: 2014 S/S is the debut album of a South Korean boy group that was formed by who? </s> Context: 2014 S/S  2014 S/S is the debut album of South Korean group WINNER.  It was released on August 12, 2014 by the group's record label, YG Entertainment.  The members were credited for writing the lyrics and composing the majority of the album's songs.   Winner (band)  Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.  It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon.  Originally a five-piece group with Taehyun, who later departed from the group in November 2016.
+06/25/2022 02:27:25 - INFO - __main__ - ['YG Entertainment']
+06/25/2022 02:27:25 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:27:25 - INFO - __main__ - Start tokenizing ... 1475 instances
+06/25/2022 02:27:25 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:27:25 - INFO - __main__ - Question: Which system of mountains in eastern North America is Hamburg Mountains a range region of ? </s> Context: Hamburg Mountains (New Jersey)  The Hamburg Mountains are a range of the New York-New Jersey Highlands region of the Appalachian Mountains.  The summit, reaching a height of 1473 ft , lies within Sussex County, New Jersey.   Appalachian Mountains  The Appalachian Mountains ( , French: "les Appalaches" ), often called the Appalachians, are a system of mountains in eastern North America.  The Appalachians first formed roughly 480 million years ago during the Ordovician Period.  It once reached elevations similar to those of the Alps and the Rocky Mountains before naturally occurring erosion.  The Appalachian chain is a barrier to east-west travel, as it forms a series of alternating ridgelines and valleys oriented in opposition to most roads running east or west.
+06/25/2022 02:27:25 - INFO - __main__ - ['The Appalachian Mountains']
+06/25/2022 02:27:25 - INFO - __main__ - Question: Who is the creator of the animated television series that its fourteenth episode of season three's title is "Time Keeps on Slippin"? </s> Context: Time Keeps On Slippin'  "Time Keeps On Slippin" is the fourteenth episode in season three of the animated television series "Futurama".  It originally aired on the Fox network in the United States on May 6, 2001.  The title is from a lyric in "Fly Like an Eagle" by Steve Miller Band.  Basketball and time-travel play a prominent role in this episode.   Futurama  Futurama is an American animated science fiction comedy series created by Matt Groening for the Fox Broadcasting Company.  The series follows the adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.  The series was envisioned by Groening in the mid-1990s while working on "The Simpsons"; he later brought David X. Cohen aboard to develop storylines and characters to pitch the show to Fox.
+06/25/2022 02:27:25 - INFO - __main__ - ['Matt Groening']
+06/25/2022 02:27:25 - INFO - __main__ - Question: Which fictional MI6 agent is a fictional character created by the British journalist and novelist Ian Fleming in 1952? </s> Context: Octopussy  Octopussy (1983) is the thirteenth entry in the Eon Productions "James Bond" film series, and the sixth to star Roger Moore as the fictional MI6 agent James Bond.   James Bond filmography  Commander James Bond RN—code number 007—is a fictional character created by the British journalist and novelist Ian Fleming in 1952.  The character appeared in a series of twelve novels and two short story collections written by Fleming and a number of continuation novels and spin-off works after Fleming's death in 1964.  There have been twenty-six films in total, produced between 1962 and 2015.
+06/25/2022 02:27:25 - INFO - __main__ - ['Commander James Bond RN']
+06/25/2022 02:27:25 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Loaded 1475 examples from dev data
+06/25/2022 02:27:28 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:27:28 - INFO - __main__ - Loaded 1475 examples from dev data
+06/25/2022 02:27:28 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:27:28 - INFO - __main__ - Loaded 1475 examples from dev data
+06/25/2022 02:27:28 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:27:28 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:27:28 - INFO - __main__ - Loaded 1476 examples from dev data
+06/25/2022 02:27:28 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:27:30 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:27:30 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:27:30 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:27:30 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:27:30 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:27:36 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:27:36 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:27:37 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:27:37 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:27:40 - INFO - __main__ - Starting inference ...
+06/25/2022 02:27:40 - INFO - __main__ - Starting inference ...
+06/25/2022 02:27:41 - INFO - __main__ - Starting inference ...
+06/25/2022 02:27:42 - INFO - __main__ - Starting inference ...
+06/25/2022 02:29:14 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:29:18 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:29:20 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:29:51 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:10:20 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:10:20 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:10:20 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:10:20 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:10:20 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=1
+06/26/2022 06:10:20 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=2
+06/26/2022 06:10:20 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=3
+06/26/2022 06:10:20 - INFO - __main__ - dataset_size=5901, num_shards=4, local_shard_id=0
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:10:22 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:10:22 - INFO - __main__ - Start tokenizing ... 1475 instances
+06/26/2022 06:10:22 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:10:22 - INFO - __main__ - Question: Where did this dish emerge in the late 1950s that is a long-standing tradition in New Jersey? </s> Context: Cuisine of New Jersey  The cuisine of New Jersey is derived from the long history of immigrants to the state and its close proximity to New York City and Philadelphia.  Restaurants in the state make use of locally grown ingredients such as asparagus, blueberries, cranberries, tomatoes, corn, and peaches.  New Jersey is home to approximately 525 diners, the most of any state, and where disco fries are a long-standing tradition.  Various foods invented in the state, such as the pork roll, also known as taylor ham, and salt water taffy remain popular there today.   Poutine  Poutine ( ; ) is a Quebecois–Canadian dish originally made with French fries and cheese curds topped with a brown gravy.  The dish emerged in the late 1950s in the Centre-du-Québec area.  For most of its existence, poutine was negatively perceived and mocked, which is in drastic contrast with its later popularity.  In the past, poutine was even used as a means of stigmatization against the Quebec society.  Today, poutine is celebrated both within and outside Quebec borders.  Poutine festivals are held in Drummondville, Montreal, Quebec City, Toronto and Ottawa, as well as in other places, including some outside of Canada: Chicago and New Hampshire.  Poutine is now served using different toppings and ingredients beyond the original French fries, cheese curds, and brown gravy.  Nicolas Fabien-Ouellet, the author of "Poutine Dynamics" (a peer-reviewed article published in CuiZine), suggests that with its increasing variations, poutine has emerged as a new dish classification in its own right, just like sandwiches, dumplings, soups, flatbreads.
+06/26/2022 06:10:22 - INFO - __main__ - ['Centre-du-Québec']
+06/26/2022 06:10:22 - INFO - __main__ - Question: What island in the center of Pearl Harbor is connected to the O'ahu by a floating bridge? </s> Context: Admiral Clarey Bridge  Admiral Clarey Bridge, also known as the Ford Island Bridge, is a pontoon bridge, commonly called a floating concrete drawbridge, providing access to Ford Island, a United States Navy installation situated in the middle of Pearl Harbor.  The bridge provides access to Ford Island's historic sites to the public via tour bus and provides access to O'ahu for US military families housed on the island.  Before the completion of the bridge, the island's residents were required to use ferry boats operated by Naval personnel that operated on an hourly basis.  The bridge is one of only a few floating bridges and its floating moveable span is the largest worldwide.  Its namesake, Admiral Bernard A. Clarey, was one of the Navy's most decorated officers.   Admiral Clarey Bridge  Admiral Clarey Bridge, also known as the Ford Island Bridge, is a pontoon bridge, commonly called a floating concrete drawbridge, providing access to Ford Island, a United States Navy installation situated in the middle of Pearl Harbor.  The bridge provides access to Ford Island's historic sites to the public via tour bus and provides access to O'ahu for US military families housed on the island.  Before the completion of the bridge, the island's residents were required to use ferry boats operated by Naval personnel that operated on an hourly basis.  The bridge is one of only a few floating bridges and its floating moveable span is the largest worldwide.  Its namesake, Admiral Bernard A. Clarey, was one of the Navy's most decorated officers.   Ford Island  Ford Island (Hawaiian: ' ) is an islet in the center of Pearl Harbor, Oahu, in the U.S. state of Hawaii.  It has been known as Rabbit Island, Marín's Island, and Little Goats Island, and its native Hawaiian name is Mokuʻ umeʻ ume.  The island had an area of 334 acres when it was surveyed in 1825, which was increased during the 1930s to 441 acres with fill dredged out of Pearl Harbor by the United States Navy to accommodate battleships.
+06/26/2022 06:10:22 - INFO - __main__ - ['Ford Island']
+06/26/2022 06:10:22 - INFO - __main__ - Question: Michael Standing was long term friends with which professional midfielder from West Brom? </s> Context: Michael Standing (footballer)  Michael John Standing (born 20 March 1981) is an English former professional footballer who played as a midfielder.  Since terminating his playing career, Standing has become an agent for former teammate and long-term friend Gareth Barry.  He has also played part-time for his hometown club, Shoreham.   Gareth Barry  Gareth Barry (born 23 February 1981) is an English professional footballer who plays as a midfielder for West Bromwich Albion.  He is the player with the highest number of appearances in the Premier League.
+06/26/2022 06:10:22 - INFO - __main__ - ['Gareth Barry']
+06/26/2022 06:10:22 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:10:22 - INFO - __main__ - Start tokenizing ... 1475 instances
+06/26/2022 06:10:22 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:10:22 - INFO - __main__ - Question: Which system of mountains in eastern North America is Hamburg Mountains a range region of ? </s> Context: Hamburg Mountains (New Jersey)  The Hamburg Mountains are a range of the New York-New Jersey Highlands region of the Appalachian Mountains.  The summit, reaching a height of 1473 ft , lies within Sussex County, New Jersey.   Appalachian Mountains  The Appalachian Mountains ( , French: "les Appalaches" ), often called the Appalachians, are a system of mountains in eastern North America.  The Appalachians first formed roughly 480 million years ago during the Ordovician Period.  It once reached elevations similar to those of the Alps and the Rocky Mountains before naturally occurring erosion.  The Appalachian chain is a barrier to east-west travel, as it forms a series of alternating ridgelines and valleys oriented in opposition to most roads running east or west.
+06/26/2022 06:10:22 - INFO - __main__ - ['The Appalachian Mountains']
+06/26/2022 06:10:22 - INFO - __main__ - Question: Who is the creator of the animated television series that its fourteenth episode of season three's title is "Time Keeps on Slippin"? </s> Context: Time Keeps On Slippin'  "Time Keeps On Slippin" is the fourteenth episode in season three of the animated television series "Futurama".  It originally aired on the Fox network in the United States on May 6, 2001.  The title is from a lyric in "Fly Like an Eagle" by Steve Miller Band.  Basketball and time-travel play a prominent role in this episode.   Futurama  Futurama is an American animated science fiction comedy series created by Matt Groening for the Fox Broadcasting Company.  The series follows the adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.  The series was envisioned by Groening in the mid-1990s while working on "The Simpsons"; he later brought David X. Cohen aboard to develop storylines and characters to pitch the show to Fox.
+06/26/2022 06:10:22 - INFO - __main__ - ['Matt Groening']
+06/26/2022 06:10:22 - INFO - __main__ - Question: Which fictional MI6 agent is a fictional character created by the British journalist and novelist Ian Fleming in 1952? </s> Context: Octopussy  Octopussy (1983) is the thirteenth entry in the Eon Productions "James Bond" film series, and the sixth to star Roger Moore as the fictional MI6 agent James Bond.   James Bond filmography  Commander James Bond RN—code number 007—is a fictional character created by the British journalist and novelist Ian Fleming in 1952.  The character appeared in a series of twelve novels and two short story collections written by Fleming and a number of continuation novels and spin-off works after Fleming's death in 1964.  There have been twenty-six films in total, produced between 1962 and 2015.
+06/26/2022 06:10:22 - INFO - __main__ - ['Commander James Bond RN']
+06/26/2022 06:10:22 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:10:22 - INFO - __main__ - Start tokenizing ... 1476 instances
+06/26/2022 06:10:22 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:10:22 - INFO - __main__ - Question: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell? </s> Context: Kiss and Tell (1945 film)  Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.  In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.  The parents' bickering about which girl is the worse influence causes more problems than it solves.   Shirley Temple  Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.  As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.   Shirley Temple  Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.  As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.
+06/26/2022 06:10:22 - INFO - __main__ - ['Chief of Protocol']
+06/26/2022 06:10:22 - INFO - __main__ - Question: The director of the romantic comedy "Big Stone Gap" is based in what New York city? </s> Context: Big Stone Gap (film)  Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s.  The film had its world premiere at the Virginia Film Festival on November 6, 2014.   Adriana Trigiani  Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City.  Trigiani has published a novel a year since 2000.
+06/26/2022 06:10:22 - INFO - __main__ - ['Greenwich Village, New York City']
+06/26/2022 06:10:22 - INFO - __main__ - Question: 2014 S/S is the debut album of a South Korean boy group that was formed by who? </s> Context: 2014 S/S  2014 S/S is the debut album of South Korean group WINNER.  It was released on August 12, 2014 by the group's record label, YG Entertainment.  The members were credited for writing the lyrics and composing the majority of the album's songs.   Winner (band)  Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.  It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon.  Originally a five-piece group with Taehyun, who later departed from the group in November 2016.
+06/26/2022 06:10:22 - INFO - __main__ - ['YG Entertainment']
+06/26/2022 06:10:22 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:10:22 - INFO - __main__ - Start tokenizing ... 1475 instances
+06/26/2022 06:10:22 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:10:22 - INFO - __main__ - Question: Who is the US Olympian and Christian evangelist did the 2010 non-fiction book by Laura Hillenbrand focus on? </s> Context: Unbroken (film)  Unbroken is a 2014 American war film produced and directed by Angelina Jolie, written by the Coen brothers, Richard LaGravenese, and William Nicholson, based on the 2010 non-fiction book by Laura Hillenbrand, "".  The film revolves around the life of USA Olympian and army officer Louis "Louie" Zamperini.  Zamperini survived in a raft for 47 days after his bomber crash landed in the ocean during World War II, then was sent to a series of prisoner of war camps.   Unbroken (film)  Unbroken is a 2014 American war film produced and directed by Angelina Jolie, written by the Coen brothers, Richard LaGravenese, and William Nicholson, based on the 2010 non-fiction book by Laura Hillenbrand, "".  The film revolves around the life of USA Olympian and army officer Louis "Louie" Zamperini.  Zamperini survived in a raft for 47 days after his bomber crash landed in the ocean during World War II, then was sent to a series of prisoner of war camps.   Louis Zamperini  Louis Silvie "Louie" Zamperini (January 26, 1917 – July 2, 2014) was a US prisoner of war survivor in World War II, a Christian evangelist and an Olympic distance runner.
+06/26/2022 06:10:22 - INFO - __main__ - ['Louis "Louie" Zamperini']
+06/26/2022 06:10:22 - INFO - __main__ - Question: What is the prefix given to the end of the name to avoid confusion for the winner of the 1996 Record of the Year Grammy? </s> Context: Seal (1994 album)  Seal (sometimes referred to as Seal II to avoid confusion with the 1991 album of the same name) is the second eponymous studio album by singer Seal.  The album was released in 1994 on ZTT and Sire Records and features the worldwide smash hit single "Kiss from a Rose".   Kiss from a Rose  "Kiss from a Rose" is a song from Seal's second eponymous album.  The song was first released as a single in July 1994.  Re-released in 1995, it was included on the "Batman Forever" film soundtrack, helping it top the charts in the US and Australia.  At the 1996 Grammy Awards, it won awards for Record of the Year, Song of the Year, and Best Male Pop Vocal Performance.
+06/26/2022 06:10:22 - INFO - __main__ - ['II']
+06/26/2022 06:10:22 - INFO - __main__ - Question: Orchard Gateway connects what shopping mall in singapore with 313 @ Somerset? </s> Context: Orchard Gateway  Orchard Gateway is a shopping mall in Orchard Road, Singapore, connecting Orchard Central and 313 @ Somerset together.  The mall was meant to be completed in November 2013, but was delayed and officially opened on April 26, 2014It was built on the site of the former Specialists Shopping Centre and Orchard Emerald.   Orchard Central  Orchard Central is a shopping mall in Singapore located along the main shopping belt at Orchard Road.  It is Singapore's first and only vertical mall and was officially opened on July 2, 2009.  It sits on the land previously occupied by an open air carpark and has a 160m frontage along Orchard Road.  In December 2016, Forbes recognized Orchard Central as one of the top five shopping malls in Singapore.
+06/26/2022 06:10:22 - INFO - __main__ - ['Orchard Central']
+06/26/2022 06:10:22 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Loaded 1475 examples from dev data
+06/26/2022 06:10:25 - INFO - __main__ - Loaded 1475 examples from dev data
+06/26/2022 06:10:25 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:10:25 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:10:25 - INFO - __main__ - Loaded 1475 examples from dev data
+06/26/2022 06:10:25 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:10:25 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:10:25 - INFO - __main__ - Loaded 1476 examples from dev data
+06/26/2022 06:10:25 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:10:26 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:10:27 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:10:27 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:10:27 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:10:27 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:10:33 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:10:34 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:10:34 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:10:34 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:10:38 - INFO - __main__ - Starting inference ...
+06/26/2022 06:10:38 - INFO - __main__ - Starting inference ...
+06/26/2022 06:10:38 - INFO - __main__ - Starting inference ...
+06/26/2022 06:10:38 - INFO - __main__ - Starting inference ...
+06/26/2022 06:12:03 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:12:05 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:12:06 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:12:28 - INFO - __main__ - Starting inference ... Done

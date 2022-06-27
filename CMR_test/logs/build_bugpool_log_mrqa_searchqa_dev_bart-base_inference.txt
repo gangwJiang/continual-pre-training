@@ -1,0 +1,752 @@
+06/25/2022 02:10:59 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:10:59 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:10:59 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:10:59 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:10:59 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=3
+06/25/2022 02:10:59 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=0
+06/25/2022 02:10:59 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=2
+06/25/2022 02:10:59 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=1
+06/25/2022 02:11:01 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:11:01 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:11:01 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:11:01 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:11:01 - INFO - __main__ - Start tokenizing ... 4243 instances
+06/25/2022 02:11:01 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:11:01 - INFO - __main__ - Question: Stew with clams, potatoes & onions ? </s> Context: Littleneck Clams with New Potatoes and Spring Onions recipe ...     Littleneck Clams with New Potatoes and Spring Onions recipe ...  Preparation. Heat oil in a large heavy pot over medium heat. Add potatoes, spring onion whites, and garlic. Add clams and half of onion greens, cover pot, and cook, stirring occasionally, until clams have opened, 8-10 minutes (discard any clams that do not open). Divide clam mixture among bowls.   Hilda's Clam Stew Recipe : Emeril Lagasse : Food Network  Add the salt, black pepper, red pepper flakes, and stir to combine. Add the shrimp stock and bring to a boil. Add the clams, potatoes, tomatoes, green onions, cilantro, and Essence. Cover and cook until the clams open, about 5 minutes, shaking the pan occasionally.   New England Clam Chowder Recipe : Dave Lieberman : Food ...  For a bowl of creamy comfort, try Dave Lieberman's New England Clam Chowder ... rich soup typically containing fish, clams, or corn with potatoes and onions".   Clam Chowder Stew Recipe - Food.com  Pour into onion and potato mixture, add clams, 2 cans undrained, add clams ... bit at a time to reach desired consistency and only if you want the soup less thick.   Clam Oyster Stew - Recipes - Cooks.com  Results 1 - 9 of 9 ... POMFRET OYSTER STEW OR CLAM CHOWDER. Dice potatoes small; chop onions ... hot, add the oysters (if you're making the oyster ... are...   Clam Potato Soup - Recipes - Cooks.com  Results 1 - 10 of 196 ... Cook and stir onion and ... Drain and add clams, liquid, salt, pepper and potato soup into onion mixture. Heat through and add ... until hot,...   Recipe of the Day: Clam Stew With Potatoes and Parsley Pure ...  Jan 28, 2009 ... While clams and potatoes cook, combine parsley leaves and thin stems in a blender with garlic and oil. Blend, adding water as necessary to...   My Best Clam Chowder Recipe - Allrecipes.com  Drain juice from clams into a large skillet over the onions, celery, potatoes and .... when I first made this I felt that the half and half made it too thick like a stew.   Quick Easy Fish Stew Recipe | SimplyRecipes.com  Fresh fish fillets cooked in a stew with onions, garlic, parsley, tomato, clam juice ... I doubled up the recipe, added a 2 Yellow Potatoes, 2 Diced Celery Sticks,...   The Food Lab: How to Make Real New England Clam Chowder ...  Jan 29, 2013 ... Tender chunks of potato should barely hold their shape, dissolving on your ... sea journey-friendly staples like onions, potatoes, and salt pork or beef, ... Most basic recipes for clam chowder call for rendering down some form...   Portuguese Chorizo and Clams | Choosy Beggars  Jul 1, 2010 ... Saute the chorizo with the onions until it is starting to brown, which will ... When the chorizo is browned, add the potatoes to the pot and give...   Amish Clam Stew Recipe  Clam Recipe - easy Amish recipe how to cook stew with clams, potatoes, butter or margarine, celery, onion, milk, eggs, and flour.   Best New England Clam Chowder Recipe - Delicious ... - No Recipes  Once you have your cleaned clams, and clam stock, making New England clam chowder is simple. Bacon, onions, and potatoes are the only things that...   Clam Chowder Recipe with Spanish Onions | Soup Recipes | PBS ...  This recipe includes all the traditional ingredients of true New England clam chowder with onions and potatoes. Get this clam chowder recipe from PBS Food.   Seafood Boil with Corn and Potatoes | Whole Foods Market  Cover pot and cook until clams and mussels open and shrimp are just cooked through, ... transfer seafood to a platter and corn, onions and potatoes to another bowl or platter. ... Get seasonal recipes and cooking tips delivered to
+06/25/2022 02:11:01 - INFO - __main__ - ['chowder']
+06/25/2022 02:11:01 - INFO - __main__ - Question: An ant shares the billing with one of these insects in the title of an Aesop fable ? </s> Context: I Hop Flashcards | Quizlet  Grasshopper. An ant shares the billing with one of these insects in the title of an Aesop fable.. Flea. This tiny insect pest, Pulex irritans, can leap more than...   Jeopary Questions page 1190 - POP ON A CD - TriviaBistro.com  I HOP: This tiny insect pest, Pulex irritans, can leap more than 130 times its own ... An ant shares the billing with one of these insects in the title of an Aesop fable.   A Bug's Life - Wikipedia  A Bug's Life is a 1998 American 3D computer-animated comedy adventure film produced by ... The film is inspired by Aesop's fable The Ant and the Grasshopper. .... was fine and they submitted a treatment to Disney in early July under the title Bugs. .... Each one of these "universal ants" would later be randomly distributed...   The Ant and the Grasshopper - Wikipedia  The Ant and the Grasshopper, alternatively titled The Grasshopper and the Ant (or Ants), is one of Aesop's Fables, numbered 373 in the Perry Index. The fable describes how a hungry grasshopper begs for food from an ant ... Later, in a parallel saying of Agur, the insects figure among the 'four things that are little upon the...   Short Stories: The Ant and the Grasshopper by Aesop  Other short stories by Aesop also available along with many others by classic and ... In a field one summer's day a Grasshopper was hopping about, chirping and singing to its heart's content. An Ant ... If you liked this story, please share it with others: ... by Aesop. Classic fable. Moral: Slow but steady progress wins the race.   Mythology and Folklore UN-Textbook: Aesop's Fables: Insects ...  May 2, 2014 ... These fables are part of the Aesop's Fables (English) unit. ... (illustration by Billinghurst). This is one of Aesop's most famous fables; note the use of the archaic "emmet," an old name for the ... The Ant and the Grasshopper ... And, with no title to be vain, ... Share to TwitterShare to FacebookShare to Pinterest...   The Internet Classics Archive | Aesop's Fables by Aesop  Commentary: Several comments have been posted about Aesop's Fables. ... One day he happened to see a Swallow, which had appeared before its ... The Birds gave no credence to these warning words, but considered the Owl to be ... All the Goods were once driven out by the Ills from that common share which they each...   Creighton University :: Aesop's Fables: 1980 to 1984  One of Fr Greg Carlson's passions is fables and what they teach us. ... Illustrations by Percy J. Billinghurst, adapted and done in color by Martina Selway. ... The right hand page has a regular page title ("Das buechle der verschroten werck. .... After all these years, I found a hardbound edition of Lobel--and then found another...   Creighton University :: Aesop's Fables: 1920 to 1929  One of Fr Greg Carlson's passions is fables and what they teach us. He has ... There is a prologue ("or epilogue"): "These tales were old when Aesop lived. ... GA closes laconically: "When winter came the Ant had food, But the ... Harrison Weir's illustration of LM is on the cover and title-page, but that is the only illustration.   Creighton University :: Aesop's Fables: 1910 to 1919  One of Fr Greg Carlson's passions is fables and what they teach us. ... The title-reference here is to the story of the kid who dances before he will die (69). ... I find it an ambitious challenge for students to take on these sometimes problematic texts, but ... "The Fox and the Goose" (113), and "The Ant and the Glowworm" (115).   1000+
+06/25/2022 02:11:01 - INFO - __main__ - ['grasshopper']
+06/25/2022 02:11:01 - INFO - __main__ - Question: Jan. 12, 1976 news could say, "The Queen is dead!"--this mystery writer called the "Queen of Crime" ? </s> Context: June 25, 2008  12, 1976 news could say, "The Queen is dead!"--this mystery writer called the "Queen of Crime" Agatha Christie;Christie "The Sacred Wood" was ... one in Naples Victor Emmanuel On January 18, 1871 Germany was unified with Wilhelm I as...   Ruth Rendell (b. 1930), who also writes under the pseudonym ...  Everything by Ruth Rendell... my all-time favorite mystery writer. ..... CS Lewis "Being Christian" Wisdom Quote Gifts Post Card Yes I can say you are on ... Top New Mystery &amp; Thriller on Goodreads, January 2012 .... 1901 - The Queen is dead. ...... Agatha Christie was called the Queen of Crime, and rightly so; she wrote...   Paul Smith/ Maximo Park by rosa paolicelli, via Flickr | i like ...  Writers ... MaximoMusic MaximoPark Sydney. Yes that would be Paul Smith from Maximo Park .... Many say she's strange but I find her to be admirable.   The Passing Tramp: May 2015  May 1, 2015 ... After an affair as shocking as my tea party on January twentieth, you naturally think ... Anthony Boucher called DuBois' Death Comes to Tea "a small .... Perhaps more than any British Golden Age mystery author outside ..... No one back in 1939 would have included "Josephine Tey" as a "Queen of Crime,"...
+06/25/2022 02:11:01 - INFO - __main__ - ['Agatha Christie']
+06/25/2022 02:11:01 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:11:01 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:11:01 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:11:01 - INFO - __main__ - Start tokenizing ... 4244 instances
+06/25/2022 02:11:01 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:11:01 - INFO - __main__ - Question: 1989: Kenneth Branagh ? </s> Context: Henry V (1989 film) - Wikipedia  Henry V is a 1989 British drama film adapted for the screen and directed by Kenneth Branagh, based on William Shakespeare's play of the same name about...   Henry V (1989) - IMDb  Action ... With Kenneth Branagh, Derek Jacobi, Simon Shepherd, James Larkin. ... Kenneth Branagh and Emma Thompson in Henry V (1989) Kenneth Branagh...   Look Back In Anger - 1989 - Kenneth Branagh Emma Thompson ...  Dec 28, 2013 - 114 min - Uploaded by Kumala MoviesLook Back In Anger - 1989 - Kenneth Branagh Emma Thompson ... 1:39:18.  Conversations ...   Henry V (1989) - Rotten Tomatoes  Critic Consensus: Pehaps Kenneth Branagh's most fully realized Shakespeare adaptation, Henry V is an energetic, passionate, and wonderfully acted film...   Henry V Movie Review & Film Summary (1989) | Roger Ebert  Dec 15, 1989 ... Perhaps it is no coincidence that another hot-blooded Turk of the London stage, Kenneth Branagh, has directed and starred in this new film...   Amazon.com: Henry V: Kenneth Branagh, Derek Jacobi, Brian ...  Amazon.com: Henry V: Kenneth Branagh, Derek Jacobi, Brian Blessed, Patrick Doyle, Ian Holm, ... *1989: Director, Actor (Branagh), Costume Design (winner)...   Henry V - Review/Film - The New York Times  Published: November 8, 1989. LEAD: Kenneth Branagh has done it. Who is Kenneth Branagh? He's the young Belfast-born actor and director, best known here...   Kenneth Branagh's Henry V: right royal entertainment | Film | The ...  Jul 28, 2011 ... Henry V (1989) Director: Kenneth Branagh Entertainment grade: A History grade: C+. Henry V became king of England in 1413. Though he...   1989 Kenneth Branagh film role Crossword Clue, Crossword Solver ...  Answers for 1989-Kenneth-Branagh-film-role crossword clue. Search for crossword clues found in the Daily Celebrity, NY Times, Daily Mirror, Telegraph and...   Henry V (1989) Kenneth Branagh as Henry V | KINGS AND ...  Henry V (1989) Kenneth Branagh as Henry V | See more about Kenneth Branagh, King Henry V and King Henry.   Henry V (1989) on iTunes  Watch trailers, read customer and critic reviews, and buy Henry V (1989) directed by Kenneth Branagh for 5.99.   Kenneth Branagh as Henry V, in a 1989 film adaptation of the ...  Oct 2, 2016 ... Kenneth Branagh as Henry V, in a 1989 film adaptation of the Shakespeare play | Does Jenna Coleman look like the real Victoria? British kings...   Past productions | Hamlet | Royal Shakespeare Company  ... in 1984; Mark Rylance in 1989; Kenneth Branagh in 1992; Alex Jennings in 1997; Samuel West in 2001; Toby Stephens in 2004 and David Tennant in 2008.   Henry V. 1989. Written and directed by Kenneth Branagh | MoMA  Henry V. 1989. Great Britain. Written and directed by Kenneth Branagh. With Branagh, Judi Dench, Paul Scofield. 137 min. Branagh's directorial debut is as...   1989 Kenneth Branagh film role | Crossword Puzzle Clue ...  1989 Kenneth Branagh film role crossword puzzle clue has 1 possible answer and appears in 2 publications.   Henry V (1989) Kenneth Branagh - January 27, 2015 - Blu-ray Forum  *1989: Best Costume Design (winner), Best Actor in a Leading Role (nominee) Kenneth Branagh, Best Director (nominee) Kenneth Branagh...   Henry V (1989, Kenneth Branagh) | The Stop Button  Jun 19, 2015 ... A review of Kenneth Branagh's 1989 film, "Henry V," starring Kenneth Branagh, Brian Blessed and Derek Jacobi.   Henry V [DVD] [1989]: Amazon.co.uk: Kenneth Branagh, Judi Dench ...  Product Description. Kenneth Branagh writes, directs and stars
+06/25/2022 02:11:01 - INFO - __main__ - ['Henry V']
+06/25/2022 02:11:01 - INFO - __main__ - Question: 2001:Chinese-Americanfigure skater ? </s> Context: Michelle Kwan - Wikipedia  Michelle Wingshan Kwan (born July 7, 1980) is an American figure skater. She is a two-time ... Kwan won five World Championships (1996, 1998, 2000, 2001, 2003), tying her with Carol Heiss (19561960) for the most world titles by an American. ..... (an ice skating adaptation of the Disney film Mulan, based on the Chinese...   Kristi Yamaguchi - Wikipedia  Kristine Tsuya Yamaguchi (born July 12, 1971) is an American former figure skater. In ladies' .... Kristi Yamaguchi received the Inspiration Award at the 2008 Asian Excellence Awards. Two days after her ... 2001, On Edge, Regionals Judge #4.   Chen Lu - Wikipedia  Chen Lu (born 24 November 1976) is a Chinese figure skater. She is the 1994 and 1998 ... figure skating, while Chen's artistic talents were praised by such American .... The Chinese Federation asked Chen to skate at the 9th National Games of China in 2001, so she could help younger skaters improve their elegance.   Tiffany Chin - Wikipedia  Audrey Tiffany Chin (born October 3, 1967) is an American figure skater. She grew up in San Diego, California. She won the 1981 World Junior Figure Skating...   Christina Gao - Wikipedia  Christina Gao (born March 7, 1994) is an American figure skater. She is the 2012 Skate ... Began skating, 2001. Retired, June 17, 2015 ... name in Chinese: ; pinyin: Go Ho. Her father was a junior national badminton champion in China.   Beatrisa Liang - Wikipedia  Beatrisa "Bebe" Liang (born March 31, 1988) is an American figure skater. She is the 2006 Four ... Making her senior national debut, Liang placed sixth at the 2001 U.S. Championships, at the age of thirteen. .... descent  Four Continents Figure Skating Championships medalists  American women of Chinese descent.   List of Chinese Americans - Wikipedia  This is a list of notable Chinese Americans, including both original immigrants who obtained ..... Elaine Chao - US Secretary of Labor from 2001 to 2009; Republican; Lanhee Chen - policy director in Mitt ..... Karen Kwan - former figure skater, sister of Michelle Kwan; Michelle Kwan () - Olympic medal winner, figure...   Michelle Kwan - Ice Skater, Athlete - Biography.com  Apr 2, 2014 ... Learn about the career of figure skater Michelle Kwan, including her five World ... Famous Cancerians  Famous Asian Americans  Famous University of ... She captured the world title in 1996, 1998, 2000, 2001 and 2003.   Meet The 2014 U.S. Olympic Figure Skating Team - Team USA  Jan 12, 2014 ... Major accomplishments: Gold medal at 2014 U.S. Figure Skating ... Sixth place at 2013 Cup of China; Seventh place at 2013 Skate America; Fourth place .... out a video of their juvenile free dance from the 2001 Boston Open.   CNN Programs - People in the News - CNN.com  1 spot, Kwan has won five U.S. crowns -- as many as ice skating legends Peggy Fleming and ... phone company, and his wife ran a family-owned Chinese restaurant called the Golden Pheasant. ... U.S. Figure Skating Championships 2001 ... "The Kwans are very much a middle American family who have one incredibly...   Figure Skaters of Asian Descent Have Risen to Prominence  Jan 23, 2010 ... Before finishing second at the United States Figure Skating ... were Asian-Americans, who also excelled here among younger skaters. Nathan...   The Real Reason Ashley Wagner Made The U.S. Olympic Figure ...  Jan 16, 2014 ... Since 2001, Karolyi, along with a selection committee comprising two other ... In this respect, at least, American figure skating is entering its Karolyi era. .... If you include Asian Americans, of whom Kwan is one, every Worlds...   Young Asian American skaters dream they can soar - latimes  Feb 21, 2010 ... Only 7, Akari
+06/25/2022 02:11:01 - INFO - __main__ - ['Michelle Kwan']
+06/25/2022 02:11:01 - INFO - __main__ - Question: Long's vitriolic 1920s attacks on this oil co. started by John D. Rockefeller won him widespread popularity ? </s> Context: jeopardy/2794_Qs.txt at master  jedoublen/jeopardy  GitHub  HUEY LONG & THE NEWS | Long's vitriolic 1920s attacks on this oil co. started by John D. Rockefeller won him widespread popularity | Standard Oil. right: Brian.   John D. Rockefeller - Wikipedia  John Davison Rockefeller Sr. (July 8, 1839  May 23, 1937) was an American oil industry ... Rockefeller founded Standard Oil Company, Inc. in 1870 as an Ohio .... His contemporaries described him as reserved, earnest, religious, ... He worked long hours and delighted, as he later recalled, in "all the methods and systems of...   John D. Rockefeller Jr. - Wikipedia  John Davison Rockefeller Jr. (January 29, 1874  May 11, 1960) was an American financier and philanthropist who was a prominent member of the Rockefeller family. He was the only son among the five children of Standard Oil co-founder John D. Rockefeller and the father of the .... In the late 1920s, Rockefeller founded the Dunbar National Bank in Harlem.   America Revealed: Neo-fascism in America  Dec 1, 2010 ... As long as the Matrix exists, humanity cannot be free. ... One such dreamer was John D. Rockefeller, born in the US in 1839, the son of a ... In 1921, the elite founded the American branch of the Council on Foreign ... Rockefeller's Standard Oil Co. built large oil refineries in Germany for the ...... Popular Posts.   america: past and present - Sam Houston State University  42) According to the religious philosophy of John Calvin and his followers, .... 8) The ______ Company was responsible for the settlement of Jamestown in Virginia. ..... D) long lives of New England settlers. ... 9) The first institution of higher learning founded in England's mainland ...... D) to win widespread popular support.   Malfunctions of the Left - Morality  The few unions that remain have been co-opted by collaborators and dupes of ... it was revealed that workers were employed as long as nineteen and twenty hours a day. The International Communist movement got its first real start in the United .... you can act as robber baron John D. Rockefeller Jr. once did and bring an...   American Visions of the Netherlands East Indies - SSOAR  Netherlands Army mounted a second military attack on the Republic, which ..... uprising as a coup d'tat organized by the Indonesian Communist Party (Partai ... Dutch aggression that completed Washington's year-long process of reorienta ..... mats, US oil company executives, and plantation directors, on the one hand, and.   Racism in the 20th Century - mdcbowen.org  -1901 John D. Rockefeller (1839-1937) family founded Standard Oil Co. ... the keys to an entire floor of the building for his genetic research in the 1920's. ... Yet he never picked one up from the dust until a White man showed to him its glittering light. ..... Although his plan was expensive, Goddard argued that the long term...   Latin America's Cold War - Lyndon B. Johnson School of Public Affairs  and urban unrest informed a widespread growth of popular protest; and the ... though less bloodyattack on the status quo: the Latin American diplomatic .... not end conflict in Latin America; it simply shifted long-running conflicts onto ...... At mid-year, U.S.-owned oil companies in Cuba refused to process Soviet crude.   Icon - The University of Texas at Austin  5 If Pollock's work appealed to a highbrow audience, does that make him a .... will regularly use drip or drip-style for its widespread popular use and to ...... dissertation, C. Wright Mills was especially vitriolic in his attacks on his own ... realityHenry Ford, John D. Rockefeller and Andrew Carnegieand the fictional hero.   Full text of "High treason; the plot against the people" - Internet Archive  Through the long tense hours of the night a cordon of heavily armed soldiers had ..... addressed were Postmaster
+06/25/2022 02:11:01 - INFO - __main__ - ['Standard Oil']
+06/25/2022 02:11:01 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:11:01 - INFO - __main__ - Start tokenizing ... 4244 instances
+06/25/2022 02:11:01 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:11:01 - INFO - __main__ - Question: "La Peregrina" is a famous pearl bought by this man in 1969 & given to Elizabeth Taylor ? </s> Context: La Peregrina pearl - Wikipedia  La Peregrina is one of the most famous pearls in the world. Its history spans almost 500 years, and it has passed from the African slave who found it at Pearl Islands in the Gulf of Panama, to European kings and queens. Most recently, the pearl belonged to Elizabeth Taylor. ... The pearl was carried to Spain and given by Temez to the future Philip II of...   Elizabeth Taylor's jewels fetch $115m as Richard Burton La ...  Dec 15, 2011 ... Liz Taylor's jewels fetch $115millon as famous La Peregrina pearl given ... for a pearl necklace and $8.8million for a diamond ring, both given to her by Richard Burton. ... as 'La Peregrina', which Burton bought for Taylor in 1969 and which ..... Homeless man who stabbed Miranda Kerr's security guard in the...   Fashioning The Past: The Story of La Peregrina Pearl: From 16th ...  Apr 23, 2012 ... The new owner of the La Peregrina Pearl, which recently sold as part ... The pear shaped white pearl is not only one of the most famous, ... Elizabeth Taylor's love affair with jewellery is a well told tale. ... Their decadent lifestyle continued in this manner and in 1969 Richard Burton acquired the La Peregrina...   Elizabeth Taylor's La Peregrina Pearl. The pearl was once the ...  ... Yusupova, mother of Felix Yusupov, the man said to have killed Rasputin. ... La Peregrina Pearl -- necklace of Elizabeth Taylor ... The famous La Pelegrina pearl was owned by Zinaida Yusupov; later the pearl ...... Bulgari platinum, diamond and sapphire sautoir, 1969, given by Richard Burton to Elizabeth Taylor in 1972...   Elizabeth Taylor: Her Most Memorable Jewels - Mibba  Take a look at some of Elizabeth Taylor's iconic jewelry. ... was the second most expensive piece at the Christie's auction, just behind the La Peregrina Pearl.   Elizabeth Taylor jewelry auction breaks five world records | | the ...  Dec 14, 2011 ... Christie's sale of Elizabeth Taylor's famous jewels was anticipated to be the ... Most astonishing price went for La Prgrina Pearl, given to Taylor by Richard Burton in 1969, ... Elizabeth Taylor Diamond, 33.19 carats, purchased by Burton in .... 8 secrets for buying a woman jewelry  Buying jewelry for a guy...   Spiritual Connections | Mediums Network  Elizabeth Taylor; and Napoleon Bonaparte; and at first you would be hard ... At first, only a cursory attention was given, the program looked stunning just as a ... Queens who wore it; the La Peregrina pearl is one of the most famous pearls in .... Richard Burton purchased the pearl at the Sotheby's auction in 1969 for $37,000.   elizabeth taylor auction sets record  USATODAY.com  Dec 14, 2011 ... Elizabeth Taylor's jewelry sells for $115 million ... million for a pearl necklace and more than $8.8 million for a diamond ring given ... The pearl, diamond and ruby necklace, known as "La Peregrina," purchased at auction for $37,000 in 1969 by ... A jewelry lover, she had pieces from some of the most famous...   Celebrity Jewelry: Forget Bling, Bring Back Pearls! | dnbpt.com  Elizabeth Taylor: Perhaps the most famous jewelry collector of our time, legendary actress Elizabeth Taylor also owns the most famous pearl, La Peregrina. Given to her in 1969 by then-husband Richard Burton (yep, hes the one Liz ... the rare and extraordinary gem was owned by a succession of royalty before being...   Pearl History | Coleman Douglas Pearls  The pearl is the oldest gem known to man, for centuries a symbol of purity, wisdom, beauty .... When, in 1969, Elizabeth Taylor bought a pearl reputed to be the Peregrina for ... being kept, experts were able to confirm that it was indeed the famous pearl. La Peregrina was auctioned by Christies Auction House and sold for 10...   Elizabeth Taylor's Collection Breaks Records at
+06/25/2022 02:11:01 - INFO - __main__ - ['Richard Burton']
+06/25/2022 02:11:01 - INFO - __main__ - Question: Are you Tolkien to me?  I'm the "eye" in your sky!  But you have to give me & my Black Riders a ring to win my love! ? </s> Context: Gimli (Character) - Quotes - IMDb  from The Lord of the Rings: The Fellowship of the Ring (2001) ... Eomer: What business does an Elf, Man, and a Dwarf have in the Riddermark? ... Gimli: Give me your name, horse-master, and I shall give you mine. ... Legolas: I'm on seventeen! ... Gimli: He was *twitching* because he's got my axe EMBEDDED IN HIS...   Bilbo Baggins (Character) - Quotes - IMDb  Gandalf: You asked me to find the fourteenth member of this company and I ... He'll melt the flesh off your bones in the blink of an eye. .... Gollum: [searching for "his precious"; the one ring; wails in despair] Lost! .... Bilbo Baggins: I'm Mr. Bilbo Baggins, I've lost my dwarves, my wizard and my ..... Bilbo Baggins: Barrel-Rider!   Gandalf (Character) - Quotes - IMDb  from The Lord of the Rings: The Fellowship of the Ring (2001) .... My heart tells me that Gollum has some part to play yet, for good or ill before this is ... Bilbo: Well, if I'm angry, it's your fault. ... Gandalf: I think you've had that ring quite long enough. .... But we can give Frodo his chance if we keep Sauron's Eye fixed upon us.   DRINKING FROM THE SUN LYRICS - Hilltop Hoods  It's got a hold on me the day I fold and leave, It's gonna seem like I'm falling, And I buried two friends, lost touch with some others, Split with my girl, found love...   The Lord of the Rings: The Fellowship of the Ring - Wikiquote  All those who follow in my bloodline shall be bound to its fate, for I shall risk no hurt .... But I know you have something to do with it: Gandalf: Goodness gracious me! ... All I did was give your uncle a little nudge out of the door. ... Gandalf: And I'm sure you will, my friend. .... Frodo: [overhearing the Black Riders] What are they?   The Hobbit: An Unexpected Journey - Wikiquote  My dear Frodo, you asked me once if I had told you everything there was to know ... blazing bright, for he had seen dragon-fire in the sky and a city turned to ash. .... Dreadful woman! Make sure you keep an eye of her after I, um, I... When I'm. ... [Bilbo opens the door, the dwarf smiles and bows]: Balin: Balin, At your service.   Why didn't the Eagles fly the Ring to Mount Doom (or the Lonely ...  One of the most commonly asked questions about The Lord of the Rings is why the ... When you have the fate of the world hanging in the balance, you don't want to ..... Read my other posts, the eagles wouldn't fly to Mt Doom because they would be ..... I really love ALL the movies but the eagles have always confused me.   LotR Songs and Spoofs - Lord of the Rings Fanatics Forum  Jul 5, 2002 ... And then, when you get all the way to zero....well, I'll let someone ... It left me theremy heart was broken. ... And then, I didn't write this, but I'm particularly fond of the LotR .... three siblings run cold, the nine black riders walked swiftly through the ... "When do you and you brothers need to take your leave?".   GameFAQs: The Lord of the Rings: The Fellowship of the Ring (GBA ...  Three rings for the Elven-kings under the sky Seven for the Dwarf-lords in their halls ... But I'm completely fed up with these morons who can't seem to get the ... FOR THE LOVE OF GOD, STOP ASKING ME! .....
+06/25/2022 02:11:01 - INFO - __main__ - ['Sauron']
+06/25/2022 02:11:01 - INFO - __main__ - Question: With a fancy flourish, John Hancock became the first to do this July 4, 1776 ? </s> Context: J! Archive - Show #5523, aired 2008-09-17  Sep 17, 2008 ... In John 20 this woman finds that the boulder in front of Jesus' tomb has ... With a fancy flourish, John Hancock became the first to do this July 4,...   John Hancock - U.S. Governor, U.S. Representative - Biography.com  Jun 9, 2015 ... Get more on the 18th century politician and merchant John Hancock, known for his ... Hancock became the first representative to sign the Declaration of Independence on July 4, 1776, a document which maintained that the ... Hancock left a sizable signature with flourish; the idea of leaving one's "John...   John Hancock - Wikipedia  John Hancock (January 23, 1737 [O.S. January 12, 1736]  October 8, 1793) was an American ... As a child, Hancock became a casual acquaintance of young John Adams, whom the Reverend Hancock had baptized in 1735. ..... After Congress approved the wording of the text on July 4, the fair copy was sent to be printed.   American Revolution John Hancock | History: Revolutionary War ...  He became the first to sign the Declaration of Independence on July 4, 1776, ... left a sizable signature with flourish; the idea of leaving one's "John Hancock" on ...... The propitious smiles of Heaven can never be expected on a nation that ...... dressing in fancy uniforms, and always keeping the press up-to-date with his views...   1000+ ideas about 1776 Declaration Of Independence on Pinterest  american-history-fun-facts.com is your first and best source for information about ... I am posting this fancy document to bring the motion to the floor that, after all of this ... Declaration of Independence 4 July 1776 'John Adams' HBO Well, you've done it ..... What became of the 56 signers of the Declaration of Independence?   Independance Day - Packerchatters  It is said that John Hancock's signed his name "with a great flourish" so England's "King George can read that without spectacles! ... July 4, 1776, became the date that was included on the Declaration of Independence, and the fancy handwritten ... years after the Declaration was written, Congress first declared July 4 to be a...   thirteen American colonies affixed their - PBS  According to the declaration, what rights do all men have? 2. ... The president of congress, John Hancock, signed the ... On July 4, 1776, fifty-six men representing the thirteen colonies signed a .... and became America's first professor of law at the College of William and Mary, ... Now here, now there, the roving Fancy flies,.   1776 The Musical - American Conservatory Theater  Oct 6, 2013 ... COVER Declaration of Independence, July 4, 1776, by John .... President John Hancock calls Congress into session. ... Before the vote can take place, however, the .... Presented to the cast of 1776 and the A.C.T. staff on the first day of .... musical play that, against all odds, became a Broadway smash hit...   Indendence Day, July 4, 1776 (An American Seder and more)  Jul 4, 2012 ... Indendence Day, July 4, 1776 (An American Seder and more) ... in their tricornered hats, fancy waistcoats and tight knee-breeches? ... In the North their incomes were more than matched by merchants such as John Hancock and Robert Morris. Next came lawyers such as John Adams, followed by tavern...   John Hancock | Foundation Truths  Posts about John Hancock written by Foundation Truths. ... conspicuous station in the continental congress of 1776, claims our first notice, was born in the town...   View PDF - Hudson Institute  The day after Congress voted to declare independence, John Adams wrote to his wife,. Abigail .... years later, Boston became the first city to designate, by a public vote, July 4 as the ...... 1776, there can be
+06/25/2022 02:11:01 - INFO - __main__ - ['sign the Declaration of Independence']
+06/25/2022 02:11:01 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:11:10 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:11:10 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:11:10 - INFO - __main__ - Start tokenizing ... 4244 instances
+06/25/2022 02:11:10 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:11:10 - INFO - __main__ - Question: 1976: "A Single Colorado Mountain" ? </s> Context: J! Archive - Show #5243, aired 2007-05-30  May 30, 2007 ... 1976: "A Single Colorado Mountain". $1200, 19. Founded in the 1530s, this capital of Jalisco state is the second-largest in Mexico. $1200, 23...   November 14, 2008  ... "Regular Folks" Ordinary People 1932: "Magnificent Inn" Grand Hotel 1976: "A Single Colorado Mountain" Rocky Down Mexico Way: In 1986 Mexico scored...   LAND USE AND LANDSCAPE CHANGE IN THE COLORADO ...  ... landscape change in a single Colorado mountain valley using methods from ..... and for multi-family 1970 1973 1976 1979 1982 1985 1988 1991 complexes...   J! set #1 Flashcards | Quizlet  18 shows included Learn with flashcards, games, and more  for free.
+06/25/2022 02:11:10 - INFO - __main__ - ['Rocky']
+06/25/2022 02:11:10 - INFO - __main__ - Question: (Cheryl of the Clue Crew reports from the Catalina Island Conservancy.) Rampant use of this 3-letter insecticide lead to a hefty settlement for restorating the population of Catalina's bald eagles ? </s> Context: jeopardy/1878_Qs.txt at master  jedoublen/jeopardy  GitHub  Rampant use of this 3-letter insecticide lead to a hefty settlement for restorating the population of Catalina's <http://www.j-archive.com/media/2007-05-30_J_09a.jpg> bald eagles | DDT ... BEGINNING & END | (<http://www.j-archive.com/media/2007-05-30_J_20.jpg> Cheryl of the Clue Crew indicates the monitor.)...   bald eagles - Catalina Island Conservancy  For bald eagle chicks are poised to leave their Catalina Island ... eagle from California's Channel Islands until IWS and the Conservancy partnered to bring.   FAQs - Catalina Island Conservancy  With this gift, the conservation and restoration of most of Catalina's interior and 62 ... public recreational and educational use of 41,000 acres of Santa Catalina Island, ... use, and this is only likely to increase in the future as population increases. .... A: Bald eagles were common on Catalina Island until the 1970s when the...   Catalina Island Conservancy - Wikipedia, the free encyclopedia  The Catalina Island Conservancy is a nonprofit organization established to protect and restore ... Catalina's native plant community is central to the ecosystem of the Island, ... native animals like the Catalina Island fox, Catalina quail, and bald eagles among ... captive breeding and release, and wild fox population monitoring.   Bald eagles hatching on Catalina Island - The Orange County Register  Mar 25, 2014 ... News: Eagles hatching on Santa Catalina Island | eagles, catalina, eagle, ddt, ... COURTESY OF CATALINA ISLAND CONSERVANCY ... Both the waters off Palos Verdes where the DDT settled and the site of the Montrose plant ... The restoration of the bald eagle population on Catalina Island is one of the...   ddt - Search-ID.com  ... in 1939 was later found less than wonderful; (Cheryl of the Clue Crew reports from the Catalina Island Conservancy.) Rampant use of this 3-letter insecticide lead to a hefty settlement for restorating the population of Catalina's bald eagles...
+06/25/2022 02:11:10 - INFO - __main__ - ['DDT']
+06/25/2022 02:11:10 - INFO - __main__ - Question: In 1718 this Texas town was founded by Martin de Alarcon & Father Olivares & named for St. Anthony of Padua ? </s> Context: Naming San Antonio in 1691 - Journal of San Antonio  The naming of San Antonio and the founding of the settlement occurred on two ... 1691, because that was the feast day of St. Anthony of Padua -- and the day that ... and governor of Coahuila y Texas, mentioned above by Father Massanet, also ... Finally, nine years later in 1718, an expedition led by Don Martin de Alarcon,...   History of San Antonio - Wikipedia  The City of San Antonio is one of the oldest Spanish colonization of the European settlements ... With that goal in 1675, an expedition formed by Fray Antonio de Olivares, ... As it was the feast day of Saint Anthony of Padova, Italy, they named the ... the town of Bejar or Bexar, convert it in the cornerstone of Spanish Texas.   San Antonio Texas History Timeline - History of St. Augustine by Gil ...  the feast day of St. Anthony of Padua, and Father Damian Massanet or ... 1716-1719 -- Martin de Alarcon, Governor of Texas ... 1716 -- Mission San Francisco de los Neches founded in eastern Texas. ... 1 May 1718 -- Father Antonio Olivares founds the Mission San Antonio de Valero. Its named in honor of Saint Anthony   ALARCON, MARTIN DE | The Handbook of Texas Online| Texas ...  Martn de Alarcn was a knight of the Order of Santiago, governor of Coahuila, governor of ... On May 1, 1718, he assisted Father Antonio San Buenaventura y Olivaresqv in the founding of San Antonio de Valero Mission. ... the beginnings of Villa de Bxar, destined to become the most important town in Spanish Texas.   Statue of Saint Anthony of Padua on the Riverwalk | Statue o | Flickr  1718 Martin de Alarcon, Governor of Texas, reinforces the presidio. ... Father Olivares renames his merged mission Mission San Antonio de Valero. ... Jose y San Miguel de Aguayo is founded by Father Margil de Jesus, who names it in honor...   Valley Hi Masonic Lodge - MasterMason.com  He saw and described the river later to be named the San Antonio. ... the feast day of [Saint Anthony of Padova, Italy], and named the place and river "San ... In 1718, Martin de Alarcn, then Governor of Texas, reinforced the presidio and the ten ... Father Olivares renamed his merged mission Mission San Antonio de Valero.   San Antonio, Texas - History - LiquiSearch  Early Spanish settlement of San Antonio began with the Martin de Alarcon ... Father Olivares had earlier made a visit to a site on the San Antonio River in 1709, ... of Villa de Bjar, destined to become the most important town in Spanish Texas. ... and on May 5, 1718 established the Presidio San Antonio de Bxar ("Bjar" in...   San Antonio, Texas - Miscellaneous Messages - H  SAN ANTONIO ~ HOW IT BEGAN ... settlement on June 13, the feast day of St. Anthony of Padua. They named the place and river "San Antonio" in his honor. ... Father Antonio de Olivares visited the site in 1709, and he was determined to found a ... Martin de Alarcn, the governor of Coahuila and Texas, to establish the...   San Antonio | Top Places to Visit Around the World  Feb 12, 2014 ... San Antonio was named for Saint Anthony of Padua, whose feast day is on June ... Early Spanish settlement of San Antonio began with the Martin de Alarcon ... The viceroy, at the instigation of Father Antonio de San Buenaventura y Olivares, ... destined to become the most important town in Spanish Texas.   Still Breathing in San Antonio: Your Guide to Fletcher's Home Town  South Texas, the massive area of which San Antonio is the capital, is as ... which to say Mass, rechristened the place San Antonio, in honor of St. Anthony of Padua. ... Don Martin de Alarcon, Captain General and Governor of the Province of Texas, ... On May 1, Father Olivares founded the Mission San
+06/25/2022 02:11:10 - INFO - __main__ - ['San Antonio']
+06/25/2022 02:11:10 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:11:21 - INFO - __main__ - Loaded 4244 examples from dev data
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:11:21 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:11:22 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:11:22 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:11:22 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:11:22 - INFO - __main__ - Loaded 4243 examples from dev data
+06/25/2022 02:11:22 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:11:22 - INFO - __main__ - Loaded 4244 examples from dev data
+06/25/2022 02:11:22 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:11:23 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:11:23 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:11:24 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:11:24 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:11:24 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:11:24 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:11:24 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:11:24 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:11:24 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:11:29 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:11:30 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:11:30 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:11:31 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:11:31 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:11:31 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:11:31 - INFO - __main__ - Loaded 4244 examples from dev data
+06/25/2022 02:11:31 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:11:34 - INFO - __main__ - Starting inference ...
+06/25/2022 02:11:35 - INFO - __main__ - Starting inference ...
+06/25/2022 02:11:35 - INFO - __main__ - Starting inference ...
+06/25/2022 02:11:42 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:11:42 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:11:42 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:11:48 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:11:53 - INFO - __main__ - Starting inference ...
+06/25/2022 02:18:16 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:18:25 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:18:51 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:21:11 - INFO - __main__ - Starting inference ... Done
+06/26/2022 05:57:35 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 05:57:35 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 05:57:35 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 05:57:35 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 05:57:35 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=2
+06/26/2022 05:57:35 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=1
+06/26/2022 05:57:35 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=3
+06/26/2022 05:57:35 - INFO - __main__ - dataset_size=16975, num_shards=4, local_shard_id=0
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 05:57:38 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 05:57:38 - INFO - __main__ - Start tokenizing ... 4243 instances
+06/26/2022 05:57:38 - INFO - __main__ - Printing 3 examples
+06/26/2022 05:57:38 - INFO - __main__ - Question: Stew with clams, potatoes & onions ? </s> Context: Littleneck Clams with New Potatoes and Spring Onions recipe ...     Littleneck Clams with New Potatoes and Spring Onions recipe ...  Preparation. Heat oil in a large heavy pot over medium heat. Add potatoes, spring onion whites, and garlic. Add clams and half of onion greens, cover pot, and cook, stirring occasionally, until clams have opened, 8-10 minutes (discard any clams that do not open). Divide clam mixture among bowls.   Hilda's Clam Stew Recipe : Emeril Lagasse : Food Network  Add the salt, black pepper, red pepper flakes, and stir to combine. Add the shrimp stock and bring to a boil. Add the clams, potatoes, tomatoes, green onions, cilantro, and Essence. Cover and cook until the clams open, about 5 minutes, shaking the pan occasionally.   New England Clam Chowder Recipe : Dave Lieberman : Food ...  For a bowl of creamy comfort, try Dave Lieberman's New England Clam Chowder ... rich soup typically containing fish, clams, or corn with potatoes and onions".   Clam Chowder Stew Recipe - Food.com  Pour into onion and potato mixture, add clams, 2 cans undrained, add clams ... bit at a time to reach desired consistency and only if you want the soup less thick.   Clam Oyster Stew - Recipes - Cooks.com  Results 1 - 9 of 9 ... POMFRET OYSTER STEW OR CLAM CHOWDER. Dice potatoes small; chop onions ... hot, add the oysters (if you're making the oyster ... are...   Clam Potato Soup - Recipes - Cooks.com  Results 1 - 10 of 196 ... Cook and stir onion and ... Drain and add clams, liquid, salt, pepper and potato soup into onion mixture. Heat through and add ... until hot,...   Recipe of the Day: Clam Stew With Potatoes and Parsley Pure ...  Jan 28, 2009 ... While clams and potatoes cook, combine parsley leaves and thin stems in a blender with garlic and oil. Blend, adding water as necessary to...   My Best Clam Chowder Recipe - Allrecipes.com  Drain juice from clams into a large skillet over the onions, celery, potatoes and .... when I first made this I felt that the half and half made it too thick like a stew.   Quick Easy Fish Stew Recipe | SimplyRecipes.com  Fresh fish fillets cooked in a stew with onions, garlic, parsley, tomato, clam juice ... I doubled up the recipe, added a 2 Yellow Potatoes, 2 Diced Celery Sticks,...   The Food Lab: How to Make Real New England Clam Chowder ...  Jan 29, 2013 ... Tender chunks of potato should barely hold their shape, dissolving on your ... sea journey-friendly staples like onions, potatoes, and salt pork or beef, ... Most basic recipes for clam chowder call for rendering down some form...   Portuguese Chorizo and Clams | Choosy Beggars  Jul 1, 2010 ... Saute the chorizo with the onions until it is starting to brown, which will ... When the chorizo is browned, add the potatoes to the pot and give...   Amish Clam Stew Recipe  Clam Recipe - easy Amish recipe how to cook stew with clams, potatoes, butter or margarine, celery, onion, milk, eggs, and flour.   Best New England Clam Chowder Recipe - Delicious ... - No Recipes  Once you have your cleaned clams, and clam stock, making New England clam chowder is simple. Bacon, onions, and potatoes are the only things that...   Clam Chowder Recipe with Spanish Onions | Soup Recipes | PBS ...  This recipe includes all the traditional ingredients of true New England clam chowder with onions and potatoes. Get this clam chowder recipe from PBS Food.   Seafood Boil with Corn and Potatoes | Whole Foods Market  Cover pot and cook until clams and mussels open and shrimp are just cooked through, ... transfer seafood to a platter and corn, onions and potatoes to another bowl or platter. ... Get seasonal recipes and cooking tips delivered to
+06/26/2022 05:57:38 - INFO - __main__ - ['chowder']
+06/26/2022 05:57:38 - INFO - __main__ - Question: An ant shares the billing with one of these insects in the title of an Aesop fable ? </s> Context: I Hop Flashcards | Quizlet  Grasshopper. An ant shares the billing with one of these insects in the title of an Aesop fable.. Flea. This tiny insect pest, Pulex irritans, can leap more than...   Jeopary Questions page 1190 - POP ON A CD - TriviaBistro.com  I HOP: This tiny insect pest, Pulex irritans, can leap more than 130 times its own ... An ant shares the billing with one of these insects in the title of an Aesop fable.   A Bug's Life - Wikipedia  A Bug's Life is a 1998 American 3D computer-animated comedy adventure film produced by ... The film is inspired by Aesop's fable The Ant and the Grasshopper. .... was fine and they submitted a treatment to Disney in early July under the title Bugs. .... Each one of these "universal ants" would later be randomly distributed...   The Ant and the Grasshopper - Wikipedia  The Ant and the Grasshopper, alternatively titled The Grasshopper and the Ant (or Ants), is one of Aesop's Fables, numbered 373 in the Perry Index. The fable describes how a hungry grasshopper begs for food from an ant ... Later, in a parallel saying of Agur, the insects figure among the 'four things that are little upon the...   Short Stories: The Ant and the Grasshopper by Aesop  Other short stories by Aesop also available along with many others by classic and ... In a field one summer's day a Grasshopper was hopping about, chirping and singing to its heart's content. An Ant ... If you liked this story, please share it with others: ... by Aesop. Classic fable. Moral: Slow but steady progress wins the race.   Mythology and Folklore UN-Textbook: Aesop's Fables: Insects ...  May 2, 2014 ... These fables are part of the Aesop's Fables (English) unit. ... (illustration by Billinghurst). This is one of Aesop's most famous fables; note the use of the archaic "emmet," an old name for the ... The Ant and the Grasshopper ... And, with no title to be vain, ... Share to TwitterShare to FacebookShare to Pinterest...   The Internet Classics Archive | Aesop's Fables by Aesop  Commentary: Several comments have been posted about Aesop's Fables. ... One day he happened to see a Swallow, which had appeared before its ... The Birds gave no credence to these warning words, but considered the Owl to be ... All the Goods were once driven out by the Ills from that common share which they each...   Creighton University :: Aesop's Fables: 1980 to 1984  One of Fr Greg Carlson's passions is fables and what they teach us. ... Illustrations by Percy J. Billinghurst, adapted and done in color by Martina Selway. ... The right hand page has a regular page title ("Das buechle der verschroten werck. .... After all these years, I found a hardbound edition of Lobel--and then found another...   Creighton University :: Aesop's Fables: 1920 to 1929  One of Fr Greg Carlson's passions is fables and what they teach us. He has ... There is a prologue ("or epilogue"): "These tales were old when Aesop lived. ... GA closes laconically: "When winter came the Ant had food, But the ... Harrison Weir's illustration of LM is on the cover and title-page, but that is the only illustration.   Creighton University :: Aesop's Fables: 1910 to 1919  One of Fr Greg Carlson's passions is fables and what they teach us. ... The title-reference here is to the story of the kid who dances before he will die (69). ... I find it an ambitious challenge for students to take on these sometimes problematic texts, but ... "The Fox and the Goose" (113), and "The Ant and the Glowworm" (115).   1000+
+06/26/2022 05:57:38 - INFO - __main__ - ['grasshopper']
+06/26/2022 05:57:38 - INFO - __main__ - Question: Jan. 12, 1976 news could say, "The Queen is dead!"--this mystery writer called the "Queen of Crime" ? </s> Context: June 25, 2008  12, 1976 news could say, "The Queen is dead!"--this mystery writer called the "Queen of Crime" Agatha Christie;Christie "The Sacred Wood" was ... one in Naples Victor Emmanuel On January 18, 1871 Germany was unified with Wilhelm I as...   Ruth Rendell (b. 1930), who also writes under the pseudonym ...  Everything by Ruth Rendell... my all-time favorite mystery writer. ..... CS Lewis "Being Christian" Wisdom Quote Gifts Post Card Yes I can say you are on ... Top New Mystery &amp; Thriller on Goodreads, January 2012 .... 1901 - The Queen is dead. ...... Agatha Christie was called the Queen of Crime, and rightly so; she wrote...   Paul Smith/ Maximo Park by rosa paolicelli, via Flickr | i like ...  Writers ... MaximoMusic MaximoPark Sydney. Yes that would be Paul Smith from Maximo Park .... Many say she's strange but I find her to be admirable.   The Passing Tramp: May 2015  May 1, 2015 ... After an affair as shocking as my tea party on January twentieth, you naturally think ... Anthony Boucher called DuBois' Death Comes to Tea "a small .... Perhaps more than any British Golden Age mystery author outside ..... No one back in 1939 would have included "Josephine Tey" as a "Queen of Crime,"...
+06/26/2022 05:57:38 - INFO - __main__ - ['Agatha Christie']
+06/26/2022 05:57:38 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 05:57:38 - INFO - __main__ - Start tokenizing ... 4244 instances
+06/26/2022 05:57:38 - INFO - __main__ - Printing 3 examples
+06/26/2022 05:57:38 - INFO - __main__ - Question: 1989: Kenneth Branagh ? </s> Context: Henry V (1989 film) - Wikipedia  Henry V is a 1989 British drama film adapted for the screen and directed by Kenneth Branagh, based on William Shakespeare's play of the same name about...   Henry V (1989) - IMDb  Action ... With Kenneth Branagh, Derek Jacobi, Simon Shepherd, James Larkin. ... Kenneth Branagh and Emma Thompson in Henry V (1989) Kenneth Branagh...   Look Back In Anger - 1989 - Kenneth Branagh Emma Thompson ...  Dec 28, 2013 - 114 min - Uploaded by Kumala MoviesLook Back In Anger - 1989 - Kenneth Branagh Emma Thompson ... 1:39:18.  Conversations ...   Henry V (1989) - Rotten Tomatoes  Critic Consensus: Pehaps Kenneth Branagh's most fully realized Shakespeare adaptation, Henry V is an energetic, passionate, and wonderfully acted film...   Henry V Movie Review & Film Summary (1989) | Roger Ebert  Dec 15, 1989 ... Perhaps it is no coincidence that another hot-blooded Turk of the London stage, Kenneth Branagh, has directed and starred in this new film...   Amazon.com: Henry V: Kenneth Branagh, Derek Jacobi, Brian ...  Amazon.com: Henry V: Kenneth Branagh, Derek Jacobi, Brian Blessed, Patrick Doyle, Ian Holm, ... *1989: Director, Actor (Branagh), Costume Design (winner)...   Henry V - Review/Film - The New York Times  Published: November 8, 1989. LEAD: Kenneth Branagh has done it. Who is Kenneth Branagh? He's the young Belfast-born actor and director, best known here...   Kenneth Branagh's Henry V: right royal entertainment | Film | The ...  Jul 28, 2011 ... Henry V (1989) Director: Kenneth Branagh Entertainment grade: A History grade: C+. Henry V became king of England in 1413. Though he...   1989 Kenneth Branagh film role Crossword Clue, Crossword Solver ...  Answers for 1989-Kenneth-Branagh-film-role crossword clue. Search for crossword clues found in the Daily Celebrity, NY Times, Daily Mirror, Telegraph and...   Henry V (1989) Kenneth Branagh as Henry V | KINGS AND ...  Henry V (1989) Kenneth Branagh as Henry V | See more about Kenneth Branagh, King Henry V and King Henry.   Henry V (1989) on iTunes  Watch trailers, read customer and critic reviews, and buy Henry V (1989) directed by Kenneth Branagh for 5.99.   Kenneth Branagh as Henry V, in a 1989 film adaptation of the ...  Oct 2, 2016 ... Kenneth Branagh as Henry V, in a 1989 film adaptation of the Shakespeare play | Does Jenna Coleman look like the real Victoria? British kings...   Past productions | Hamlet | Royal Shakespeare Company  ... in 1984; Mark Rylance in 1989; Kenneth Branagh in 1992; Alex Jennings in 1997; Samuel West in 2001; Toby Stephens in 2004 and David Tennant in 2008.   Henry V. 1989. Written and directed by Kenneth Branagh | MoMA  Henry V. 1989. Great Britain. Written and directed by Kenneth Branagh. With Branagh, Judi Dench, Paul Scofield. 137 min. Branagh's directorial debut is as...   1989 Kenneth Branagh film role | Crossword Puzzle Clue ...  1989 Kenneth Branagh film role crossword puzzle clue has 1 possible answer and appears in 2 publications.   Henry V (1989) Kenneth Branagh - January 27, 2015 - Blu-ray Forum  *1989: Best Costume Design (winner), Best Actor in a Leading Role (nominee) Kenneth Branagh, Best Director (nominee) Kenneth Branagh...   Henry V (1989, Kenneth Branagh) | The Stop Button  Jun 19, 2015 ... A review of Kenneth Branagh's 1989 film, "Henry V," starring Kenneth Branagh, Brian Blessed and Derek Jacobi.   Henry V [DVD] [1989]: Amazon.co.uk: Kenneth Branagh, Judi Dench ...  Product Description. Kenneth Branagh writes, directs and stars
+06/26/2022 05:57:38 - INFO - __main__ - ['Henry V']
+06/26/2022 05:57:38 - INFO - __main__ - Question: 2001:Chinese-Americanfigure skater ? </s> Context: Michelle Kwan - Wikipedia  Michelle Wingshan Kwan (born July 7, 1980) is an American figure skater. She is a two-time ... Kwan won five World Championships (1996, 1998, 2000, 2001, 2003), tying her with Carol Heiss (19561960) for the most world titles by an American. ..... (an ice skating adaptation of the Disney film Mulan, based on the Chinese...   Kristi Yamaguchi - Wikipedia  Kristine Tsuya Yamaguchi (born July 12, 1971) is an American former figure skater. In ladies' .... Kristi Yamaguchi received the Inspiration Award at the 2008 Asian Excellence Awards. Two days after her ... 2001, On Edge, Regionals Judge #4.   Chen Lu - Wikipedia  Chen Lu (born 24 November 1976) is a Chinese figure skater. She is the 1994 and 1998 ... figure skating, while Chen's artistic talents were praised by such American .... The Chinese Federation asked Chen to skate at the 9th National Games of China in 2001, so she could help younger skaters improve their elegance.   Tiffany Chin - Wikipedia  Audrey Tiffany Chin (born October 3, 1967) is an American figure skater. She grew up in San Diego, California. She won the 1981 World Junior Figure Skating...   Christina Gao - Wikipedia  Christina Gao (born March 7, 1994) is an American figure skater. She is the 2012 Skate ... Began skating, 2001. Retired, June 17, 2015 ... name in Chinese: ; pinyin: Go Ho. Her father was a junior national badminton champion in China.   Beatrisa Liang - Wikipedia  Beatrisa "Bebe" Liang (born March 31, 1988) is an American figure skater. She is the 2006 Four ... Making her senior national debut, Liang placed sixth at the 2001 U.S. Championships, at the age of thirteen. .... descent  Four Continents Figure Skating Championships medalists  American women of Chinese descent.   List of Chinese Americans - Wikipedia  This is a list of notable Chinese Americans, including both original immigrants who obtained ..... Elaine Chao - US Secretary of Labor from 2001 to 2009; Republican; Lanhee Chen - policy director in Mitt ..... Karen Kwan - former figure skater, sister of Michelle Kwan; Michelle Kwan () - Olympic medal winner, figure...   Michelle Kwan - Ice Skater, Athlete - Biography.com  Apr 2, 2014 ... Learn about the career of figure skater Michelle Kwan, including her five World ... Famous Cancerians  Famous Asian Americans  Famous University of ... She captured the world title in 1996, 1998, 2000, 2001 and 2003.   Meet The 2014 U.S. Olympic Figure Skating Team - Team USA  Jan 12, 2014 ... Major accomplishments: Gold medal at 2014 U.S. Figure Skating ... Sixth place at 2013 Cup of China; Seventh place at 2013 Skate America; Fourth place .... out a video of their juvenile free dance from the 2001 Boston Open.   CNN Programs - People in the News - CNN.com  1 spot, Kwan has won five U.S. crowns -- as many as ice skating legends Peggy Fleming and ... phone company, and his wife ran a family-owned Chinese restaurant called the Golden Pheasant. ... U.S. Figure Skating Championships 2001 ... "The Kwans are very much a middle American family who have one incredibly...   Figure Skaters of Asian Descent Have Risen to Prominence  Jan 23, 2010 ... Before finishing second at the United States Figure Skating ... were Asian-Americans, who also excelled here among younger skaters. Nathan...   The Real Reason Ashley Wagner Made The U.S. Olympic Figure ...  Jan 16, 2014 ... Since 2001, Karolyi, along with a selection committee comprising two other ... In this respect, at least, American figure skating is entering its Karolyi era. .... If you include Asian Americans, of whom Kwan is one, every Worlds...   Young Asian American skaters dream they can soar - latimes  Feb 21, 2010 ... Only 7, Akari
+06/26/2022 05:57:38 - INFO - __main__ - ['Michelle Kwan']
+06/26/2022 05:57:38 - INFO - __main__ - Question: Long's vitriolic 1920s attacks on this oil co. started by John D. Rockefeller won him widespread popularity ? </s> Context: jeopardy/2794_Qs.txt at master  jedoublen/jeopardy  GitHub  HUEY LONG & THE NEWS | Long's vitriolic 1920s attacks on this oil co. started by John D. Rockefeller won him widespread popularity | Standard Oil. right: Brian.   John D. Rockefeller - Wikipedia  John Davison Rockefeller Sr. (July 8, 1839  May 23, 1937) was an American oil industry ... Rockefeller founded Standard Oil Company, Inc. in 1870 as an Ohio .... His contemporaries described him as reserved, earnest, religious, ... He worked long hours and delighted, as he later recalled, in "all the methods and systems of...   John D. Rockefeller Jr. - Wikipedia  John Davison Rockefeller Jr. (January 29, 1874  May 11, 1960) was an American financier and philanthropist who was a prominent member of the Rockefeller family. He was the only son among the five children of Standard Oil co-founder John D. Rockefeller and the father of the .... In the late 1920s, Rockefeller founded the Dunbar National Bank in Harlem.   America Revealed: Neo-fascism in America  Dec 1, 2010 ... As long as the Matrix exists, humanity cannot be free. ... One such dreamer was John D. Rockefeller, born in the US in 1839, the son of a ... In 1921, the elite founded the American branch of the Council on Foreign ... Rockefeller's Standard Oil Co. built large oil refineries in Germany for the ...... Popular Posts.   america: past and present - Sam Houston State University  42) According to the religious philosophy of John Calvin and his followers, .... 8) The ______ Company was responsible for the settlement of Jamestown in Virginia. ..... D) long lives of New England settlers. ... 9) The first institution of higher learning founded in England's mainland ...... D) to win widespread popular support.   Malfunctions of the Left - Morality  The few unions that remain have been co-opted by collaborators and dupes of ... it was revealed that workers were employed as long as nineteen and twenty hours a day. The International Communist movement got its first real start in the United .... you can act as robber baron John D. Rockefeller Jr. once did and bring an...   American Visions of the Netherlands East Indies - SSOAR  Netherlands Army mounted a second military attack on the Republic, which ..... uprising as a coup d'tat organized by the Indonesian Communist Party (Partai ... Dutch aggression that completed Washington's year-long process of reorienta ..... mats, US oil company executives, and plantation directors, on the one hand, and.   Racism in the 20th Century - mdcbowen.org  -1901 John D. Rockefeller (1839-1937) family founded Standard Oil Co. ... the keys to an entire floor of the building for his genetic research in the 1920's. ... Yet he never picked one up from the dust until a White man showed to him its glittering light. ..... Although his plan was expensive, Goddard argued that the long term...   Latin America's Cold War - Lyndon B. Johnson School of Public Affairs  and urban unrest informed a widespread growth of popular protest; and the ... though less bloodyattack on the status quo: the Latin American diplomatic .... not end conflict in Latin America; it simply shifted long-running conflicts onto ...... At mid-year, U.S.-owned oil companies in Cuba refused to process Soviet crude.   Icon - The University of Texas at Austin  5 If Pollock's work appealed to a highbrow audience, does that make him a .... will regularly use drip or drip-style for its widespread popular use and to ...... dissertation, C. Wright Mills was especially vitriolic in his attacks on his own ... realityHenry Ford, John D. Rockefeller and Andrew Carnegieand the fictional hero.   Full text of "High treason; the plot against the people" - Internet Archive  Through the long tense hours of the night a cordon of heavily armed soldiers had ..... addressed were Postmaster
+06/26/2022 05:57:38 - INFO - __main__ - ['Standard Oil']
+06/26/2022 05:57:38 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 05:57:38 - INFO - __main__ - Start tokenizing ... 4244 instances
+06/26/2022 05:57:38 - INFO - __main__ - Printing 3 examples
+06/26/2022 05:57:38 - INFO - __main__ - Question: "La Peregrina" is a famous pearl bought by this man in 1969 & given to Elizabeth Taylor ? </s> Context: La Peregrina pearl - Wikipedia  La Peregrina is one of the most famous pearls in the world. Its history spans almost 500 years, and it has passed from the African slave who found it at Pearl Islands in the Gulf of Panama, to European kings and queens. Most recently, the pearl belonged to Elizabeth Taylor. ... The pearl was carried to Spain and given by Temez to the future Philip II of...   Elizabeth Taylor's jewels fetch $115m as Richard Burton La ...  Dec 15, 2011 ... Liz Taylor's jewels fetch $115millon as famous La Peregrina pearl given ... for a pearl necklace and $8.8million for a diamond ring, both given to her by Richard Burton. ... as 'La Peregrina', which Burton bought for Taylor in 1969 and which ..... Homeless man who stabbed Miranda Kerr's security guard in the...   Fashioning The Past: The Story of La Peregrina Pearl: From 16th ...  Apr 23, 2012 ... The new owner of the La Peregrina Pearl, which recently sold as part ... The pear shaped white pearl is not only one of the most famous, ... Elizabeth Taylor's love affair with jewellery is a well told tale. ... Their decadent lifestyle continued in this manner and in 1969 Richard Burton acquired the La Peregrina...   Elizabeth Taylor's La Peregrina Pearl. The pearl was once the ...  ... Yusupova, mother of Felix Yusupov, the man said to have killed Rasputin. ... La Peregrina Pearl -- necklace of Elizabeth Taylor ... The famous La Pelegrina pearl was owned by Zinaida Yusupov; later the pearl ...... Bulgari platinum, diamond and sapphire sautoir, 1969, given by Richard Burton to Elizabeth Taylor in 1972...   Elizabeth Taylor: Her Most Memorable Jewels - Mibba  Take a look at some of Elizabeth Taylor's iconic jewelry. ... was the second most expensive piece at the Christie's auction, just behind the La Peregrina Pearl.   Elizabeth Taylor jewelry auction breaks five world records | | the ...  Dec 14, 2011 ... Christie's sale of Elizabeth Taylor's famous jewels was anticipated to be the ... Most astonishing price went for La Prgrina Pearl, given to Taylor by Richard Burton in 1969, ... Elizabeth Taylor Diamond, 33.19 carats, purchased by Burton in .... 8 secrets for buying a woman jewelry  Buying jewelry for a guy...   Spiritual Connections | Mediums Network  Elizabeth Taylor; and Napoleon Bonaparte; and at first you would be hard ... At first, only a cursory attention was given, the program looked stunning just as a ... Queens who wore it; the La Peregrina pearl is one of the most famous pearls in .... Richard Burton purchased the pearl at the Sotheby's auction in 1969 for $37,000.   elizabeth taylor auction sets record  USATODAY.com  Dec 14, 2011 ... Elizabeth Taylor's jewelry sells for $115 million ... million for a pearl necklace and more than $8.8 million for a diamond ring given ... The pearl, diamond and ruby necklace, known as "La Peregrina," purchased at auction for $37,000 in 1969 by ... A jewelry lover, she had pieces from some of the most famous...   Celebrity Jewelry: Forget Bling, Bring Back Pearls! | dnbpt.com  Elizabeth Taylor: Perhaps the most famous jewelry collector of our time, legendary actress Elizabeth Taylor also owns the most famous pearl, La Peregrina. Given to her in 1969 by then-husband Richard Burton (yep, hes the one Liz ... the rare and extraordinary gem was owned by a succession of royalty before being...   Pearl History | Coleman Douglas Pearls  The pearl is the oldest gem known to man, for centuries a symbol of purity, wisdom, beauty .... When, in 1969, Elizabeth Taylor bought a pearl reputed to be the Peregrina for ... being kept, experts were able to confirm that it was indeed the famous pearl. La Peregrina was auctioned by Christies Auction House and sold for 10...   Elizabeth Taylor's Collection Breaks Records at
+06/26/2022 05:57:38 - INFO - __main__ - ['Richard Burton']
+06/26/2022 05:57:38 - INFO - __main__ - Question: Are you Tolkien to me?  I'm the "eye" in your sky!  But you have to give me & my Black Riders a ring to win my love! ? </s> Context: Gimli (Character) - Quotes - IMDb  from The Lord of the Rings: The Fellowship of the Ring (2001) ... Eomer: What business does an Elf, Man, and a Dwarf have in the Riddermark? ... Gimli: Give me your name, horse-master, and I shall give you mine. ... Legolas: I'm on seventeen! ... Gimli: He was *twitching* because he's got my axe EMBEDDED IN HIS...   Bilbo Baggins (Character) - Quotes - IMDb  Gandalf: You asked me to find the fourteenth member of this company and I ... He'll melt the flesh off your bones in the blink of an eye. .... Gollum: [searching for "his precious"; the one ring; wails in despair] Lost! .... Bilbo Baggins: I'm Mr. Bilbo Baggins, I've lost my dwarves, my wizard and my ..... Bilbo Baggins: Barrel-Rider!   Gandalf (Character) - Quotes - IMDb  from The Lord of the Rings: The Fellowship of the Ring (2001) .... My heart tells me that Gollum has some part to play yet, for good or ill before this is ... Bilbo: Well, if I'm angry, it's your fault. ... Gandalf: I think you've had that ring quite long enough. .... But we can give Frodo his chance if we keep Sauron's Eye fixed upon us.   DRINKING FROM THE SUN LYRICS - Hilltop Hoods  It's got a hold on me the day I fold and leave, It's gonna seem like I'm falling, And I buried two friends, lost touch with some others, Split with my girl, found love...   The Lord of the Rings: The Fellowship of the Ring - Wikiquote  All those who follow in my bloodline shall be bound to its fate, for I shall risk no hurt .... But I know you have something to do with it: Gandalf: Goodness gracious me! ... All I did was give your uncle a little nudge out of the door. ... Gandalf: And I'm sure you will, my friend. .... Frodo: [overhearing the Black Riders] What are they?   The Hobbit: An Unexpected Journey - Wikiquote  My dear Frodo, you asked me once if I had told you everything there was to know ... blazing bright, for he had seen dragon-fire in the sky and a city turned to ash. .... Dreadful woman! Make sure you keep an eye of her after I, um, I... When I'm. ... [Bilbo opens the door, the dwarf smiles and bows]: Balin: Balin, At your service.   Why didn't the Eagles fly the Ring to Mount Doom (or the Lonely ...  One of the most commonly asked questions about The Lord of the Rings is why the ... When you have the fate of the world hanging in the balance, you don't want to ..... Read my other posts, the eagles wouldn't fly to Mt Doom because they would be ..... I really love ALL the movies but the eagles have always confused me.   LotR Songs and Spoofs - Lord of the Rings Fanatics Forum  Jul 5, 2002 ... And then, when you get all the way to zero....well, I'll let someone ... It left me theremy heart was broken. ... And then, I didn't write this, but I'm particularly fond of the LotR .... three siblings run cold, the nine black riders walked swiftly through the ... "When do you and you brothers need to take your leave?".   GameFAQs: The Lord of the Rings: The Fellowship of the Ring (GBA ...  Three rings for the Elven-kings under the sky Seven for the Dwarf-lords in their halls ... But I'm completely fed up with these morons who can't seem to get the ... FOR THE LOVE OF GOD, STOP ASKING ME! .....
+06/26/2022 05:57:38 - INFO - __main__ - ['Sauron']
+06/26/2022 05:57:38 - INFO - __main__ - Question: With a fancy flourish, John Hancock became the first to do this July 4, 1776 ? </s> Context: J! Archive - Show #5523, aired 2008-09-17  Sep 17, 2008 ... In John 20 this woman finds that the boulder in front of Jesus' tomb has ... With a fancy flourish, John Hancock became the first to do this July 4,...   John Hancock - U.S. Governor, U.S. Representative - Biography.com  Jun 9, 2015 ... Get more on the 18th century politician and merchant John Hancock, known for his ... Hancock became the first representative to sign the Declaration of Independence on July 4, 1776, a document which maintained that the ... Hancock left a sizable signature with flourish; the idea of leaving one's "John...   John Hancock - Wikipedia  John Hancock (January 23, 1737 [O.S. January 12, 1736]  October 8, 1793) was an American ... As a child, Hancock became a casual acquaintance of young John Adams, whom the Reverend Hancock had baptized in 1735. ..... After Congress approved the wording of the text on July 4, the fair copy was sent to be printed.   American Revolution John Hancock | History: Revolutionary War ...  He became the first to sign the Declaration of Independence on July 4, 1776, ... left a sizable signature with flourish; the idea of leaving one's "John Hancock" on ...... The propitious smiles of Heaven can never be expected on a nation that ...... dressing in fancy uniforms, and always keeping the press up-to-date with his views...   1000+ ideas about 1776 Declaration Of Independence on Pinterest  american-history-fun-facts.com is your first and best source for information about ... I am posting this fancy document to bring the motion to the floor that, after all of this ... Declaration of Independence 4 July 1776 'John Adams' HBO Well, you've done it ..... What became of the 56 signers of the Declaration of Independence?   Independance Day - Packerchatters  It is said that John Hancock's signed his name "with a great flourish" so England's "King George can read that without spectacles! ... July 4, 1776, became the date that was included on the Declaration of Independence, and the fancy handwritten ... years after the Declaration was written, Congress first declared July 4 to be a...   thirteen American colonies affixed their - PBS  According to the declaration, what rights do all men have? 2. ... The president of congress, John Hancock, signed the ... On July 4, 1776, fifty-six men representing the thirteen colonies signed a .... and became America's first professor of law at the College of William and Mary, ... Now here, now there, the roving Fancy flies,.   1776 The Musical - American Conservatory Theater  Oct 6, 2013 ... COVER Declaration of Independence, July 4, 1776, by John .... President John Hancock calls Congress into session. ... Before the vote can take place, however, the .... Presented to the cast of 1776 and the A.C.T. staff on the first day of .... musical play that, against all odds, became a Broadway smash hit...   Indendence Day, July 4, 1776 (An American Seder and more)  Jul 4, 2012 ... Indendence Day, July 4, 1776 (An American Seder and more) ... in their tricornered hats, fancy waistcoats and tight knee-breeches? ... In the North their incomes were more than matched by merchants such as John Hancock and Robert Morris. Next came lawyers such as John Adams, followed by tavern...   John Hancock | Foundation Truths  Posts about John Hancock written by Foundation Truths. ... conspicuous station in the continental congress of 1776, claims our first notice, was born in the town...   View PDF - Hudson Institute  The day after Congress voted to declare independence, John Adams wrote to his wife,. Abigail .... years later, Boston became the first city to designate, by a public vote, July 4 as the ...... 1776, there can be
+06/26/2022 05:57:38 - INFO - __main__ - ['sign the Declaration of Independence']
+06/26/2022 05:57:38 - INFO - __main__ - Start tokenizing ... 4244 instances
+06/26/2022 05:57:38 - INFO - __main__ - Printing 3 examples
+06/26/2022 05:57:38 - INFO - __main__ - Question: 1976: "A Single Colorado Mountain" ? </s> Context: J! Archive - Show #5243, aired 2007-05-30  May 30, 2007 ... 1976: "A Single Colorado Mountain". $1200, 19. Founded in the 1530s, this capital of Jalisco state is the second-largest in Mexico. $1200, 23...   November 14, 2008  ... "Regular Folks" Ordinary People 1932: "Magnificent Inn" Grand Hotel 1976: "A Single Colorado Mountain" Rocky Down Mexico Way: In 1986 Mexico scored...   LAND USE AND LANDSCAPE CHANGE IN THE COLORADO ...  ... landscape change in a single Colorado mountain valley using methods from ..... and for multi-family 1970 1973 1976 1979 1982 1985 1988 1991 complexes...   J! set #1 Flashcards | Quizlet  18 shows included Learn with flashcards, games, and more  for free.
+06/26/2022 05:57:38 - INFO - __main__ - ['Rocky']
+06/26/2022 05:57:38 - INFO - __main__ - Question: (Cheryl of the Clue Crew reports from the Catalina Island Conservancy.) Rampant use of this 3-letter insecticide lead to a hefty settlement for restorating the population of Catalina's bald eagles ? </s> Context: jeopardy/1878_Qs.txt at master  jedoublen/jeopardy  GitHub  Rampant use of this 3-letter insecticide lead to a hefty settlement for restorating the population of Catalina's <http://www.j-archive.com/media/2007-05-30_J_09a.jpg> bald eagles | DDT ... BEGINNING & END | (<http://www.j-archive.com/media/2007-05-30_J_20.jpg> Cheryl of the Clue Crew indicates the monitor.)...   bald eagles - Catalina Island Conservancy  For bald eagle chicks are poised to leave their Catalina Island ... eagle from California's Channel Islands until IWS and the Conservancy partnered to bring.   FAQs - Catalina Island Conservancy  With this gift, the conservation and restoration of most of Catalina's interior and 62 ... public recreational and educational use of 41,000 acres of Santa Catalina Island, ... use, and this is only likely to increase in the future as population increases. .... A: Bald eagles were common on Catalina Island until the 1970s when the...   Catalina Island Conservancy - Wikipedia, the free encyclopedia  The Catalina Island Conservancy is a nonprofit organization established to protect and restore ... Catalina's native plant community is central to the ecosystem of the Island, ... native animals like the Catalina Island fox, Catalina quail, and bald eagles among ... captive breeding and release, and wild fox population monitoring.   Bald eagles hatching on Catalina Island - The Orange County Register  Mar 25, 2014 ... News: Eagles hatching on Santa Catalina Island | eagles, catalina, eagle, ddt, ... COURTESY OF CATALINA ISLAND CONSERVANCY ... Both the waters off Palos Verdes where the DDT settled and the site of the Montrose plant ... The restoration of the bald eagle population on Catalina Island is one of the...   ddt - Search-ID.com  ... in 1939 was later found less than wonderful; (Cheryl of the Clue Crew reports from the Catalina Island Conservancy.) Rampant use of this 3-letter insecticide lead to a hefty settlement for restorating the population of Catalina's bald eagles...
+06/26/2022 05:57:38 - INFO - __main__ - ['DDT']
+06/26/2022 05:57:38 - INFO - __main__ - Question: In 1718 this Texas town was founded by Martin de Alarcon & Father Olivares & named for St. Anthony of Padua ? </s> Context: Naming San Antonio in 1691 - Journal of San Antonio  The naming of San Antonio and the founding of the settlement occurred on two ... 1691, because that was the feast day of St. Anthony of Padua -- and the day that ... and governor of Coahuila y Texas, mentioned above by Father Massanet, also ... Finally, nine years later in 1718, an expedition led by Don Martin de Alarcon,...   History of San Antonio - Wikipedia  The City of San Antonio is one of the oldest Spanish colonization of the European settlements ... With that goal in 1675, an expedition formed by Fray Antonio de Olivares, ... As it was the feast day of Saint Anthony of Padova, Italy, they named the ... the town of Bejar or Bexar, convert it in the cornerstone of Spanish Texas.   San Antonio Texas History Timeline - History of St. Augustine by Gil ...  the feast day of St. Anthony of Padua, and Father Damian Massanet or ... 1716-1719 -- Martin de Alarcon, Governor of Texas ... 1716 -- Mission San Francisco de los Neches founded in eastern Texas. ... 1 May 1718 -- Father Antonio Olivares founds the Mission San Antonio de Valero. Its named in honor of Saint Anthony   ALARCON, MARTIN DE | The Handbook of Texas Online| Texas ...  Martn de Alarcn was a knight of the Order of Santiago, governor of Coahuila, governor of ... On May 1, 1718, he assisted Father Antonio San Buenaventura y Olivaresqv in the founding of San Antonio de Valero Mission. ... the beginnings of Villa de Bxar, destined to become the most important town in Spanish Texas.   Statue of Saint Anthony of Padua on the Riverwalk | Statue o | Flickr  1718 Martin de Alarcon, Governor of Texas, reinforces the presidio. ... Father Olivares renames his merged mission Mission San Antonio de Valero. ... Jose y San Miguel de Aguayo is founded by Father Margil de Jesus, who names it in honor...   Valley Hi Masonic Lodge - MasterMason.com  He saw and described the river later to be named the San Antonio. ... the feast day of [Saint Anthony of Padova, Italy], and named the place and river "San ... In 1718, Martin de Alarcn, then Governor of Texas, reinforced the presidio and the ten ... Father Olivares renamed his merged mission Mission San Antonio de Valero.   San Antonio, Texas - History - LiquiSearch  Early Spanish settlement of San Antonio began with the Martin de Alarcon ... Father Olivares had earlier made a visit to a site on the San Antonio River in 1709, ... of Villa de Bjar, destined to become the most important town in Spanish Texas. ... and on May 5, 1718 established the Presidio San Antonio de Bxar ("Bjar" in...   San Antonio, Texas - Miscellaneous Messages - H  SAN ANTONIO ~ HOW IT BEGAN ... settlement on June 13, the feast day of St. Anthony of Padua. They named the place and river "San Antonio" in his honor. ... Father Antonio de Olivares visited the site in 1709, and he was determined to found a ... Martin de Alarcn, the governor of Coahuila and Texas, to establish the...   San Antonio | Top Places to Visit Around the World  Feb 12, 2014 ... San Antonio was named for Saint Anthony of Padua, whose feast day is on June ... Early Spanish settlement of San Antonio began with the Martin de Alarcon ... The viceroy, at the instigation of Father Antonio de San Buenaventura y Olivares, ... destined to become the most important town in Spanish Texas.   Still Breathing in San Antonio: Your Guide to Fletcher's Home Town  South Texas, the massive area of which San Antonio is the capital, is as ... which to say Mass, rechristened the place San Antonio, in honor of St. Anthony of Padua. ... Don Martin de Alarcon, Captain General and Governor of the Province of Texas, ... On May 1, Father Olivares founded the Mission San
+06/26/2022 05:57:38 - INFO - __main__ - ['San Antonio']
+06/26/2022 05:57:38 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 05:57:38 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 05:57:54 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 05:57:54 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Loaded 4244 examples from dev data
+06/26/2022 05:57:55 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 05:57:55 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 05:57:55 - INFO - __main__ - Loaded 4243 examples from dev data
+06/26/2022 05:57:55 - INFO - __main__ - Loaded 4244 examples from dev data
+06/26/2022 05:57:55 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 05:57:55 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 05:57:55 - INFO - __main__ - Loaded 4244 examples from dev data
+06/26/2022 05:57:55 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 05:57:56 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 05:57:56 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 05:57:57 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 05:57:57 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 05:57:57 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 05:57:57 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 05:57:57 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 05:57:57 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 05:57:57 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 05:57:57 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 05:57:57 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 05:57:57 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 05:58:02 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 05:58:03 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 05:58:03 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 05:58:03 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 05:58:06 - INFO - __main__ - Starting inference ...
+06/26/2022 05:58:07 - INFO - __main__ - Starting inference ...
+06/26/2022 05:58:07 - INFO - __main__ - Starting inference ...
+06/26/2022 05:58:07 - INFO - __main__ - Starting inference ...
+06/26/2022 06:02:59 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:03:02 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:03:05 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:05:29 - INFO - __main__ - Starting inference ... Done

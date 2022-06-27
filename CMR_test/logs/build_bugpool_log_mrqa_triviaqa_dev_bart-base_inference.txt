@@ -1,0 +1,752 @@
+06/25/2022 02:23:37 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:23:37 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:23:37 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:23:37 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=2
+06/25/2022 02:23:38 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=64, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/25/2022 02:23:38 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=3
+06/25/2022 02:23:38 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=0
+06/25/2022 02:23:38 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=1
+06/25/2022 02:23:40 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:23:40 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:23:40 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:23:40 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:23:40 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/25/2022 02:23:40 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:23:40 - INFO - __main__ - Question: "Who wrote ""Leaves of Grass""?" ? </s> Context: Leaves of GrassLeaves of Grass is a poetry collection by the American poet Walt Whitman (1819–1892). Though the first edition was published in 1855, Whitman spent most of his professional life writing and re-writing Leaves of Grass,  revising it multiple times until his death. This resulted in vastly different editions over four decades—the first a small book of twelve poems and the last a compilation of over 400.  The poems of Leaves of Grass are loosely connected, with each representing Whitman's celebration of his philosophy of life and humanity. This book is notable for its discussion of delight in sensual pleasures during a time when such candid displays were considered immoral. Where much previous poetry, especially English, relied on symbolism, allegory, and meditation on the religious and spiritual, Leaves of Grass (particularly the first edition) exalted the body and the material world. Influenced by Ralph Waldo Emerson and the Transcendentalist movement, itself an offshoot of Romanticism, Whitman's poetry praises nature and the individual human's role in it. However, much like Emerson, Whitman does not diminish the role of the mind or the spirit; rather, he elevates the human form and the human mind, deeming both worthy of poetic praise.  With one exception, the poems do not rhyme or follow standard rules for meter and line length. Among the poems in the collection are "Song of Myself", "I Sing the Body Electric", "Out of the Cradle Endlessly Rocking". Later editions included Whitman's elegy to the assassinated President Abraham Lincoln, "When Lilacs Last in the Dooryard Bloom'd".  Leaves of Grass was highly controversial during its time for its explicit sexual imagery, and Whitman was subject to derision by many contemporary critics. Over time, the collection has infiltrated popular culture and been recognized as one of the central works of American poetry.  Publication history and origin  Initial publication  Leaves of Grass has its genesis in an essay called The Poet by Ralph Waldo Emerson, published in 1844, which expressed the need for the United States to have its own new and unique poet to write about the new country's virtues and vices. Whitman, reading the essay, consciously set out to answer Emerson's call as he began work on the first edition of Leaves of Grass. Whitman, however, downplayed Emerson's influence, stating, "I was simmering, simmering, simmering; Emerson brought me to a boil".   On May 15, 1855, Whitman registered the title Leaves of Grass with the clerk of the United States District Court, Southern District of New Jersey, and received its copyright.Kaplan, 198 The first edition was published in Brooklyn at the printing shop of two Scottish immigrants, James and Andrew Rome, whom Whitman had known since the 1840s,  on July 4, 1855. The shop was located at Fulton Street (now Cadman Plaza West) and Cranberry Street, now the site of apartment buildings that bear Whitman's name.  Whitman paid for and did much of the typesetting for the first edition himself. The book did not include the author's name, instead offering an engraving by Samuel Hollyer depicting Whitman in work clothes and a jaunty hat, arms at his side.Callow, 227 Early advertisements for the first edition appealed to "lovers of literary curiosities" as an oddity.  Sales on the book were few but Whitman was not discouraged.  The first edition was very small, collecting only twelve unnamed poems in 95 pages.Loving, 179 Whitman once said he intended the book to be small enough to be carried in a pocket. "That would tend to induce people to take me along with them and read me in the open air: I am nearly always successful with the reader in the open air", he explained.Reynolds, 352 About 800 were printed,  though only 200 were bound in its trademark green cloth cover. The only American library known to have purchased a copy of the first edition was in Philadelphia.  The poems of the first edition, which were given titles in later issues, were "Song of Myself", "A Song for Occupations
+06/25/2022 02:23:40 - INFO - __main__ - ['walter whitman', 'walt whitman']
+06/25/2022 02:23:40 - INFO - __main__ - Question: What is the largest lake in Central America? </s> Context: Discovering Lake Nicaragua: The Largest Lake In Central ...Discovering Lake Nicaragua: The Largest Lake In Central America | HULIQ  Discovering Lake Nicaragua: The Largest Lake In Central America  By Armen Hareyan G+ 2008-05-06 09:06  Lake Nicaragua is not only the largest lake in Central America, but at 3,100 square miles, it is the largest body of fresh water between the Great Lakes of North America and Lake Titicaca on the Bolivia-Peru border.The aboriginal name for this lake, Cocibolca, means "sweet sea". It is the largest lake in Central America and one of the very few, or perhaps the only, freshwater lake to have sharks, although their numbers have dropped precipitously.  The adventurous are rewarded by the splendor of volcanoes, jungle villages, placid lakes, and pristine beaches, untouched islands, like you'll find boating in Lago de Nicaragua, the largest lake in Central America and home to rare freshwater sharks. Or perhaps you'll discover a remote surf break on the southwestern Pacific coast.  Largest Lake In Central America Nicaragua is home to the largest lake in Central America locally known as Cocibolca or Lake Nicaragua. Nearly 20% of the total landmass of Nicaragua is set aside in 78 different National Parks and protected areas.  People considered digging a canal through either Nicaragua or Panama-if they had used Nicaragua, they would have dug a canal to Lake Nicaragua (the largest lake in Central America), then another one away from it. Instead, it was dug through the Isthmus of Panama.  The largest Central American nation, Nicaragua, is full of parks and reserves and more lakes than any other Central American nation. Located between Honduras to the north and Costa Rica to the south and with long coastlines on both the Pacific Ocean and the Caribbean Sea, Nicaragua is about one-third tropical rainforests and is split in half by a mountain range scattered with volcanoes.  Also known as La Mar Dulce (the Sweet Sea), Lake Nicaragua is the largest lake in Central America and the tenth largest freshwater lake in the world. Forty-five rivers flow into the lake and it is home to the worlds only species of freshwater shark.  The lake is connected to the Caribbean Sea by the San Juan River, historically making the lakeside city of Granada, Nicaragua an Atlantic port although it is closer to the Pacific. The lake has a history of Caribbean pirates which assaulted nearby Granada on three occasions.[1]. Despite draining into the Caribbean Sea, the Pacific Ocean is near enough to be seen from the mountains of Ometepe.  Before construction of the Panama Canal, a stagecoach line owned by Cornelius Vanderbilt's Accessory Transit Company connected the lake with the Pacific across the low hills of the narrow Isthmus of Rivas. Plans were made to take advantage of this route to build an interoceanic canal, the Nicaragua Canal, but the Panama Canal was built instead. In order to quell competition with the Panama Canal, the U.S. secured all rights to a canal along this route in the Bryan-Chamorro Treaty of 1916. However, the idea of another canal in Nicaragua still periodically resurfaces. Ecocanal is one of these projects.  What is the Largest Lake in Central America - Want to Know itWhat is the Largest Lake in Central America  What is the Largest Lake in Central America  27 Nov, 2012 what is  0  Central America is generally regarded as the region between North America and South America. It is considered to be a subcontinent, rather than being a part of either continent. There are seven countries in this region called; Panama, Nicaragua, Honduras, Guatemala, El Salvador, Costa Rica and Belize. Central America covers about 534,000 km2 (202,000 sq mi), which is just 0.1% of the Earth’s surface! Despite this fact, Central America is home to the 19th largest lake in the world (by area). Let’s find out the name of this lake and where it is located.  What is the largest lake in Central America?  The largest lake in Central America is Lake Nicaragua (Spanish: Lago de Nicaragua), also known as Cocibolca or Granada.
+06/25/2022 02:23:40 - INFO - __main__ - ['cocibolca', 'lake nicaragua', 'lago de nicaragua']
+06/25/2022 02:23:40 - INFO - __main__ - Question: What city state was ruled by Lorenzo de' Medici? </s> Context: Lorenzo De' Medici - 100 Leaders100 Leaders  Your first name.  Summary  Lorenzo de’ Medici recognized the importance of the arts. As the heir to a major European banking business, he used his family’s vast wealth to fund painters, sculptors, and architects, helping Florence emerge as a cultural center and spurring the Renaissance at great personal cost. He led the city-state as a despot, using everything from friendship to threats to secure and maintain his power. He cared greatly about Florence’s success, even putting himself in harm’s way to settle conflicts with rivals.  "I do not regret [spending 663,000 florins for charity, buildings, and taxes] for though many would consider it better to have a part of that sum in their purse, I consider it to have been a great honor to our state, and I think the money was well-expended and I am well-pleased."  Quoted (1471) in Living on the Edge in Leonardo’s Florence, edited by Gene A. Brucker, 2005, Google Books  Biography  Lorenzo de’ Medici assumed power in the city-state of Florence in 1469. The Medicis were among the foremost bankers in Europe at the time, accumulating great wealth, and they had ruled the republic for years. Lorenzo continued the family tradition of leading as a despot, and he centralized power through strategic friendships, marriages, bribes, and threats.  Despite this strength, Lorenzo’s rule was not unchallenged. In 1478, the Pazzi conspiracy – named for the rival banking family that instigated an attempted coup – tried to assassinate Lorenzo, injuring him and killing his brother. The attempt occurred with the knowledge of the Pope, and when Lorenzo retaliated against the conspirators, the Catholic Church (backed by soldiers from Naples) entered a state of war with Florence.  Lorenzo inspired Florentines to defend their city-state. However, as war dragged on, Lorenzo boldly decided to force peace talks by sailing to Naples personally. There he remained in the king’s hands for three months, until the king – impressed by Lorenzo’s action – agreed to end the violence. Lorenzo used this event to consolidate more power, as he could now argue that he knew the best way to handle threats to Florence.  Meanwhile, Lorenzo became one of the foremost artistic patrons in Florence, and all of Italy. He sponsored Leonardo da Vinci, Michelangelo Buonarroti, and Sandro Botticelli. This set an example that spurred patronage across Renaissance Italy. de’ Medici also supported humanists, creating a library with classical works from the East. He expanded the Medici library and encouraged the study of classic literature in Florence and across Europe. Although the money he spent meant he left the Medici bank weaker than when he inherited it, he was groundbreaking in his support for the arts.  What Made Lorenzo de' Medici A leader?  Florence was a leading artistic city during the Renaissance, and Lorenzo de’ Medici was one of its most enthusiastic patrons. He set an example for the city to by endorsing several of the period’s leading artists.  Through multiple arrangements and marriages, de’ Medici assured his family of power in the Catholic Church (there were four Medici popes) and across Europe.  Lorenzo’s actions following the Pazzi Conspiracy showed his willingness to take risks on behalf of his people, and once he returned, the Florentine people were willing to follow him even after he used the event to centralize his power.  The Medici banking clan continued its prominence through Lorenzo’s reign, meaning that he did not just lead the city politically, but also economically. He used this money to promote art and architecture, enhancing Florence’s reputation as a cultural center.  Discover More About Lorenzo de' Medici  Keywords  Print  Hibbert, Christopher. The House of Medici: Its Rise and Fall. New York: Morrow, 1975.  Kent, F.W. Lorenzo de’ Medici and the Art of Magnificence. Baltimore: Johns Hopkins University Press, 2004.  Parks, Tim. Medici Money: Banking, Metaphysics, and Art in Fifteenth-Century Florence. New York:
+06/25/2022 02:23:40 - INFO - __main__ - ['florence']
+06/25/2022 02:23:40 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:23:40 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:23:40 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:23:40 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/25/2022 02:23:40 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:23:40 - INFO - __main__ - Question: Who was King of England in 1350? </s> Context: Edward III | king of England | Britannica.comEdward III | king of England | Britannica.com  king of England  Alternative Title: Edward of Windsor  Edward III  Henry, 1st duke and 4th earl of Lancaster  Edward III, byname Edward of Windsor (born November 13, 1312, Windsor , Berkshire , England—died June 21, 1377, Sheen, Surrey), king of England from 1327 to 1377, who led England into the Hundred Years’ War with France. The descendants of his seven sons and five daughters contested the throne for generations, climaxing in the Wars of the Roses (1455–85).  Edward III, watercolour, 15th century; in the British Library (Cotton MS. Julius E. IV).  By permission of the British Library  Early years  The eldest son of Edward II and Isabella of France , Edward III was summoned to Parliament as earl of Chester (1320) and was made duke of Aquitaine (1325), but, contrary to tradition, he never received the title of prince of Wales.  Edward III grew up amid struggles between his father and a number of barons who were attempting to limit the king’s power and to strengthen their own role in governing England. His mother, repelled by her husband’s treatment of the nobles and disaffected by the confiscation of her English estates by his supporters, played an important role in this conflict. In 1325 she left England to return to France to intervene in the dispute between her brother, Charles IV of France, and her husband over the latter’s French possessions, Guyenne , Gascony , and Ponthieu. She was successful; the land was secured for England on condition that the English king pay homage to Charles. This was performed on the king’s behalf by his young son.  United Kingdom: Edward III (1327–77)  The heir apparent was secure at his mother’s side. With Roger Mortimer , an influential baron who had escaped to France in 1323 and had become her lover, Isabella now began preparations to invade England to depose her husband. To raise funds for this enterprise, Edward III was betrothed to Philippa , daughter of William, count of Hainaut and Holland.  Within five months of their invasion of England, the queen and the nobles, who had much popular support, overpowered the king’s forces. Edward II, charged with incompetence and breaking his coronation oath, was forced to resign, and on January 29, 1327, Edward III, aged 14, was crowned king of England.  During the next four years Isabella and Mortimer governed in his name, though nominally his guardian was Henry, earl of Lancaster . In the summer of 1327 he took part in an abortive campaign against the Scots, which resulted in the Treaty of Northampton (1328), making Scotland an independent realm. Edward was deeply troubled by the settlement and signed it only after much persuasion by Isabella and Mortimer. He married Philippa at York on January 24, 1328. Soon afterward Edward made a successful effort to throw off his degrading dependence on his mother and Mortimer. While a council was being held at Nottingham, he entered the castle by night, through a subterranean passage, took Mortimer prisoner, and had him executed (November 1330). Edward had discreetly ignored his mother’s liaison with Mortimer and treated her with every respect, but her political influence was at an end.  Britannica Stories  Cheetahs Face Extinction Risk  Edward III now began to rule as well as to reign. Young, ardent , and active, he sought to remake England into the powerful nation it had been under Edward I . He still resented the concession of independence made to Scotland by the Treaty of Northampton. The death of Robert I , the Bruce, king of Scotland, in 1329 gave him a chance of retrieving his position. The new king of Scots, his brother-in-law, David II , was a mere boy, and Edward took advantage of his weakness to aid the Scottish barons who had been exiled by Bruce to place their leader, Edward Balliol, on the Scottish throne. David II fled to France, but Balliol was despised as a puppet
+06/25/2022 02:23:40 - INFO - __main__ - ['edward iii']
+06/25/2022 02:23:40 - INFO - __main__ - Question: Mammy Two Shoes, a recurring character in MGM's Tom and Jerry cartoons was inspired by which African-American actress and singer? </s> Context: Mammy Two Shoes : definition of Mammy Two Shoes and ...Mammy Two Shoes : definition of Mammy Two Shoes and synonyms of Mammy Two Shoes (English)  Aunt Harriet (mentioned, not heard or seen in The Million Dollar Cat ).  Mammy Two Shoes (sometimes Mrs. Two Shoes) is a recurring character in MGM 's Tom and Jerry cartoons. She is a heavy-set middle-aged black woman who often has to deal with the mayhem generated by the lead characters.  As a partially seen character , she was famous for never showing her face (except very briefly in Saturday Evening Puss ). Mammy's appearances have often been edited out, dubbed, or re-animated as a slim white woman in later television showings, since her character is a mammy archetype now often regarded as racist. It was later revealed that her character was greatly inspired by Oscar -winning black actress and singer Hattie McDaniel , best known for playing "Mammy" in MGM and David O. Selznick 's 1939 film Gone with the Wind .  A character very similar to Mammy Two Shoes had earlier been portrayed in the Disney Silly Symphonies shorts Three Orphan Kittens and More Kittens , as well as the Pluto short Pantry Pirate and the Figaro short Figaro and Cleo . A similar character Aunt Petunia the Mammy actually shows her face which resembles blackface in The Little Audrey Cartoon Series .  Contents  7 References    Theatrical Tom and Jerry cartoons    Mammy Two Shoes, in a scene from the Tom & Jerry short Saturday Evening Puss , whose full face was shown for the first time.  Mammy first appeared in Puss Gets the Boot , the first Tom and Jerry cartoon (except Tom was called "Jasper"). She always referred to Tom as his given name Thomas and almost always used "is" in conjunction with a pronoun ("is you" and "I is"). The character went on to make many appearances through the entire series until 1952 and her last appearance in the short, Push-Button Kitty . William Hanna and Joseph Barbera initially portrayed Mammy as the maid of the house, with the real owners unknown to us. Later, Hanna and Barbera seemed to suggest, through dialogue and occasional behavior, that the house was Mammy's own.  Mammy was originally voiced by well-known African-American character actress Lillian Randolph . In the 1960s, the MGM animation studio , by then under the supervision of Chuck Jones , created censored versions of the Tom & Jerry cartoons featuring Mammy for television. These versions used rotoscoping techniques to replace Mammy on-screen with a similarly stocky white woman (in most shorts) or a thin white woman (in Saturday Evening Puss); Randolph's voice on the soundtracks was replaced by an Irish-accented (or, in Puss, generic young adult) voice performed by white actress June Foray . [1]  The original versions of the cartoons were reinstated when Turner Broadcasting acquired ownership of the Tom & Jerry property. But in 1992, the cartoons featuring Mammy were edited again; this time, to replace Lillian Randolph's voice with that of Thea Vidale , who re-recorded the dialogue to remove Mammy's use of potentially offensive dialect . These re-recorded versions of the cartoons are aired to this day on Turner's Cartoon Network -related cable channels, and have at times turned up on DVD as well. However, some European TV showings of these cartoons, especially the UK, retain Randolph's original voice. The Region 2 Complete Collectors Edition DVD boxset has Vidale's voice on the first DVD and Randolph in a number of the episodes after that (such as A Mouse in the House and Mouse Cleaning ).    Replacement characters for Mammy  From 1954's Pet Peeve , Mammy disappeared from Tom and Jerry; the owners of the animals' house became a young, white, middle-class couple named Joan and George , and starting with 1955's The Flying Sorceress , the audience was able to see these owners' heads.  In 1961, when Rembrandt Films began producing Tom and Jerry shorts, the owner of the house became a corpulent white man. The character was designed
+06/25/2022 02:23:40 - INFO - __main__ - ['hattie mcdaniel']
+06/25/2022 02:23:40 - INFO - __main__ - Question: Alan Minter was World boxing champion at which weight? </s> Context: Proudly Presenting Alan Minter Boxing Fights on Boxing DVDs.Proudly Presenting Alan Minter Boxing Fights on Boxing DVDs.  Boxing Fight Record: won 39 (KO 23) & lost 9 Boxing Fights   History of Alan Alan Minter Boxing Career Set     Alan Minter Career Set won five boxing fights in a row by knockout and, in 1973, Pat Dwyer became the first boxer to go the distance with him, over eight rounds. Alan Minter won his next five boxing fights, three by knockout, before tasting defeat for the first time after the referee stopped the fight in the eighth round to King George Aido due to bad cuts suffered by Alan Minter. Two more wins followed before facing Jan Magziarz, who beat him twice in a row again due to cuts.  1974 was a diverse year for Alan  Minter, defeating Tony Byrne by a result in eight, losing in two to  Ricky Torres again on cuts, having a third fight with Magziarz result in  a no boxing fight in four rounds and closing the year with a win in  eight rounds by result in his first worldwide fight, against Shako Mamba  in Hamburg, Germany.In 1975, he won four fights in a row, including another boxing bout in Hamburg and, by the end of the year, he challenged Kevin Finnegan for the British boxing Middleweight title, captivating it by a 15 round decision. In 1976 he won six fights, to extend his streak to ten successive wins.These wins gave Alan Minter a status among the top ten boxing Middleweight challengers.  In 1977, he won the European boxing Middleweight title by beating Germano Valsecchi by a knockout in five in Italy. But in his next boxing fight his winning line ended when he lost to former world title challenger Ronnie Harris by a knockout in eight. Alan Minter returned to top ten contender status by upsetting the former World Welterweight and Light Middleweight Champion Emile Griffith with a ten round decision win in Monte Carlo, but then he lost his European title to Gratien Tonna by a knockout in eight at Milan. He closed '77 with a third 15 round decision win over Finnegan to retain his British title.  1978 was a bad year for Alan Minter, even though he won all three of his boxing bouts. On 15 February, at the Muhammad Ali vs Leon Spinks I undercard in Las Vegas, Nevada, he won his first bout in the United States by knocking out Sandy Torres in five. Then, he went to Italy once once more to get back his European Middleweight title by knocking out Angelo Jacopucci in twelve rounds. Jacopucci died a few days afterwards, due to injuries sustained in the bout. Alan Minter completed his year by avenging his loss to Tonna with a six round boxing knockout.  In 1979, Alan Minter won all four of his boxing fights, two of them by knockout. On 16 March 1980, in Las Vegas, he was given a attempt at World Middleweight Boxing Champion Vito Antuofermo's title at the Caesars Palace. He won the title by a 15 round result and, in a rematch, he retained the world title by a TKO in eight rounds. Alan Minter's run as world boxing champion came to an end on 27 September of that year, when he was stopped on cuts in three rounds to Marvin Hagler at Wembley Arena in London. After the fight was stopped, Alan Minter's followers caused a riot, throwing beer cans into the boxing ring and both boxers had to be ushered away by the police. Earlier to the fight, Alan Minter made the obviously racist statement on the BBC that, "that black man is not going to take my title away." He later retracted this statement and said he meant "no man" is going to take my title away.     Alan Minter : Reflection of 1980s - The Living DaylightsAlan Minter : Reflection of 1980s  Comment  ****  Alan Minter was perhaps the most popular man in Britain heading into his fateful clash against Marvin Hagler on September 27, 1980.  After winning the world title in March in Las Vegas from Vito Antuofermo, the new champion turned in
+06/25/2022 02:23:40 - INFO - __main__ - ['middleweight']
+06/25/2022 02:23:40 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:23:40 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/25/2022 02:23:40 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:23:40 - INFO - __main__ - Question: Who is the current Australian prime minister ? </s> Context: Prime Minister of AustraliaThe Prime Minister of the Commonwealth of Australia is the head of government in Australia. The individual who holds the office is the most senior Minister of the Crown, the leader of the Cabinet and the chairperson of the National Security Committee. The office is not mentioned in the Constitution of Australia and exists only through an unwritten political convention and tradition. Despite this, in practice it is the most powerful political position in Australia. The individual who holds the office is commissioned by the Governor-General of Australia.  Almost always and according to convention, the Prime Minister is the leader of the majority party or largest party in a coalition of parties in the House of Representatives. However, there is no constitutional requirement that the prime minister sit in the House of Representatives, or even be a member of parliament, though by convention this is always the case. The only case where a member of the Senate was appointed prime minister was John Gorton, who subsequently resigned his Senate position and was elected as a member of the House of Representatives (Senator George Pearce was acting prime minister for seven months in 1916 while Billy Hughes was overseas).   Malcolm Turnbull has held the office of Prime Minister since 15 September 2015. He received his commission after replacing Tony Abbott as the leader of the Liberal Party, the dominant party in the Coalition government, following the outcome of the September 2015 Liberal leadership ballot.   Former Prime Ministers continue to be important national figures, and in some cases go on to significant post-prime ministerial careers. Some notable examples have included: Edmund Barton, who was a justice of the High Court; George Reid, Andrew Fisher, Joseph Cook and Stanley Bruce, who were High Commissioners to the United Kingdom; Arthur Fadden, who was Treasurer under another prime minister, Robert Menzies; and Kevin Rudd, who became Julia Gillard's Foreign Minister.  Appointment  The Prime Minister of Australia is appointed by the Governor-General of Australia under Section 64 of the Australian Constitution, which empowers the Governor-General to appoint Ministers of the Crown and requires such Ministers to be members of the House of Representatives or the Senate, or become members within three months of the appointment. Before being sworn in as a minister, a person must first be sworn in as a member of the Federal Executive Council if they are not already a member. Membership of the Federal Executive Council entitles the member to the style of The Honourable (usually abbreviated to The Hon) for life, barring exceptional circumstances. The senior members of the Executive Council constitute the Cabinet of Australia.  The Prime Minister is, like other ministers, normally sworn in by the Governor-General and then presented with the commission (Letters patent) of office. When defeated in an election, or on resigning, the Prime Minister is said to "hand in the commission" and actually does so by returning it to the Governor-General. In the event of a Prime Minister dying in office, or becoming incapacitated, the Governor-General can terminate the commission. Ministers hold office "during the pleasure of the Governor-General" (s. 64 of the Constitution of Australia), so theoretically, the Governor-General can dismiss a minister at any time, by notifying them in writing of the termination of their commission; however, his or her power to do so except on the advice of the Prime Minister is heavily circumscribed by convention.  Despite the importance of the office of prime minister, the Constitution does not mention the office by name. The conventions of the Westminster system were thought to be sufficiently entrenched in Australia by the authors of the Constitution that it was deemed unnecessary to detail them. The formal title of the portfolio has always been simply "Prime Minister", except for the period of the Fourth Deakin Ministry (June 1909 to April 1910), when it was known as "Prime Minister (without portfolio)".   If a government cannot get its appropriation (budget) legislation passed by the House of Representatives, or the House passes a vote of "no confidence" in the government, the Prime Minister is
+06/25/2022 02:23:40 - INFO - __main__ - ['julia gillard']
+06/25/2022 02:23:40 - INFO - __main__ - Question: The name of which chemical element of the Periodic Table ends with the letters KEL ? </s> Context: Chemical elementA chemical element or element is a species of atoms having the same number of protons in their atomic nuclei (i.e. the same atomic number, Z).  There are 118 elements that have been identified, of which the first 94 occur naturally on Earth with the remaining 24 being synthetic elements. There are 80 elements that have at least one stable isotope and 38 that have exclusively radioactive isotopes, which decay over time into other elements. Iron is the most abundant element (by mass) making up Earth, while oxygen is the most common element in the crust of Earth.   Chemical elements constitute all of the ordinary matter of the universe. However astronomical observations suggest that ordinary observable matter is only approximately 15% of the matter in the universe: the remainder is dark matter, the composition of which is unknown, but it is not composed of chemical elements.   The two lightest elements, hydrogen and helium were mostly formed in the Big Bang and are the most common elements in the universe. The next three elements (lithium, beryllium and boron) were formed mostly by cosmic ray spallation, and are thus more rare than those that follow. Formation of elements with from six to twenty six protons occurred and continues to occur in main sequence stars via stellar nucleosynthesis. The high abundance of oxygen, silicon, and iron on Earth reflects their common production in such stars. Elements with greater than twenty-six protons are formed by supernova nucleosynthesis in supernovae, which, when they explode, blast these elements far into space as supernova remnants, where they may become incorporated into planets when they are formed.   The term "element" is used for a kind of atoms with a given number of protons (regardless of whether they are or they are not ionized or chemically bonded, e.g. hydrogen in water) as well as for a pure chemical substance consisting of a single element (e.g. hydrogen gas). For the second meaning, the terms "elementary substance" and "simple substance" have been suggested, but they have not gained much acceptance in the English-language chemical literature, whereas in some other languages their equivalent is widely used (e.g. French corps simple, Russian простое вещество). One element can form multiple substances different by their structure; they are called allotropes of the element.  When different elements are chemically combined, with the atoms held together by chemical bonds, they form chemical compounds.  Only a minority of elements are found uncombined as relatively pure minerals. Among the more common of such "native elements" are copper, silver, gold, carbon (as coal, graphite, or diamonds), and sulfur. All but a few of the most inert elements, such as noble gases and noble metals, are usually found on Earth in chemically combined form, as chemical compounds. While about 32 of the chemical elements occur on Earth in native uncombined forms, most of these occur as mixtures. For example, atmospheric air is primarily a mixture of nitrogen, oxygen, and argon, and native solid elements occur in alloys, such as that of iron and nickel.  The history of the discovery and use of the elements began with primitive human societies that found native elements like carbon, sulfur, copper and gold. Later civilizations extracted elemental copper, tin, lead and iron from their ores by smelting, using charcoal. Alchemists and chemists subsequently identified many more, with almost all of the naturally-occurring elements becoming known by 1900.  The properties of the chemical elements are summarized on the periodic table, which organizes the elements by increasing atomic number into rows ("periods") in which the columns ("groups") share recurring ("periodic") physical and chemical properties. Save for unstable radioactive elements with short half-lives, all of the elements are available industrially, most of them in high degrees of purity.  Description  The lightest chemical elements are hydrogen and helium, both created by Big Bang nucleosynthesis during the first 20 minutes of the universe  in a ratio of around 3:1 by mass (or 12:1 by number of atoms),   along with tiny traces of
+06/25/2022 02:23:40 - INFO - __main__ - ['nickel']
+06/25/2022 02:23:40 - INFO - __main__ - Question: "Geography - which ""Strait"" in the Mediterranean lies between Sicily and mainland Italy ?" ? </s> Context: Sicily | island, Italy | Britannica.comSicily | island, Italy | Britannica.com  Sicily  Mediterranean Sea  Sicily, Italian Sicilia, island of Italy , the largest and one of the most densely populated in the Mediterranean Sea . Together with the Egadi, Lipari, Pelagie, and Panteleria islands, Sicily forms an autonomous region of Italy. It lies about 100 miles (160 km) northeast of Tunisia (northern Africa). The island is separated from the mainland by the Strait of Messina (2 miles [3 km] wide in the north and 10 miles [16 km] wide in the South). The capital is Palermo .  Sicily, Italy.  The cathedral at Palermo, Sicily  Leo de Wys Inc./Joachim Messerschmidt  History  Sicily was inhabited 10,000 years ago. Its strategic location at the centre of the Mediterranean has made the island a crossroads of history, a pawn of conquest and empire, and a melting pot for a dozen or more ethnic groups whose warriors or merchants sought its shores. At the coming of the Greeks, three peoples occupied Sicily: in the east the Siculi , or Sicels, who gave their name to the island but were reputed to be latecomers from Italy; to the west of the Gelas River, the Sicani ; and in the extreme west the Elymians , a people to whom a Trojan origin was assigned, with their chief centres at Segesta and at Eryx (Erice). The Siculi spoke an Indo-European language; there are no remains of the languages of the other peoples. There were also Phoenician settlements on the island. The Greeks settled Sicilian towns between the 8th and 6th centuries bce. The mountainous centre remained in the hands of Siculi and Sicani, who were increasingly Hellenized in ideas and material culture .  Doric columns on the Greek temple at Segesta, Sicily, c. 424–416 bc  SCALA/Art Resource, New York  Lombardy  In the 3rd century bce the island became the first Roman province. The Byzantine general Belisarius occupied Sicily in 535 ce, at the start of hostilities with the Ostrogoths in Italy, and after a short time Sicily came under Byzantine rule. In 965 the island fell to Arab conquest from North Africa , in 1060 to Normans, who progressively Latinized the island. In the 12th and 13th centuries the island formed a part of the Kingdom of the Two Sicilies (or Naples), and in the 18th century Sicily was ruled by the Bourbons. During the 19th century the island was a major centre of revolutionary movements: in 1860, as a result of Giuseppe Garibaldi’s revolt, it was liberated from the Bourbons and in the following year was incorporated into the united kingdom of Italy. In 1947 Sicily gained regional autonomy .  Mosaic picture of Jesus Christ in the cathedral in Cefalù, Sicily, Italy.  Mimmo Jodice/Corbis  Physical and human geography  The island is mostly mountainous, and seismic and volcanic activity is quite intense. Europe’s highest active volcano is Mount Etna (10,900 feet [3,220 metres]). The only wide valley is the fertile Plain of Catania in the east. The climate is subtropical and Mediterranean. Annual precipitation on the plains is 16–24 inches (400–600 mm), and in the mountains 47–55 inches (1,200–1,400 mm). Underground water and springs are plentiful. The natural vegetation of Sicily has been greatly reduced by human influence, and forests occupy only 4 percent of the territory.  Mount Etna erupting at night, Sicily, Italy.  David Trood—The Image Bank/Getty Images  An investigation into whether a tsumani triggered by underwater volcanos caused the destruction of …  Contunico © ZDF Enterprises GmbH, Mainz  Exploring Italy and France: Fact or Fiction?  Sicilians are a diverse people, having had contact with a great variety of ethnic stocks and physical types throughout the centuries. Despite its position at the crossroads of many Mediterranean civilizations, it retains many characteristics of more rural regions bred of its isolation and distance from mainland Italy. One peculiar feature of the separateness of Sicilian life is the persistence of the Mafia , an organization dating from the Middle Ages that gradually evolved into a paralegal criminal brotherhood. It gives certain parts of
+06/25/2022 02:23:40 - INFO - __main__ - ['messina']
+06/25/2022 02:23:40 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:23:49 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/25/2022 02:23:49 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/25/2022 02:23:49 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/25/2022 02:23:49 - INFO - __main__ - Printing 3 examples
+06/25/2022 02:23:49 - INFO - __main__ - Question: Who had an 80s No 1 hit with Hold On To The Nights? </s> Context: Hold On to the Nights"Hold On to the Nights" is a power ballad and number-one hit for American rock singer/songwriter/musician Richard Marx.  This was the fourth and final single released from his self-titled debut album, and the first to reach the top of the Billboard Hot 100 chart.  Written by Richard Marx, "Hold On to the Nights" reached the Billboard Hot 100 number 1 position on July 23, 1988, preventing Def Leppard's "Pour Some Sugar On Me" from reaching the top spot that same week. The song was on the chart for twenty-one weeks, and left the chart at number 65. From Marx' debut 1987 album, Richard Marx, the song also reached number three on the Billboard Adult Contemporary chart. "Hold On to the Nights" has been re-released numerous albums  and is included on Marx's live performance DVD A Night Out with Friends (2012).  Charts
+06/25/2022 02:23:49 - INFO - __main__ - ['richard marx']
+06/25/2022 02:23:49 - INFO - __main__ - Question: What is the Japanese share index called? </s> Context: Nikkei Definition | InvestopediaNikkei Definition | Investopedia  Nikkei  What is the 'Nikkei'  Nikkei is short for Japan's Nikkei 225 Stock Average, the leading and most-respected index of Japanese stocks. It is a price-weighted index comprised of Japan's top 225 blue-chip companies traded on the Tokyo Stock Exchange . The Nikkei is equivalent to the Dow Jones Industrial Average Index in the United States.  BREAKING DOWN 'Nikkei'  Originally called the Nikkei Dow Jones Stock Average (from 1975 to 1985), it is now named for the "Nihon Keizai Shimbun" or Japan Economic Newspaper, commonly known as Nikkei, which sponsors the calculation of the index. The index has been calculated since September 1950, retroactive to May 1949. Among the best-known companies included in the Nikkei index are Canon Inc., Sony Corporation and Toyota Motor Corporation. It is the oldest stock index in Asia.  The Nikkei was established as part of the rebuilding and industrialization of Japan in the aftermath of the Second World War. Constituent stocks are ranked by share price, rather than by market capitalization as is common in most indexes. Valuations are denominated in Japanese yen. The composition of the Nikkei is reviewed every September, and any needed changes take place in October.  Background  The Tokyo Stock Exchange was established in 1878. In 1943, during the Second World War, the Japanese government combined the TSE with five others to form a single Japanese Stock Exchange. That exchange was closed down in August 1945, near the end of the war. The Tokyo Stock Exchange re-opened on May 16, 1949 under the aegis of the new Securities Exchange Act .  Japan experienced a major asset bubble in the late 1980's, as the government used fiscal and monetary stimuli to counteract a recession caused by the Japanese yen's 50% appreciation during the first part of the decade. Stock prices and land values tripled between 1985 and 1989; at the height of the bubble, the TSE accounted for 60% of global stock market capitalization. The bubble burst in 1990, and the value of the Nikkei Index fell by one-third that year. In October 2008, the Nikkei traded below 7,000; this was a decline of more than 80% from its December 1989 high. It subsequently rebounded strongly, rising 150% between June 2012 and June 2015 with the help of economic stimulus from the Japanese government and the Bank of Japan . This was still nearly 50% below the 1989 high.  Investing in the Nikkei Index  It is not possible to directly purchase an index, but there are several Exchange Traded Funds whose components correlate to the Nikkei. ETFs that track it and trade on the Tokyo Stock Exchange include Blackrock Japan's iShares Nikkei 225 and Nomura Asset Management 's Nikkei 225 Exchange Traded Fund. The MAXIS Nikkei 225 Index ETF is a dollar-denominated fund that trades on the New York Stock Exchange .  Trading Center
+06/25/2022 02:23:49 - INFO - __main__ - ['nikkei']
+06/25/2022 02:23:49 - INFO - __main__ - Question: Who had a 70s No 1 hit with Kiss You All Over? </s> Context: Kiss You All Over"Kiss You All Over" is a 1978 song performed by the group Exile. It was written by Mike Chapman and Nicky Chinn. It was included on the band's album Mixed Emotions, and it featured Jimmy Stokley and guitarist JP Pennington on lead vocals. It was a number one single in the United States, but proved to be Exile's only big hit in the pop rock market.  Billboard ranked it as the No. 5 song for 1978. In the United Kingdom, the song was released on Mickie Most's RAK Records, and it peaked at number 6 in the UK Singles Chart.  In this song, a string synthesizer is used.  Lead vocalist on the song Stokley was ousted from the band in 1979, his health declining thereafter until he died at the age of 41 in 1985. The band moved into country music following the synth-pop success of "Kiss You All Over" and the 1979 follow-on hit "You Thrill Me" (reaching #40 (UK no. 67)) and "How Could This Go Wrong", #88 on the charts. "Take Me Down" peaked at #3 on the Euro Hit 40 in the mid-1980s.  Cover versions  * 1978: A version by Jim Mundy and Terri Melton made number 87 on the Hot Country Songs charts.  * 1978: A Disco version was covered by Broadway  * 1979: Along with the track "So Strange", Phyllis Hyman covered this song and had a minor disco hit, peaking at number 75.  * Also in 1979, Millie Jackson covered this song for her album A Moment's Pleasure and it was released as a single in Europe.  * 1982: A lovers rock version by Samantha Rose produced by reggae producer Winston Curtis was recorded in London.  * 1993: Tiffany released a version on her Asia-only album Dreams Never Die. The album (and song) were re-released in the U.S. in 2005.   * 1997: The band No Mercy's remixed version by Johnny Vicious and Darrin "Spike" Friedman reached #1 on the Billboard Hot Dance Club Play chart.  It also reached #16 on the UK Singles Chart and #47 in Australia.  * 2013: On the album Love Will..., Trace Adkins recorded a cover version with Exile (J.P. Pennington and Les Taylor).  * 2016: A cover of the song appears on the Information Society album Orders of Magnitude  Appearances in other media  The song was featured in the films Happy Gilmore, Wild Hogs, Man on the Moon, Employee of the Month, and Zookeeper. It was also used in 2007 on CBC's Hockey Night In Canada during a montage of Stanley Cup celebrations at the conclusion of the final game of the Stanley Cup Playoffs. The song closes out the finale of the first season of the Amazon Series Red Oaks.  Exile - kiss you all over - YouTubeExile - kiss you all over - YouTube  Exile - kiss you all over  Want to watch this again later?  Sign in to add this video to a playlist.  Need to report the video?  Sign in to report inappropriate content.  Rating is available when the video has been rented.  This feature is not available right now. Please try again later.  Uploaded on Apr 26, 2008  Exile - kiss you all over  Category  Standard YouTube License  Music  Exile - I Wanna Kiss You All Over (1978) - YouTubeExile - I Wanna Kiss You All Over (1978) - YouTube  Exile - I Wanna Kiss You All Over (1978)  Want to watch this again later?  Sign in to add this video to a playlist.  Need to report the video?  Sign in to report inappropriate content.  The interactive transcript could not be loaded.  Loading...  Rating is available when the video has been rented.  This feature is not available right now. Please try again later.  Uploaded on Jun 30, 2006  Jimmy Stokley (lead vocals), J. P. Pennington (guitar, vocals
+06/25/2022 02:23:49 - INFO - __main__ - ['exile']
+06/25/2022 02:23:49 - INFO - __main__ - Tokenizing Input ...
+06/25/2022 02:23:51 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:23:51 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:23:51 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:23:51 - INFO - __main__ - Loaded 1946 examples from dev data
+06/25/2022 02:23:51 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:23:51 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:23:51 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:23:52 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:23:52 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:23:52 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:23:52 - INFO - __main__ - Loaded 1946 examples from dev data
+06/25/2022 02:23:52 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:23:52 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:23:52 - INFO - __main__ - Loaded 1946 examples from dev data
+06/25/2022 02:23:52 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:23:53 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:23:53 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:23:53 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:23:53 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:23:53 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:23:54 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:23:54 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:23:54 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:23:54 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:23:58 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:23:59 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:24:00 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:24:01 - INFO - __main__ - Tokenizing Input ... Done!
+06/25/2022 02:24:01 - INFO - __main__ - Tokenizing Output ...
+06/25/2022 02:24:01 - INFO - __main__ - Tokenizing Output ... Done!
+06/25/2022 02:24:01 - INFO - __main__ - Loaded 1946 examples from dev data
+06/25/2022 02:24:01 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/25/2022 02:24:03 - INFO - __main__ - Starting inference ...
+06/25/2022 02:24:04 - INFO - __main__ - Starting inference ...
+06/25/2022 02:24:04 - INFO - __main__ - Starting inference ...
+06/25/2022 02:24:12 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/25/2022 02:24:12 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/25/2022 02:24:12 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/25/2022 02:24:17 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/25/2022 02:24:22 - INFO - __main__ - Starting inference ...
+06/25/2022 02:26:29 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:26:29 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:26:42 - INFO - __main__ - Starting inference ... Done
+06/25/2022 02:27:19 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:07:22 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:07:22 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:07:22 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:07:22 - INFO - __main__ - Config args: Namespace(append_another_bos=True, checkpoint='', dataset='mrqa', debug=False, dev_file='', do_lowercase=False, do_predict=True, do_train=False, max_input_length=888, max_output_length=50, model='facebook/bart-base', num_beams=3, output_dir='out/mrqa_squad_bart-base_upstream_model/', predict_batch_size=48, predict_checkpoint='out/mrqa_squad_bart-base_upstream_model//best-model.pt', prefix='', quiet=False, seed=42, train_file='')
+06/26/2022 06:07:22 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=0
+06/26/2022 06:07:22 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=1
+06/26/2022 06:07:22 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=3
+06/26/2022 06:07:22 - INFO - __main__ - dataset_size=7784, num_shards=4, local_shard_id=2
+06/26/2022 06:07:24 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:07:24 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:07:24 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:07:24 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:07:24 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/26/2022 06:07:24 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:07:24 - INFO - __main__ - Question: "Who wrote ""Leaves of Grass""?" ? </s> Context: Leaves of GrassLeaves of Grass is a poetry collection by the American poet Walt Whitman (1819–1892). Though the first edition was published in 1855, Whitman spent most of his professional life writing and re-writing Leaves of Grass,  revising it multiple times until his death. This resulted in vastly different editions over four decades—the first a small book of twelve poems and the last a compilation of over 400.  The poems of Leaves of Grass are loosely connected, with each representing Whitman's celebration of his philosophy of life and humanity. This book is notable for its discussion of delight in sensual pleasures during a time when such candid displays were considered immoral. Where much previous poetry, especially English, relied on symbolism, allegory, and meditation on the religious and spiritual, Leaves of Grass (particularly the first edition) exalted the body and the material world. Influenced by Ralph Waldo Emerson and the Transcendentalist movement, itself an offshoot of Romanticism, Whitman's poetry praises nature and the individual human's role in it. However, much like Emerson, Whitman does not diminish the role of the mind or the spirit; rather, he elevates the human form and the human mind, deeming both worthy of poetic praise.  With one exception, the poems do not rhyme or follow standard rules for meter and line length. Among the poems in the collection are "Song of Myself", "I Sing the Body Electric", "Out of the Cradle Endlessly Rocking". Later editions included Whitman's elegy to the assassinated President Abraham Lincoln, "When Lilacs Last in the Dooryard Bloom'd".  Leaves of Grass was highly controversial during its time for its explicit sexual imagery, and Whitman was subject to derision by many contemporary critics. Over time, the collection has infiltrated popular culture and been recognized as one of the central works of American poetry.  Publication history and origin  Initial publication  Leaves of Grass has its genesis in an essay called The Poet by Ralph Waldo Emerson, published in 1844, which expressed the need for the United States to have its own new and unique poet to write about the new country's virtues and vices. Whitman, reading the essay, consciously set out to answer Emerson's call as he began work on the first edition of Leaves of Grass. Whitman, however, downplayed Emerson's influence, stating, "I was simmering, simmering, simmering; Emerson brought me to a boil".   On May 15, 1855, Whitman registered the title Leaves of Grass with the clerk of the United States District Court, Southern District of New Jersey, and received its copyright.Kaplan, 198 The first edition was published in Brooklyn at the printing shop of two Scottish immigrants, James and Andrew Rome, whom Whitman had known since the 1840s,  on July 4, 1855. The shop was located at Fulton Street (now Cadman Plaza West) and Cranberry Street, now the site of apartment buildings that bear Whitman's name.  Whitman paid for and did much of the typesetting for the first edition himself. The book did not include the author's name, instead offering an engraving by Samuel Hollyer depicting Whitman in work clothes and a jaunty hat, arms at his side.Callow, 227 Early advertisements for the first edition appealed to "lovers of literary curiosities" as an oddity.  Sales on the book were few but Whitman was not discouraged.  The first edition was very small, collecting only twelve unnamed poems in 95 pages.Loving, 179 Whitman once said he intended the book to be small enough to be carried in a pocket. "That would tend to induce people to take me along with them and read me in the open air: I am nearly always successful with the reader in the open air", he explained.Reynolds, 352 About 800 were printed,  though only 200 were bound in its trademark green cloth cover. The only American library known to have purchased a copy of the first edition was in Philadelphia.  The poems of the first edition, which were given titles in later issues, were "Song of Myself", "A Song for Occupations
+06/26/2022 06:07:24 - INFO - __main__ - ['walter whitman', 'walt whitman']
+06/26/2022 06:07:24 - INFO - __main__ - Question: What is the largest lake in Central America? </s> Context: Discovering Lake Nicaragua: The Largest Lake In Central ...Discovering Lake Nicaragua: The Largest Lake In Central America | HULIQ  Discovering Lake Nicaragua: The Largest Lake In Central America  By Armen Hareyan G+ 2008-05-06 09:06  Lake Nicaragua is not only the largest lake in Central America, but at 3,100 square miles, it is the largest body of fresh water between the Great Lakes of North America and Lake Titicaca on the Bolivia-Peru border.The aboriginal name for this lake, Cocibolca, means "sweet sea". It is the largest lake in Central America and one of the very few, or perhaps the only, freshwater lake to have sharks, although their numbers have dropped precipitously.  The adventurous are rewarded by the splendor of volcanoes, jungle villages, placid lakes, and pristine beaches, untouched islands, like you'll find boating in Lago de Nicaragua, the largest lake in Central America and home to rare freshwater sharks. Or perhaps you'll discover a remote surf break on the southwestern Pacific coast.  Largest Lake In Central America Nicaragua is home to the largest lake in Central America locally known as Cocibolca or Lake Nicaragua. Nearly 20% of the total landmass of Nicaragua is set aside in 78 different National Parks and protected areas.  People considered digging a canal through either Nicaragua or Panama-if they had used Nicaragua, they would have dug a canal to Lake Nicaragua (the largest lake in Central America), then another one away from it. Instead, it was dug through the Isthmus of Panama.  The largest Central American nation, Nicaragua, is full of parks and reserves and more lakes than any other Central American nation. Located between Honduras to the north and Costa Rica to the south and with long coastlines on both the Pacific Ocean and the Caribbean Sea, Nicaragua is about one-third tropical rainforests and is split in half by a mountain range scattered with volcanoes.  Also known as La Mar Dulce (the Sweet Sea), Lake Nicaragua is the largest lake in Central America and the tenth largest freshwater lake in the world. Forty-five rivers flow into the lake and it is home to the worlds only species of freshwater shark.  The lake is connected to the Caribbean Sea by the San Juan River, historically making the lakeside city of Granada, Nicaragua an Atlantic port although it is closer to the Pacific. The lake has a history of Caribbean pirates which assaulted nearby Granada on three occasions.[1]. Despite draining into the Caribbean Sea, the Pacific Ocean is near enough to be seen from the mountains of Ometepe.  Before construction of the Panama Canal, a stagecoach line owned by Cornelius Vanderbilt's Accessory Transit Company connected the lake with the Pacific across the low hills of the narrow Isthmus of Rivas. Plans were made to take advantage of this route to build an interoceanic canal, the Nicaragua Canal, but the Panama Canal was built instead. In order to quell competition with the Panama Canal, the U.S. secured all rights to a canal along this route in the Bryan-Chamorro Treaty of 1916. However, the idea of another canal in Nicaragua still periodically resurfaces. Ecocanal is one of these projects.  What is the Largest Lake in Central America - Want to Know itWhat is the Largest Lake in Central America  What is the Largest Lake in Central America  27 Nov, 2012 what is  0  Central America is generally regarded as the region between North America and South America. It is considered to be a subcontinent, rather than being a part of either continent. There are seven countries in this region called; Panama, Nicaragua, Honduras, Guatemala, El Salvador, Costa Rica and Belize. Central America covers about 534,000 km2 (202,000 sq mi), which is just 0.1% of the Earth’s surface! Despite this fact, Central America is home to the 19th largest lake in the world (by area). Let’s find out the name of this lake and where it is located.  What is the largest lake in Central America?  The largest lake in Central America is Lake Nicaragua (Spanish: Lago de Nicaragua), also known as Cocibolca or Granada.
+06/26/2022 06:07:24 - INFO - __main__ - ['cocibolca', 'lake nicaragua', 'lago de nicaragua']
+06/26/2022 06:07:24 - INFO - __main__ - Question: What city state was ruled by Lorenzo de' Medici? </s> Context: Lorenzo De' Medici - 100 Leaders100 Leaders  Your first name.  Summary  Lorenzo de’ Medici recognized the importance of the arts. As the heir to a major European banking business, he used his family’s vast wealth to fund painters, sculptors, and architects, helping Florence emerge as a cultural center and spurring the Renaissance at great personal cost. He led the city-state as a despot, using everything from friendship to threats to secure and maintain his power. He cared greatly about Florence’s success, even putting himself in harm’s way to settle conflicts with rivals.  "I do not regret [spending 663,000 florins for charity, buildings, and taxes] for though many would consider it better to have a part of that sum in their purse, I consider it to have been a great honor to our state, and I think the money was well-expended and I am well-pleased."  Quoted (1471) in Living on the Edge in Leonardo’s Florence, edited by Gene A. Brucker, 2005, Google Books  Biography  Lorenzo de’ Medici assumed power in the city-state of Florence in 1469. The Medicis were among the foremost bankers in Europe at the time, accumulating great wealth, and they had ruled the republic for years. Lorenzo continued the family tradition of leading as a despot, and he centralized power through strategic friendships, marriages, bribes, and threats.  Despite this strength, Lorenzo’s rule was not unchallenged. In 1478, the Pazzi conspiracy – named for the rival banking family that instigated an attempted coup – tried to assassinate Lorenzo, injuring him and killing his brother. The attempt occurred with the knowledge of the Pope, and when Lorenzo retaliated against the conspirators, the Catholic Church (backed by soldiers from Naples) entered a state of war with Florence.  Lorenzo inspired Florentines to defend their city-state. However, as war dragged on, Lorenzo boldly decided to force peace talks by sailing to Naples personally. There he remained in the king’s hands for three months, until the king – impressed by Lorenzo’s action – agreed to end the violence. Lorenzo used this event to consolidate more power, as he could now argue that he knew the best way to handle threats to Florence.  Meanwhile, Lorenzo became one of the foremost artistic patrons in Florence, and all of Italy. He sponsored Leonardo da Vinci, Michelangelo Buonarroti, and Sandro Botticelli. This set an example that spurred patronage across Renaissance Italy. de’ Medici also supported humanists, creating a library with classical works from the East. He expanded the Medici library and encouraged the study of classic literature in Florence and across Europe. Although the money he spent meant he left the Medici bank weaker than when he inherited it, he was groundbreaking in his support for the arts.  What Made Lorenzo de' Medici A leader?  Florence was a leading artistic city during the Renaissance, and Lorenzo de’ Medici was one of its most enthusiastic patrons. He set an example for the city to by endorsing several of the period’s leading artists.  Through multiple arrangements and marriages, de’ Medici assured his family of power in the Catholic Church (there were four Medici popes) and across Europe.  Lorenzo’s actions following the Pazzi Conspiracy showed his willingness to take risks on behalf of his people, and once he returned, the Florentine people were willing to follow him even after he used the event to centralize his power.  The Medici banking clan continued its prominence through Lorenzo’s reign, meaning that he did not just lead the city politically, but also economically. He used this money to promote art and architecture, enhancing Florence’s reputation as a cultural center.  Discover More About Lorenzo de' Medici  Keywords  Print  Hibbert, Christopher. The House of Medici: Its Rise and Fall. New York: Morrow, 1975.  Kent, F.W. Lorenzo de’ Medici and the Art of Magnificence. Baltimore: Johns Hopkins University Press, 2004.  Parks, Tim. Medici Money: Banking, Metaphysics, and Art in Fifteenth-Century Florence. New York:
+06/26/2022 06:07:24 - INFO - __main__ - ['florence']
+06/26/2022 06:07:24 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:07:24 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/26/2022 06:07:24 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:07:24 - INFO - __main__ - Question: Who is the current Australian prime minister ? </s> Context: Prime Minister of AustraliaThe Prime Minister of the Commonwealth of Australia is the head of government in Australia. The individual who holds the office is the most senior Minister of the Crown, the leader of the Cabinet and the chairperson of the National Security Committee. The office is not mentioned in the Constitution of Australia and exists only through an unwritten political convention and tradition. Despite this, in practice it is the most powerful political position in Australia. The individual who holds the office is commissioned by the Governor-General of Australia.  Almost always and according to convention, the Prime Minister is the leader of the majority party or largest party in a coalition of parties in the House of Representatives. However, there is no constitutional requirement that the prime minister sit in the House of Representatives, or even be a member of parliament, though by convention this is always the case. The only case where a member of the Senate was appointed prime minister was John Gorton, who subsequently resigned his Senate position and was elected as a member of the House of Representatives (Senator George Pearce was acting prime minister for seven months in 1916 while Billy Hughes was overseas).   Malcolm Turnbull has held the office of Prime Minister since 15 September 2015. He received his commission after replacing Tony Abbott as the leader of the Liberal Party, the dominant party in the Coalition government, following the outcome of the September 2015 Liberal leadership ballot.   Former Prime Ministers continue to be important national figures, and in some cases go on to significant post-prime ministerial careers. Some notable examples have included: Edmund Barton, who was a justice of the High Court; George Reid, Andrew Fisher, Joseph Cook and Stanley Bruce, who were High Commissioners to the United Kingdom; Arthur Fadden, who was Treasurer under another prime minister, Robert Menzies; and Kevin Rudd, who became Julia Gillard's Foreign Minister.  Appointment  The Prime Minister of Australia is appointed by the Governor-General of Australia under Section 64 of the Australian Constitution, which empowers the Governor-General to appoint Ministers of the Crown and requires such Ministers to be members of the House of Representatives or the Senate, or become members within three months of the appointment. Before being sworn in as a minister, a person must first be sworn in as a member of the Federal Executive Council if they are not already a member. Membership of the Federal Executive Council entitles the member to the style of The Honourable (usually abbreviated to The Hon) for life, barring exceptional circumstances. The senior members of the Executive Council constitute the Cabinet of Australia.  The Prime Minister is, like other ministers, normally sworn in by the Governor-General and then presented with the commission (Letters patent) of office. When defeated in an election, or on resigning, the Prime Minister is said to "hand in the commission" and actually does so by returning it to the Governor-General. In the event of a Prime Minister dying in office, or becoming incapacitated, the Governor-General can terminate the commission. Ministers hold office "during the pleasure of the Governor-General" (s. 64 of the Constitution of Australia), so theoretically, the Governor-General can dismiss a minister at any time, by notifying them in writing of the termination of their commission; however, his or her power to do so except on the advice of the Prime Minister is heavily circumscribed by convention.  Despite the importance of the office of prime minister, the Constitution does not mention the office by name. The conventions of the Westminster system were thought to be sufficiently entrenched in Australia by the authors of the Constitution that it was deemed unnecessary to detail them. The formal title of the portfolio has always been simply "Prime Minister", except for the period of the Fourth Deakin Ministry (June 1909 to April 1910), when it was known as "Prime Minister (without portfolio)".   If a government cannot get its appropriation (budget) legislation passed by the House of Representatives, or the House passes a vote of "no confidence" in the government, the Prime Minister is
+06/26/2022 06:07:24 - INFO - __main__ - ['julia gillard']
+06/26/2022 06:07:24 - INFO - __main__ - Question: The name of which chemical element of the Periodic Table ends with the letters KEL ? </s> Context: Chemical elementA chemical element or element is a species of atoms having the same number of protons in their atomic nuclei (i.e. the same atomic number, Z).  There are 118 elements that have been identified, of which the first 94 occur naturally on Earth with the remaining 24 being synthetic elements. There are 80 elements that have at least one stable isotope and 38 that have exclusively radioactive isotopes, which decay over time into other elements. Iron is the most abundant element (by mass) making up Earth, while oxygen is the most common element in the crust of Earth.   Chemical elements constitute all of the ordinary matter of the universe. However astronomical observations suggest that ordinary observable matter is only approximately 15% of the matter in the universe: the remainder is dark matter, the composition of which is unknown, but it is not composed of chemical elements.   The two lightest elements, hydrogen and helium were mostly formed in the Big Bang and are the most common elements in the universe. The next three elements (lithium, beryllium and boron) were formed mostly by cosmic ray spallation, and are thus more rare than those that follow. Formation of elements with from six to twenty six protons occurred and continues to occur in main sequence stars via stellar nucleosynthesis. The high abundance of oxygen, silicon, and iron on Earth reflects their common production in such stars. Elements with greater than twenty-six protons are formed by supernova nucleosynthesis in supernovae, which, when they explode, blast these elements far into space as supernova remnants, where they may become incorporated into planets when they are formed.   The term "element" is used for a kind of atoms with a given number of protons (regardless of whether they are or they are not ionized or chemically bonded, e.g. hydrogen in water) as well as for a pure chemical substance consisting of a single element (e.g. hydrogen gas). For the second meaning, the terms "elementary substance" and "simple substance" have been suggested, but they have not gained much acceptance in the English-language chemical literature, whereas in some other languages their equivalent is widely used (e.g. French corps simple, Russian простое вещество). One element can form multiple substances different by their structure; they are called allotropes of the element.  When different elements are chemically combined, with the atoms held together by chemical bonds, they form chemical compounds.  Only a minority of elements are found uncombined as relatively pure minerals. Among the more common of such "native elements" are copper, silver, gold, carbon (as coal, graphite, or diamonds), and sulfur. All but a few of the most inert elements, such as noble gases and noble metals, are usually found on Earth in chemically combined form, as chemical compounds. While about 32 of the chemical elements occur on Earth in native uncombined forms, most of these occur as mixtures. For example, atmospheric air is primarily a mixture of nitrogen, oxygen, and argon, and native solid elements occur in alloys, such as that of iron and nickel.  The history of the discovery and use of the elements began with primitive human societies that found native elements like carbon, sulfur, copper and gold. Later civilizations extracted elemental copper, tin, lead and iron from their ores by smelting, using charcoal. Alchemists and chemists subsequently identified many more, with almost all of the naturally-occurring elements becoming known by 1900.  The properties of the chemical elements are summarized on the periodic table, which organizes the elements by increasing atomic number into rows ("periods") in which the columns ("groups") share recurring ("periodic") physical and chemical properties. Save for unstable radioactive elements with short half-lives, all of the elements are available industrially, most of them in high degrees of purity.  Description  The lightest chemical elements are hydrogen and helium, both created by Big Bang nucleosynthesis during the first 20 minutes of the universe  in a ratio of around 3:1 by mass (or 12:1 by number of atoms),   along with tiny traces of
+06/26/2022 06:07:24 - INFO - __main__ - ['nickel']
+06/26/2022 06:07:24 - INFO - __main__ - Question: "Geography - which ""Strait"" in the Mediterranean lies between Sicily and mainland Italy ?" ? </s> Context: Sicily | island, Italy | Britannica.comSicily | island, Italy | Britannica.com  Sicily  Mediterranean Sea  Sicily, Italian Sicilia, island of Italy , the largest and one of the most densely populated in the Mediterranean Sea . Together with the Egadi, Lipari, Pelagie, and Panteleria islands, Sicily forms an autonomous region of Italy. It lies about 100 miles (160 km) northeast of Tunisia (northern Africa). The island is separated from the mainland by the Strait of Messina (2 miles [3 km] wide in the north and 10 miles [16 km] wide in the South). The capital is Palermo .  Sicily, Italy.  The cathedral at Palermo, Sicily  Leo de Wys Inc./Joachim Messerschmidt  History  Sicily was inhabited 10,000 years ago. Its strategic location at the centre of the Mediterranean has made the island a crossroads of history, a pawn of conquest and empire, and a melting pot for a dozen or more ethnic groups whose warriors or merchants sought its shores. At the coming of the Greeks, three peoples occupied Sicily: in the east the Siculi , or Sicels, who gave their name to the island but were reputed to be latecomers from Italy; to the west of the Gelas River, the Sicani ; and in the extreme west the Elymians , a people to whom a Trojan origin was assigned, with their chief centres at Segesta and at Eryx (Erice). The Siculi spoke an Indo-European language; there are no remains of the languages of the other peoples. There were also Phoenician settlements on the island. The Greeks settled Sicilian towns between the 8th and 6th centuries bce. The mountainous centre remained in the hands of Siculi and Sicani, who were increasingly Hellenized in ideas and material culture .  Doric columns on the Greek temple at Segesta, Sicily, c. 424–416 bc  SCALA/Art Resource, New York  Lombardy  In the 3rd century bce the island became the first Roman province. The Byzantine general Belisarius occupied Sicily in 535 ce, at the start of hostilities with the Ostrogoths in Italy, and after a short time Sicily came under Byzantine rule. In 965 the island fell to Arab conquest from North Africa , in 1060 to Normans, who progressively Latinized the island. In the 12th and 13th centuries the island formed a part of the Kingdom of the Two Sicilies (or Naples), and in the 18th century Sicily was ruled by the Bourbons. During the 19th century the island was a major centre of revolutionary movements: in 1860, as a result of Giuseppe Garibaldi’s revolt, it was liberated from the Bourbons and in the following year was incorporated into the united kingdom of Italy. In 1947 Sicily gained regional autonomy .  Mosaic picture of Jesus Christ in the cathedral in Cefalù, Sicily, Italy.  Mimmo Jodice/Corbis  Physical and human geography  The island is mostly mountainous, and seismic and volcanic activity is quite intense. Europe’s highest active volcano is Mount Etna (10,900 feet [3,220 metres]). The only wide valley is the fertile Plain of Catania in the east. The climate is subtropical and Mediterranean. Annual precipitation on the plains is 16–24 inches (400–600 mm), and in the mountains 47–55 inches (1,200–1,400 mm). Underground water and springs are plentiful. The natural vegetation of Sicily has been greatly reduced by human influence, and forests occupy only 4 percent of the territory.  Mount Etna erupting at night, Sicily, Italy.  David Trood—The Image Bank/Getty Images  An investigation into whether a tsumani triggered by underwater volcanos caused the destruction of …  Contunico © ZDF Enterprises GmbH, Mainz  Exploring Italy and France: Fact or Fiction?  Sicilians are a diverse people, having had contact with a great variety of ethnic stocks and physical types throughout the centuries. Despite its position at the crossroads of many Mediterranean civilizations, it retains many characteristics of more rural regions bred of its isolation and distance from mainland Italy. One peculiar feature of the separateness of Sicilian life is the persistence of the Mafia , an organization dating from the Middle Ages that gradually evolved into a paralegal criminal brotherhood. It gives certain parts of
+06/26/2022 06:07:24 - INFO - __main__ - ['messina']
+06/26/2022 06:07:24 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:07:33 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:07:33 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:07:33 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json from cache at /data2/home/gangwei/.cache/torch/transformers/1ae1f5b6e2b22b25ccc04c000bb79ca847aa226d0761536b011cf7e5868f0655.ef00af9e673c7160b4d41cfda1f48c5f4cba57d5142754525572a846a1ab1b9b
+06/26/2022 06:07:33 - INFO - transformers.tokenization_utils - loading file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt from cache at /data2/home/gangwei/.cache/torch/transformers/f8f83199a6270d582d6245dc100e99c4155de81c9745c6248077018fe01abcfb.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+06/26/2022 06:07:33 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/26/2022 06:07:33 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:07:33 - INFO - __main__ - Question: Who had an 80s No 1 hit with Hold On To The Nights? </s> Context: Hold On to the Nights"Hold On to the Nights" is a power ballad and number-one hit for American rock singer/songwriter/musician Richard Marx.  This was the fourth and final single released from his self-titled debut album, and the first to reach the top of the Billboard Hot 100 chart.  Written by Richard Marx, "Hold On to the Nights" reached the Billboard Hot 100 number 1 position on July 23, 1988, preventing Def Leppard's "Pour Some Sugar On Me" from reaching the top spot that same week. The song was on the chart for twenty-one weeks, and left the chart at number 65. From Marx' debut 1987 album, Richard Marx, the song also reached number three on the Billboard Adult Contemporary chart. "Hold On to the Nights" has been re-released numerous albums  and is included on Marx's live performance DVD A Night Out with Friends (2012).  Charts
+06/26/2022 06:07:33 - INFO - __main__ - ['richard marx']
+06/26/2022 06:07:33 - INFO - __main__ - Question: What is the Japanese share index called? </s> Context: Nikkei Definition | InvestopediaNikkei Definition | Investopedia  Nikkei  What is the 'Nikkei'  Nikkei is short for Japan's Nikkei 225 Stock Average, the leading and most-respected index of Japanese stocks. It is a price-weighted index comprised of Japan's top 225 blue-chip companies traded on the Tokyo Stock Exchange . The Nikkei is equivalent to the Dow Jones Industrial Average Index in the United States.  BREAKING DOWN 'Nikkei'  Originally called the Nikkei Dow Jones Stock Average (from 1975 to 1985), it is now named for the "Nihon Keizai Shimbun" or Japan Economic Newspaper, commonly known as Nikkei, which sponsors the calculation of the index. The index has been calculated since September 1950, retroactive to May 1949. Among the best-known companies included in the Nikkei index are Canon Inc., Sony Corporation and Toyota Motor Corporation. It is the oldest stock index in Asia.  The Nikkei was established as part of the rebuilding and industrialization of Japan in the aftermath of the Second World War. Constituent stocks are ranked by share price, rather than by market capitalization as is common in most indexes. Valuations are denominated in Japanese yen. The composition of the Nikkei is reviewed every September, and any needed changes take place in October.  Background  The Tokyo Stock Exchange was established in 1878. In 1943, during the Second World War, the Japanese government combined the TSE with five others to form a single Japanese Stock Exchange. That exchange was closed down in August 1945, near the end of the war. The Tokyo Stock Exchange re-opened on May 16, 1949 under the aegis of the new Securities Exchange Act .  Japan experienced a major asset bubble in the late 1980's, as the government used fiscal and monetary stimuli to counteract a recession caused by the Japanese yen's 50% appreciation during the first part of the decade. Stock prices and land values tripled between 1985 and 1989; at the height of the bubble, the TSE accounted for 60% of global stock market capitalization. The bubble burst in 1990, and the value of the Nikkei Index fell by one-third that year. In October 2008, the Nikkei traded below 7,000; this was a decline of more than 80% from its December 1989 high. It subsequently rebounded strongly, rising 150% between June 2012 and June 2015 with the help of economic stimulus from the Japanese government and the Bank of Japan . This was still nearly 50% below the 1989 high.  Investing in the Nikkei Index  It is not possible to directly purchase an index, but there are several Exchange Traded Funds whose components correlate to the Nikkei. ETFs that track it and trade on the Tokyo Stock Exchange include Blackrock Japan's iShares Nikkei 225 and Nomura Asset Management 's Nikkei 225 Exchange Traded Fund. The MAXIS Nikkei 225 Index ETF is a dollar-denominated fund that trades on the New York Stock Exchange .  Trading Center
+06/26/2022 06:07:33 - INFO - __main__ - ['nikkei']
+06/26/2022 06:07:33 - INFO - __main__ - Question: Who had a 70s No 1 hit with Kiss You All Over? </s> Context: Kiss You All Over"Kiss You All Over" is a 1978 song performed by the group Exile. It was written by Mike Chapman and Nicky Chinn. It was included on the band's album Mixed Emotions, and it featured Jimmy Stokley and guitarist JP Pennington on lead vocals. It was a number one single in the United States, but proved to be Exile's only big hit in the pop rock market.  Billboard ranked it as the No. 5 song for 1978. In the United Kingdom, the song was released on Mickie Most's RAK Records, and it peaked at number 6 in the UK Singles Chart.  In this song, a string synthesizer is used.  Lead vocalist on the song Stokley was ousted from the band in 1979, his health declining thereafter until he died at the age of 41 in 1985. The band moved into country music following the synth-pop success of "Kiss You All Over" and the 1979 follow-on hit "You Thrill Me" (reaching #40 (UK no. 67)) and "How Could This Go Wrong", #88 on the charts. "Take Me Down" peaked at #3 on the Euro Hit 40 in the mid-1980s.  Cover versions  * 1978: A version by Jim Mundy and Terri Melton made number 87 on the Hot Country Songs charts.  * 1978: A Disco version was covered by Broadway  * 1979: Along with the track "So Strange", Phyllis Hyman covered this song and had a minor disco hit, peaking at number 75.  * Also in 1979, Millie Jackson covered this song for her album A Moment's Pleasure and it was released as a single in Europe.  * 1982: A lovers rock version by Samantha Rose produced by reggae producer Winston Curtis was recorded in London.  * 1993: Tiffany released a version on her Asia-only album Dreams Never Die. The album (and song) were re-released in the U.S. in 2005.   * 1997: The band No Mercy's remixed version by Johnny Vicious and Darrin "Spike" Friedman reached #1 on the Billboard Hot Dance Club Play chart.  It also reached #16 on the UK Singles Chart and #47 in Australia.  * 2013: On the album Love Will..., Trace Adkins recorded a cover version with Exile (J.P. Pennington and Les Taylor).  * 2016: A cover of the song appears on the Information Society album Orders of Magnitude  Appearances in other media  The song was featured in the films Happy Gilmore, Wild Hogs, Man on the Moon, Employee of the Month, and Zookeeper. It was also used in 2007 on CBC's Hockey Night In Canada during a montage of Stanley Cup celebrations at the conclusion of the final game of the Stanley Cup Playoffs. The song closes out the finale of the first season of the Amazon Series Red Oaks.  Exile - kiss you all over - YouTubeExile - kiss you all over - YouTube  Exile - kiss you all over  Want to watch this again later?  Sign in to add this video to a playlist.  Need to report the video?  Sign in to report inappropriate content.  Rating is available when the video has been rented.  This feature is not available right now. Please try again later.  Uploaded on Apr 26, 2008  Exile - kiss you all over  Category  Standard YouTube License  Music  Exile - I Wanna Kiss You All Over (1978) - YouTubeExile - I Wanna Kiss You All Over (1978) - YouTube  Exile - I Wanna Kiss You All Over (1978)  Want to watch this again later?  Sign in to add this video to a playlist.  Need to report the video?  Sign in to report inappropriate content.  The interactive transcript could not be loaded.  Loading...  Rating is available when the video has been rented.  This feature is not available right now. Please try again later.  Uploaded on Jun 30, 2006  Jimmy Stokley (lead vocals), J. P. Pennington (guitar, vocals
+06/26/2022 06:07:33 - INFO - __main__ - ['exile']
+06/26/2022 06:07:33 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:07:33 - INFO - __main__ - Start tokenizing ... 1946 instances
+06/26/2022 06:07:33 - INFO - __main__ - Printing 3 examples
+06/26/2022 06:07:33 - INFO - __main__ - Question: Who was King of England in 1350? </s> Context: Edward III | king of England | Britannica.comEdward III | king of England | Britannica.com  king of England  Alternative Title: Edward of Windsor  Edward III  Henry, 1st duke and 4th earl of Lancaster  Edward III, byname Edward of Windsor (born November 13, 1312, Windsor , Berkshire , England—died June 21, 1377, Sheen, Surrey), king of England from 1327 to 1377, who led England into the Hundred Years’ War with France. The descendants of his seven sons and five daughters contested the throne for generations, climaxing in the Wars of the Roses (1455–85).  Edward III, watercolour, 15th century; in the British Library (Cotton MS. Julius E. IV).  By permission of the British Library  Early years  The eldest son of Edward II and Isabella of France , Edward III was summoned to Parliament as earl of Chester (1320) and was made duke of Aquitaine (1325), but, contrary to tradition, he never received the title of prince of Wales.  Edward III grew up amid struggles between his father and a number of barons who were attempting to limit the king’s power and to strengthen their own role in governing England. His mother, repelled by her husband’s treatment of the nobles and disaffected by the confiscation of her English estates by his supporters, played an important role in this conflict. In 1325 she left England to return to France to intervene in the dispute between her brother, Charles IV of France, and her husband over the latter’s French possessions, Guyenne , Gascony , and Ponthieu. She was successful; the land was secured for England on condition that the English king pay homage to Charles. This was performed on the king’s behalf by his young son.  United Kingdom: Edward III (1327–77)  The heir apparent was secure at his mother’s side. With Roger Mortimer , an influential baron who had escaped to France in 1323 and had become her lover, Isabella now began preparations to invade England to depose her husband. To raise funds for this enterprise, Edward III was betrothed to Philippa , daughter of William, count of Hainaut and Holland.  Within five months of their invasion of England, the queen and the nobles, who had much popular support, overpowered the king’s forces. Edward II, charged with incompetence and breaking his coronation oath, was forced to resign, and on January 29, 1327, Edward III, aged 14, was crowned king of England.  During the next four years Isabella and Mortimer governed in his name, though nominally his guardian was Henry, earl of Lancaster . In the summer of 1327 he took part in an abortive campaign against the Scots, which resulted in the Treaty of Northampton (1328), making Scotland an independent realm. Edward was deeply troubled by the settlement and signed it only after much persuasion by Isabella and Mortimer. He married Philippa at York on January 24, 1328. Soon afterward Edward made a successful effort to throw off his degrading dependence on his mother and Mortimer. While a council was being held at Nottingham, he entered the castle by night, through a subterranean passage, took Mortimer prisoner, and had him executed (November 1330). Edward had discreetly ignored his mother’s liaison with Mortimer and treated her with every respect, but her political influence was at an end.  Britannica Stories  Cheetahs Face Extinction Risk  Edward III now began to rule as well as to reign. Young, ardent , and active, he sought to remake England into the powerful nation it had been under Edward I . He still resented the concession of independence made to Scotland by the Treaty of Northampton. The death of Robert I , the Bruce, king of Scotland, in 1329 gave him a chance of retrieving his position. The new king of Scots, his brother-in-law, David II , was a mere boy, and Edward took advantage of his weakness to aid the Scottish barons who had been exiled by Bruce to place their leader, Edward Balliol, on the Scottish throne. David II fled to France, but Balliol was despised as a puppet
+06/26/2022 06:07:33 - INFO - __main__ - ['edward iii']
+06/26/2022 06:07:33 - INFO - __main__ - Question: Mammy Two Shoes, a recurring character in MGM's Tom and Jerry cartoons was inspired by which African-American actress and singer? </s> Context: Mammy Two Shoes : definition of Mammy Two Shoes and ...Mammy Two Shoes : definition of Mammy Two Shoes and synonyms of Mammy Two Shoes (English)  Aunt Harriet (mentioned, not heard or seen in The Million Dollar Cat ).  Mammy Two Shoes (sometimes Mrs. Two Shoes) is a recurring character in MGM 's Tom and Jerry cartoons. She is a heavy-set middle-aged black woman who often has to deal with the mayhem generated by the lead characters.  As a partially seen character , she was famous for never showing her face (except very briefly in Saturday Evening Puss ). Mammy's appearances have often been edited out, dubbed, or re-animated as a slim white woman in later television showings, since her character is a mammy archetype now often regarded as racist. It was later revealed that her character was greatly inspired by Oscar -winning black actress and singer Hattie McDaniel , best known for playing "Mammy" in MGM and David O. Selznick 's 1939 film Gone with the Wind .  A character very similar to Mammy Two Shoes had earlier been portrayed in the Disney Silly Symphonies shorts Three Orphan Kittens and More Kittens , as well as the Pluto short Pantry Pirate and the Figaro short Figaro and Cleo . A similar character Aunt Petunia the Mammy actually shows her face which resembles blackface in The Little Audrey Cartoon Series .  Contents  7 References    Theatrical Tom and Jerry cartoons    Mammy Two Shoes, in a scene from the Tom & Jerry short Saturday Evening Puss , whose full face was shown for the first time.  Mammy first appeared in Puss Gets the Boot , the first Tom and Jerry cartoon (except Tom was called "Jasper"). She always referred to Tom as his given name Thomas and almost always used "is" in conjunction with a pronoun ("is you" and "I is"). The character went on to make many appearances through the entire series until 1952 and her last appearance in the short, Push-Button Kitty . William Hanna and Joseph Barbera initially portrayed Mammy as the maid of the house, with the real owners unknown to us. Later, Hanna and Barbera seemed to suggest, through dialogue and occasional behavior, that the house was Mammy's own.  Mammy was originally voiced by well-known African-American character actress Lillian Randolph . In the 1960s, the MGM animation studio , by then under the supervision of Chuck Jones , created censored versions of the Tom & Jerry cartoons featuring Mammy for television. These versions used rotoscoping techniques to replace Mammy on-screen with a similarly stocky white woman (in most shorts) or a thin white woman (in Saturday Evening Puss); Randolph's voice on the soundtracks was replaced by an Irish-accented (or, in Puss, generic young adult) voice performed by white actress June Foray . [1]  The original versions of the cartoons were reinstated when Turner Broadcasting acquired ownership of the Tom & Jerry property. But in 1992, the cartoons featuring Mammy were edited again; this time, to replace Lillian Randolph's voice with that of Thea Vidale , who re-recorded the dialogue to remove Mammy's use of potentially offensive dialect . These re-recorded versions of the cartoons are aired to this day on Turner's Cartoon Network -related cable channels, and have at times turned up on DVD as well. However, some European TV showings of these cartoons, especially the UK, retain Randolph's original voice. The Region 2 Complete Collectors Edition DVD boxset has Vidale's voice on the first DVD and Randolph in a number of the episodes after that (such as A Mouse in the House and Mouse Cleaning ).    Replacement characters for Mammy  From 1954's Pet Peeve , Mammy disappeared from Tom and Jerry; the owners of the animals' house became a young, white, middle-class couple named Joan and George , and starting with 1955's The Flying Sorceress , the audience was able to see these owners' heads.  In 1961, when Rembrandt Films began producing Tom and Jerry shorts, the owner of the house became a corpulent white man. The character was designed
+06/26/2022 06:07:33 - INFO - __main__ - ['hattie mcdaniel']
+06/26/2022 06:07:33 - INFO - __main__ - Question: Alan Minter was World boxing champion at which weight? </s> Context: Proudly Presenting Alan Minter Boxing Fights on Boxing DVDs.Proudly Presenting Alan Minter Boxing Fights on Boxing DVDs.  Boxing Fight Record: won 39 (KO 23) & lost 9 Boxing Fights   History of Alan Alan Minter Boxing Career Set     Alan Minter Career Set won five boxing fights in a row by knockout and, in 1973, Pat Dwyer became the first boxer to go the distance with him, over eight rounds. Alan Minter won his next five boxing fights, three by knockout, before tasting defeat for the first time after the referee stopped the fight in the eighth round to King George Aido due to bad cuts suffered by Alan Minter. Two more wins followed before facing Jan Magziarz, who beat him twice in a row again due to cuts.  1974 was a diverse year for Alan  Minter, defeating Tony Byrne by a result in eight, losing in two to  Ricky Torres again on cuts, having a third fight with Magziarz result in  a no boxing fight in four rounds and closing the year with a win in  eight rounds by result in his first worldwide fight, against Shako Mamba  in Hamburg, Germany.In 1975, he won four fights in a row, including another boxing bout in Hamburg and, by the end of the year, he challenged Kevin Finnegan for the British boxing Middleweight title, captivating it by a 15 round decision. In 1976 he won six fights, to extend his streak to ten successive wins.These wins gave Alan Minter a status among the top ten boxing Middleweight challengers.  In 1977, he won the European boxing Middleweight title by beating Germano Valsecchi by a knockout in five in Italy. But in his next boxing fight his winning line ended when he lost to former world title challenger Ronnie Harris by a knockout in eight. Alan Minter returned to top ten contender status by upsetting the former World Welterweight and Light Middleweight Champion Emile Griffith with a ten round decision win in Monte Carlo, but then he lost his European title to Gratien Tonna by a knockout in eight at Milan. He closed '77 with a third 15 round decision win over Finnegan to retain his British title.  1978 was a bad year for Alan Minter, even though he won all three of his boxing bouts. On 15 February, at the Muhammad Ali vs Leon Spinks I undercard in Las Vegas, Nevada, he won his first bout in the United States by knocking out Sandy Torres in five. Then, he went to Italy once once more to get back his European Middleweight title by knocking out Angelo Jacopucci in twelve rounds. Jacopucci died a few days afterwards, due to injuries sustained in the bout. Alan Minter completed his year by avenging his loss to Tonna with a six round boxing knockout.  In 1979, Alan Minter won all four of his boxing fights, two of them by knockout. On 16 March 1980, in Las Vegas, he was given a attempt at World Middleweight Boxing Champion Vito Antuofermo's title at the Caesars Palace. He won the title by a 15 round result and, in a rematch, he retained the world title by a TKO in eight rounds. Alan Minter's run as world boxing champion came to an end on 27 September of that year, when he was stopped on cuts in three rounds to Marvin Hagler at Wembley Arena in London. After the fight was stopped, Alan Minter's followers caused a riot, throwing beer cans into the boxing ring and both boxers had to be ushered away by the police. Earlier to the fight, Alan Minter made the obviously racist statement on the BBC that, "that black man is not going to take my title away." He later retracted this statement and said he meant "no man" is going to take my title away.     Alan Minter : Reflection of 1980s - The Living DaylightsAlan Minter : Reflection of 1980s  Comment  ****  Alan Minter was perhaps the most popular man in Britain heading into his fateful clash against Marvin Hagler on September 27, 1980.  After winning the world title in March in Las Vegas from Vito Antuofermo, the new champion turned in
+06/26/2022 06:07:33 - INFO - __main__ - ['middleweight']
+06/26/2022 06:07:33 - INFO - __main__ - Tokenizing Input ...
+06/26/2022 06:07:33 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:07:33 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:07:34 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:07:34 - INFO - __main__ - Loaded 1946 examples from dev data
+06/26/2022 06:07:34 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:07:34 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:07:34 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:07:34 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:07:34 - INFO - __main__ - Loaded 1946 examples from dev data
+06/26/2022 06:07:34 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:07:35 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:07:35 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:07:36 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:07:36 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:07:36 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:07:36 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:07:40 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:07:41 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:07:43 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:07:43 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:07:43 - INFO - __main__ - Tokenizing Input ... Done!
+06/26/2022 06:07:43 - INFO - __main__ - Tokenizing Output ...
+06/26/2022 06:07:43 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:07:43 - INFO - __main__ - Loaded 1946 examples from dev data
+06/26/2022 06:07:43 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:07:43 - INFO - __main__ - Tokenizing Output ... Done!
+06/26/2022 06:07:43 - INFO - __main__ - Loaded 1946 examples from dev data
+06/26/2022 06:07:43 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt ....
+06/26/2022 06:07:44 - INFO - __main__ - Starting inference ...
+06/26/2022 06:07:45 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:07:45 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:07:45 - INFO - __main__ - Starting inference ...
+06/26/2022 06:07:45 - INFO - transformers.configuration_utils - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/facebook/bart-base/config.json from cache at /data2/home/gangwei/.cache/torch/transformers/09f4fcaeaf785dd3b97b085d6e3510c7081f586ec8e75981683c6299c0f81d9d.e8d516ad807436d395effad8c2326786872659b7dd1210827ac67c761198a0eb
+06/26/2022 06:07:45 - INFO - transformers.configuration_utils - Model config BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 768,
+  "decoder_attention_heads": 12,
+  "decoder_ffn_dim": 3072,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 6,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "early_stopping": true,
+  "encoder_attention_heads": 12,
+  "encoder_ffn_dim": 3072,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 6,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "no_repeat_ngram_size": 3,
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 50265
+}
+
+06/26/2022 06:07:45 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:07:45 - INFO - transformers.modeling_utils - loading weights file https://cdn.huggingface.co/facebook/bart-base/pytorch_model.bin from cache at /data2/home/gangwei/.cache/torch/transformers/566c05fb6983817e8ad7a4fa51e3099fe9caa3b31730f964bc5198d71c677523.0a3d95c18c1e434448941bc25accea7b122882be6526fb67c8e8fb6d5ebc711c
+06/26/2022 06:07:50 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:07:50 - INFO - __main__ - Loading checkpoint from out/mrqa_squad_bart-base_upstream_model//best-model.pt .... Done!
+06/26/2022 06:07:54 - INFO - __main__ - Starting inference ...
+06/26/2022 06:07:54 - INFO - __main__ - Starting inference ...
+06/26/2022 06:09:50 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:09:53 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:09:54 - INFO - __main__ - Starting inference ... Done
+06/26/2022 06:10:16 - INFO - __main__ - Starting inference ... Done

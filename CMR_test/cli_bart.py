@@ -12,15 +12,15 @@ import sys
 import argparse
 import logging
 
-sys.path.append("/amax/home/gangwei/project/continual-pre-training/CMR_test")
+sys.path.append("/data2/home/gangwei/project/continual-pre-training/CMR_test")
 
 import random
 import numpy as np 
 import torch
 
 from cmr.models.utils import set_seeds
-# from cmr.models.run_bart import run
-from cmr.models.run_test import run
+from cmr.models.run_bart import run
+# from cmr.models.run_test import run
 
 
 def get_parser():
